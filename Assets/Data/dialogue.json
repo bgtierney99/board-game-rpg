@@ -1,0 +1,475 @@
+{
+	"dialogue": [
+		{
+			"id": "hello",
+			"speaker": "Someone",
+			"text": ["Hello {PlayerName}"],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "space_interaction",
+			"speaker": "The Controller",
+			"text": ["You've crossed paths with {Subject}! What will you do?"],
+			"response": [
+				{
+					"value": "Fight",
+					"action": {
+						"value": "battle",
+						"parameters": []
+					}
+				},
+				{
+					"value": "Trade",
+					"action": {
+						"value": "trade",
+						"parameters": []
+					}
+				},
+				{
+					"value": "Ignore",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "empty_inventory",
+			"speaker": "The Controller",
+			"text": ["Oh no! {Subject} has nothing!"],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "prize_found",
+			"speaker": "The Controller",
+			"text": ["You landed on a prize space! What are you going to do?"],
+			"response": [
+				{
+					"value": "Open it!",
+					"action": {
+						"value": "open",
+						"parameters": []
+					}
+				},
+				{
+					"value": "Ignore",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "got_items",
+			"speaker": "The Controller",
+			"text": ["You found {Items} in this container!"],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "grave_items",
+			"speaker": "The Controller",
+			"text": ["You found: {Items}\nin {Owner}'s grave."],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "battle_items",
+			"speaker": "The Controller",
+			"text": ["{Winner} got {Money} money and {Items}\nfrom beating {Losers}"],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "companion_found",
+			"speaker": "The Controller",
+			"text": ["Something is hiding here! What's your plan?"],
+			"response": [
+				{
+					"value": "Check it out",
+					"action": {
+						"value": "tame",
+						"parameters": []
+					}
+				},
+				{
+					"value": "Ignore",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "companion_attack",
+			"speaker": "The Controller",
+			"text": ["Ooh! The {Companion} attacked you and ran off!"],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "got_companion",
+			"speaker": "The Controller",
+			"text": ["You found {Companion}!"],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "not_implemented",
+			"speaker": "The Controller",
+			"text": ["This feature is not implemented yet... or it is, and the idiot in charge broke it.", "Whoops! Can't do that yet!"],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "player_grave",
+			"speaker": "The Controller",
+			"text": ["Someone's items can be found at this grave site."],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "no_grave",
+			"speaker": "The Controller",
+			"text": ["You didn't have anything to leave behind. What a shame..."],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "trap_damage_reaction",
+			"speaker": "{PlayerName}",
+			"text": ["Ouch!", "Come on!", "Huh?!"],
+			"response": [
+				{
+					"value": "Next",
+					"action": {
+						"value": "next",
+						"parameters": ["trap_damage_response"]
+					}
+				}
+			]
+		},
+		{
+			"id": "trap_damage_response",
+			"speaker": "The Controller",
+			"text": ["Looks like that space was trapped!", "Sorry... maybe."],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "trap_stuck_start",
+			"speaker": "The Controller",
+			"text": ["That's not fun! Looks like {PlayerName} is stuck!"],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "trap_stuck_end",
+			"speaker": "The Controller",
+			"text": ["Did you have fun hanging around for a bit?", "Unstuck this time, huh?", "There you go! It'll be nice to see you moving around."],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "expedition_start",
+			"speaker": "The Controller",
+			"text": ["{PlayerName} found an expedition!"],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "expedition_end",
+			"speaker": "The Controller",
+			"text": ["Did you get a good haul?", "How'd you make out?", "Nice to see you again! You've been busy!"],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "shop_intro",
+			"speaker": "{Speaker}",
+			"text": ["Welcome to my shop! What can I do for you?"],
+			"response": [
+				{
+					"value": "Buy",
+					"action": {
+						"value": "buy",
+						"parameters": []
+					}
+				},
+				{
+					"value": "Sell",
+					"action": {
+						"value": "sell",
+						"parameters": []
+					}
+				},
+				{
+					"value": "Fight",
+					"action": {
+						"value": "fight",
+						"parameters": []
+					}
+				},
+				{
+					"value": "Ignore",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+				
+			]
+		},
+		{
+			"id": "shop_follow-up",
+			"speaker": "{Speaker}",
+			"text": ["Anything else I can do for you?"],
+			"response": [
+				{
+					"value": "Buy",
+					"action": {
+						"value": "buy",
+						"parameters": []
+					}
+				},
+				{
+					"value": "Sell",
+					"action": {
+						"value": "sell",
+						"parameters": []
+					}
+				},
+				{
+					"value": "Fight",
+					"action": {
+						"value": "fight",
+						"parameters": []
+					}
+				},
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+				
+			]
+		},
+		{
+			"id": "intro_speech_boss",
+			"speaker": "The Controller",
+			"text": ["Welcome to the game, players. To restore your worlds to their original states, you must defeat me. Good luck."],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "turn_2_reached",
+			"speaker": "The Controller",
+			"text": ["We've reached turn 2! How stupendous!!!"],
+			"response": [
+				{
+					"value": "Next",
+					"action": {
+						"value": "next",
+						"parameters": ["turn_2_reached_next"]
+					}
+				}
+			]
+		},
+		{
+			"id": "turn_2_reached_next",
+			"speaker": "The Controller",
+			"text": ["More dialogue? Wonderful!!"],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "boss_battle_begin",
+			"speaker": "The Controller",
+			"text": ["Let's begin, shall we?", "Ready to lose, huh?", "Come at me! I dare you."],
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "task_001",
+			"character_name": "Villager Lady",
+			"task_id": "task_002",
+			"text": {
+				"available": "Can someone get me some things? I need it and I'll give you this weapon.",
+				"active": "Did you get the stuff yet? Come see me when you have it please.",
+				"completed": "Hey! Thanks so much! Here's your reward as promised!"
+			},
+			"type": "task_offer",
+			"response": {
+				"available": {
+					"accept": {
+						"text": "Yeah, sure!",
+						"action": "start_task",
+						"parameters": [
+							"task_002"
+						]
+					},
+					"decline": {
+						"text": "Nah, I'm good.",
+						"action": "close_dialogue"
+					},
+					"steal": {
+						"text": "FIGHT",
+						"action": "do_battle",
+						"parameters": [
+							"current_player",
+							"character_name"
+						]
+					}
+				},
+				"active": {
+					"continue": {
+						"text": "Sorry! Will do!",
+						"action": "close_dialogue"
+					}
+				},
+				"completed": {
+					"accept_reward": {
+						"text": "Thank you!",
+						"action": "accept_reward",
+						"parameters": [
+							"task_002"
+						]
+					}
+				}
+			}
+		}
+	]
+}

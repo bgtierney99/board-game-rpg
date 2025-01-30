@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="dataTable" load_steps=9 format=3 uid="uid://c2hsqdb2tuy2l"]
+
+[ext_resource type="Script" path="res://Resources/Tables/dataTable.gd" id="1_if0sl"]
+[ext_resource type="Resource" uid="uid://bixddetwuif4r" path="res://Resources/Equipment/Items/item_1.tres" id="2_n8vlp"]
+[ext_resource type="Resource" uid="uid://chc8ymoglxufa" path="res://Resources/Equipment/Items/item_2.tres" id="3_goi7u"]
+[ext_resource type="Resource" uid="uid://cg0lp0xoi8ggj" path="res://Resources/Equipment/Items/item_3.tres" id="4_web3g"]
+[ext_resource type="Resource" uid="uid://eyjvdjd5btmv" path="res://Resources/Equipment/Items/item_4.tres" id="5_ex2u2"]
+[ext_resource type="Resource" uid="uid://b5yhwj3bcggls" path="res://Resources/Equipment/Items/item_5.tres" id="6_biu2q"]
+[ext_resource type="Resource" uid="uid://bvttrwcaapyeq" path="res://Resources/Equipment/Items/item_6.tres" id="7_0erod"]
+[ext_resource type="Resource" uid="uid://mt1k2nb3incv" path="res://Resources/Equipment/Items/item_7.tres" id="8_u71b7"]
+
+[resource]
+script = ExtResource("1_if0sl")
+table = Array[Resource]([ExtResource("2_n8vlp"), ExtResource("3_goi7u"), ExtResource("4_web3g"), ExtResource("5_ex2u2"), ExtResource("6_biu2q"), ExtResource("7_0erod"), ExtResource("8_u71b7")])

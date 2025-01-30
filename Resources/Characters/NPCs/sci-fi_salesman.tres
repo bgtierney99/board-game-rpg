@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://ds7vr0wscrxqf"]
+
+[ext_resource type="PackedScene" uid="uid://b0eptbq4i60l4" path="res://Assets/Art/Characters/Models/sci-fi_1.glb" id="1_6lsja"]
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_gaxkj"]
+
+[resource]
+script = ExtResource("1_gaxkj")
+model = ExtResource("1_6lsja")
+name = "Sci-Fi Salesman"
+base_stats = {
+"Attack": 10,
+"Defense": 30,
+"HP": 20,
+"Speed": 30
+}
+world = 0
+smart_battler = true
+is_3D = false
+strategy = 0
+money = 3000

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwggmpbf2b6kr"]
+
+[ext_resource type="PackedScene" uid="uid://by78m8kobhn6p" path="res://Assets/Art/Items/Models/data_sprite.glb" id="1_nhftd"]
+
+[node name="DataSprite" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.922733, 0.385439, 0, -0.385439, 0.922733, 0, 1.076, 1.5)
+
+[node name="data_sprite" parent="." instance=ExtResource("1_nhftd")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)

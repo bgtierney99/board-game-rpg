@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="weightedResourceStack" load_steps=2 format=3 uid="uid://c88huhw8r1kcu"]
+
+[ext_resource type="Script" path="res://Resources/weightedStack.gd" id="1_uh6pj"]
+
+[resource]
+script = ExtResource("1_uh6pj")
+count = -1
+weight = 1

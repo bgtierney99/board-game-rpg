@@ -1,0 +1,33 @@
+[gd_resource type="Animation" format=3 uid="uid://dq6wwciddses7"]
+
+[resource]
+resource_name = "Open"
+length = 1.33333
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Top")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -0.439893, 1, 0, 0.0666667, 1, -0.439893, 1.00104, 0, 0.1, 1, -0.439893, 1.00216, 0, 0.133333, 1, -0.439893, 1.00352, 0, 0.2, 1, -0.439893, 1.00648, 0, 0.233333, 1, -0.439893, 1.00784, 0, 0.266667, 1, -0.439893, 1.00896, 0, 0.333333, 1, -0.439893, 1.01, 0, 1.33333, 1, -0.439893, 1.01, 0)
+tracks/1/type = "scale_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Top")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 1, 1, 1, 0.333333, 1, 1, 1, 1, 0.366667, 1, 0.996741, 1, 1, 0.4, 1, 0.987259, 1, 1, 0.433333, 1, 0.972, 1, 1, 0.466667, 1, 0.951407, 1, 1, 0.5, 1, 0.925926, 1, 1, 0.533333, 1, 0.896, 1, 1, 0.566667, 1, 0.862074, 1, 1, 0.6, 1, 0.824593, 1, 1, 0.633333, 1, 0.784, 1, 1, 0.666667, 1, 0.740741, 1, 1, 0.7, 1, 0.695259, 1, 1, 0.733333, 1, 0.648, 1, 1, 0.766667, 1, 0.599407, 1, 1, 0.9, 1, 0.400593, 1, 1, 0.933333, 1, 0.352, 1, 1, 0.966667, 1, 0.304741, 1, 1, 1, 1, 0.259259, 1, 1, 1.03333, 1, 0.216, 1, 1, 1.06667, 1, 0.175407, 1, 1, 1.1, 1, 0.137926, 1, 1, 1.13333, 1, 0.104, 1, 1, 1.16667, 1, 0.074074, 1, 1, 1.2, 1, 0.0485924, 1, 1, 1.23333, 1, 0.028, 1, 1, 1.26667, 1, 0.0127409, 1, 1, 1.3, 1, 0.0032593, 1, 1, 1.33333, 1, 0, 1, 1)
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("..")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"give_items"
+}]
+}

@@ -1,0 +1,97 @@
+[gd_scene load_steps=10 format=3 uid="uid://bwqe4q4ogy3t1"]
+
+[ext_resource type="PackedScene" uid="uid://b2ix4caw0f7y" path="res://Scenes/space.tscn" id="1_d0x1m"]
+[ext_resource type="Script" path="res://Scripts/Board.gd" id="1_r8ymi"]
+[ext_resource type="PackedScene" uid="uid://bnib74k2p56m6" path="res://Scenes/character.tscn" id="3_y4b2n"]
+[ext_resource type="PackedScene" uid="uid://811w67a8hcbu" path="res://Scenes/roll_test_buttons.tscn" id="4_tqv3e"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0r5cx"]
+albedo_color = Color(0, 0.596078, 0.243137, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rnd6n"]
+material = SubResource("StandardMaterial3D_0r5cx")
+size = Vector3(50, 0.1, 50)
+
+[sub_resource type="Curve3D" id="Curve3D_4sr6g"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 4.54472, 0, -0.0284043, 0, 0, 0, 0, 0, 0, 4.52199, 0, 1.53952, 0, 0, 0, 0, 0, 0, 4.51063, 0, 3.07337, 0, 0, 0, 0, 0, 0, 2.95433, 0, 3.08113, 0, 0, 0, 0, 0, 0, 1.46567, 0, 3.08473, 0, 0, 0, 0, 0, 0, -0.0454464, 0, 3.09609, 0, 0, 0, 0, 0, 0, -0.0454464, 0, 1.48672, 0, 0, 0, 0, 0, 0, -0.0454464, 0, -0.0170428, 0, 0, 0, 0, 0, 0, 1.48847, 0, -0.0208395, 0, 0, 0, 0, 0, 0, 2.95399, 0, -0.024467, 0, 0, 0, 0, 0, 0, 4.54472, 0, -0.0284043),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 11
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ywq7q"]
+top_radius = 0.25
+height = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qpf4w"]
+
+[node name="Base" type="Node3D"]
+
+[node name="Board" type="Node3D" parent="." node_paths=PackedStringArray("current_player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+script = ExtResource("1_r8ymi")
+current_player = NodePath("../Player 1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Board"]
+mesh = SubResource("BoxMesh_rnd6n")
+skeleton = NodePath("../..")
+
+[node name="Spaces" type="Node" parent="."]
+
+[node name="Board Space1" parent="Spaces" instance=ExtResource("1_d0x1m")]
+
+[node name="Board Space2" parent="Spaces" instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0)
+
+[node name="Board Space3" parent="Spaces" instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="Board Space4" parent="Spaces" instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 0)
+
+[node name="Board Space5" parent="Spaces" instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 1.5)
+
+[node name="Board Space6" parent="Spaces" instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 3)
+
+[node name="Board Space7" parent="Spaces" instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
+
+[node name="Board Space8" parent="Spaces" instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 3)
+
+[node name="Board Space9" parent="Spaces" instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+
+[node name="Board Space10" parent="Spaces" instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.34184, 0.939758, 0, -0.939758, 0.34184, 0, 8.92205, 0)
+
+[node name="Player 1" parent="." node_paths=PackedStringArray("follow_target", "current_space") instance=ExtResource("3_y4b2n")]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 2.17955, 0.7, 5.24004)
+follow_target = NodePath("../Path3D/Player 1 Follow")
+current_space = NodePath("../Spaces/Board Space4")
+
+[node name="Path3D" type="Path3D" parent="."]
+curve = SubResource("Curve3D_4sr6g")
+
+[node name="Player 1 Follow" type="PathFollow3D" parent="Path3D"]
+transform = Transform3D(-0.999878, 0, 0.0144926, 0, 1, 0, -0.0144926, 0, -0.999878, 4.54472, 0, -0.0284043)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Path3D/Player 1 Follow"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.568065, 0)
+mesh = SubResource("CylinderMesh_ywq7q")
+
+[node name="Area3D" type="Area3D" parent="Path3D/Player 1 Follow"]
+visibility_parent = NodePath("../MeshInstance3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Path3D/Player 1 Follow/Area3D"]
+shape = SubResource("BoxShape3D_qpf4w")
+
+[node name="Roll Test" parent="." instance=ExtResource("4_tqv3e")]
+
+[connection signal="body_entered" from="Path3D/Player 1 Follow/Area3D" to="Board" method="_on_area_3d_body_entered"]
+[connection signal="send_num_result" from="Roll Test" to="Board" method="move_spaces"]

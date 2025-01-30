@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://be8m4ine5m4aw"]
+
+[ext_resource type="Script" path="res://Scripts/UI/player_results.gd" id="1_inen1"]
+[ext_resource type="PackedScene" uid="uid://6rvluknqcohs" path="res://Scenes/outline.tscn" id="2_fw480"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q81o6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a5re0"]
+bg_color = Color(0, 0.498039, 0.74902, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_alkum"]
+viewport_path = NodePath("SubViewport")
+
+[node name="PlayerResults" type="VBoxContainer"]
+offset_right = 50.0
+offset_bottom = 500.0
+alignment = 2
+script = ExtResource("1_inen1")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+custom_minimum_size = Vector2(50, 500)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_styles/background = SubResource("StyleBoxEmpty_q81o6")
+theme_override_styles/fill = SubResource("StyleBoxFlat_a5re0")
+value = 75.0
+fill_mode = 3
+show_percentage = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(25, 554)
+scale = Vector2(0.2, 0.2)
+texture = SubResource("ViewportTexture_alkum")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+own_world_3d = true
+transparent_bg = true
+size = Vector2i(256, 256)
+
+[node name="Camera3D" type="Camera3D" parent="SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, 2.5)
+
+[node name="Outline" parent="SubViewport" instance=ExtResource("2_fw480")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3, 0)
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="SubViewport"]
+transform = Transform3D(0.819152, -0.573576, 0, 0.573576, 0.819152, 0, 0, 0, 1, 3, 1, 0)
+
+[node name="DirectionalLight3D5" type="DirectionalLight3D" parent="SubViewport"]
+transform = Transform3D(-0.819152, 0.573576, -8.74228e-08, 0.573576, 0.819152, 0, 7.16125e-08, -5.01436e-08, -1, -3, 1, 0)
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="SubViewport"]
+transform = Transform3D(-3.58063e-08, 2.50718e-08, -1, 0.573576, 0.819152, 0, 0.819152, -0.573576, -4.37114e-08, 0, 1, 3)
+
+[node name="DirectionalLight3D4" type="DirectionalLight3D" parent="SubViewport"]
+transform = Transform3D(-3.58063e-08, 2.50718e-08, 1, 0.573576, 0.819152, 0, -0.819152, 0.573576, -4.37114e-08, 0, 1, -3)

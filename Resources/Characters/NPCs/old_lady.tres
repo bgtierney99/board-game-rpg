@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=2 format=3 uid="uid://dom2qlplorvfa"]
+
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_kn68a"]
+
+[resource]
+script = ExtResource("1_kn68a")
+name = "Old Lady"
+base_stats = {
+"Attack": 10,
+"Defense": 5,
+"HP": 25,
+"Speed": 10
+}
+world = 2
+smart_battler = false
+is_3D = false
+strategy = 0
+money = 0

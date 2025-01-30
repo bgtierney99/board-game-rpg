@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://b8j8utw62dmcw"]
+
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_3fv37"]
+[ext_resource type="PackedScene" uid="uid://bkutmerhnu7ub" path="res://Assets/Art/Characters/Models/the_controller.glb" id="1_84xhw"]
+
+[resource]
+script = ExtResource("1_3fv37")
+model = ExtResource("1_84xhw")
+name = "The Controller"
+base_stats = {
+"Attack": 110,
+"Defense": 90,
+"HP": 300,
+"Speed": 100
+}
+world = 4
+smart_battler = true
+is_3D = true
+strategy = 0
+money = 0

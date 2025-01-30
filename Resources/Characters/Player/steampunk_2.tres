@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://v6hj01ks4rmq"]
+
+[ext_resource type="PackedScene" uid="uid://cmi28unp4ey8f" path="res://Assets/Art/Characters/Models/steampunk_2.glb" id="1_frkws"]
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_tnjvw"]
+
+[resource]
+script = ExtResource("1_tnjvw")
+model = ExtResource("1_frkws")
+name = "Nalia Cartroe"
+base_stats = {
+"Attack": 40,
+"Defense": 40,
+"HP": 45,
+"Speed": 75
+}
+world = 1
+smart_battler = true
+is_3D = false
+strategy = 1
+money = 0

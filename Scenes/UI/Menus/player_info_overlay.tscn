@@ -1,0 +1,73 @@
+[gd_scene load_steps=3 format=3 uid="uid://cac1a31c0rtw6"]
+
+[ext_resource type="Script" path="res://Scripts/UI/PlayerInfo.gd" id="1_yltif"]
+[ext_resource type="PackedScene" uid="uid://8858ltyflkui" path="res://Scenes/UI/Menus/health_bar.tscn" id="2_sffw4"]
+
+[node name="PlayerInfo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yltif")
+
+[node name="background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -960.0
+offset_right = 960.0
+offset_bottom = 200.0
+grow_horizontal = 2
+size_flags_horizontal = 0
+color = Color(0.0862745, 0.196078, 0.282353, 1)
+
+[node name="HBox" type="HBoxContainer" parent="."]
+layout_mode = 1
+offset_right = 1920.0
+offset_bottom = 100.0
+
+[node name="BossHealth" parent="." instance=ExtResource("2_sffw4")]
+custom_minimum_size = Vector2(1920, 100)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.0
+offset_left = -960.0
+offset_top = 100.0
+offset_right = 960.0
+offset_bottom = 200.0
+grow_vertical = 1
+
+[node name="hp_bar" parent="BossHealth" index="0"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -955.0
+offset_top = -85.0
+offset_right = 945.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="hp_val" parent="BossHealth" index="1"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -32.5
+offset_top = -35.0
+offset_right = 32.5
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[editable path="BossHealth"]

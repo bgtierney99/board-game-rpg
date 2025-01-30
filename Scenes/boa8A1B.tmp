@@ -1,0 +1,148 @@
+[gd_scene load_steps=10 format=3 uid="uid://bwqe4q4ogy3t1"]
+
+[ext_resource type="PackedScene" uid="uid://b2ix4caw0f7y" path="res://Scenes/space.tscn" id="1_d0x1m"]
+[ext_resource type="Script" path="res://Scripts/Board.gd" id="1_r8ymi"]
+[ext_resource type="Resource" uid="uid://dm8quw46ujtkw" path="res://Resources/battle_manager.tres" id="2_5e85k"]
+[ext_resource type="Resource" uid="uid://be7pn1alt2ps2" path="res://Resources/Events/event_prize.tres" id="3_ktbvs"]
+[ext_resource type="Resource" uid="uid://cdtloyo5eyhpm" path="res://Resources/Events/event_basic.tres" id="3_mim3d"]
+[ext_resource type="PackedScene" uid="uid://ciktxmx1fkm0u" path="res://Scenes/UI/UIManager.tscn" id="8_sbxgd"]
+[ext_resource type="Resource" uid="uid://2fmvduhcasat" path="res://Resources/Events/event_checkpoint.tres" id="11_0aeo0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0r5cx"]
+albedo_color = Color(0, 0.596078, 0.243137, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rnd6n"]
+material = SubResource("StandardMaterial3D_0r5cx")
+size = Vector3(50, 0.1, 50)
+
+[node name="Board" type="Node3D" node_paths=PackedStringArray("main_camera", "ui_manager")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+script = ExtResource("1_r8ymi")
+main_camera = NodePath("Camera3D")
+ui_manager = NodePath("UiManager")
+battle_manager = ExtResource("2_5e85k")
+event_table = Array[Resource("res://Resources/Events/eventData.gd")]([ExtResource("3_mim3d"), ExtResource("3_ktbvs")])
+
+[node name="Board Mesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_rnd6n")
+skeleton = NodePath("../..")
+
+[node name="Spaces" type="Node" parent="."]
+
+[node name="Start_1" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -0.75)
+nearby_spaces = [NodePath("../Board Space1")]
+event_data = ExtResource("11_0aeo0")
+
+[node name="Start_2" parent="Spaces" node_paths=PackedStringArray("nearby_spaces", "event_image") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 0.75)
+nearby_spaces = [NodePath("../Board Space1")]
+event_image = NodePath("../Start_1/event image")
+event_data = ExtResource("11_0aeo0")
+
+[node name="Start_3" parent="Spaces" node_paths=PackedStringArray("nearby_spaces", "event_image") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -0.75)
+nearby_spaces = [NodePath("../Board Space1")]
+event_image = NodePath("../Start_1/event image")
+event_data = ExtResource("11_0aeo0")
+
+[node name="Start_4" parent="Spaces" node_paths=PackedStringArray("nearby_spaces", "event_image") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0.75)
+nearby_spaces = [NodePath("../Board Space1")]
+event_image = NodePath("../Start_1/event image")
+event_data = ExtResource("11_0aeo0")
+
+[node name="Board Space1" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+nearby_spaces = [NodePath("../Board Space2"), NodePath("../Board Space10")]
+
+[node name="Board Space2" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0)
+nearby_spaces = [NodePath("../Board Space1"), NodePath("../Board Space3"), NodePath("../Board Space20")]
+
+[node name="Board Space3" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+nearby_spaces = [NodePath("../Board Space2"), NodePath("../Board Space4")]
+
+[node name="Board Space4" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 0)
+nearby_spaces = [NodePath("../Board Space3"), NodePath("../Board Space5"), NodePath("../Board Space14")]
+
+[node name="Board Space14" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(0.999717, -0.023804, 0, 0.023804, 0.999717, 0, 0, 0, 1, 5.95804, 0, 0)
+nearby_spaces = [NodePath("../Board Space4"), NodePath("../Board Space15")]
+
+[node name="Board Space15" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95804, 0, -1.39657)
+nearby_spaces = [NodePath("../Board Space14"), NodePath("../Board Space16")]
+
+[node name="Board Space16" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95804, 0, -2.66824)
+nearby_spaces = [NodePath("../Board Space15"), NodePath("../Board Space17")]
+
+[node name="Board Space17" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.36594, 0, -2.66824)
+nearby_spaces = [NodePath("../Board Space16"), NodePath("../Board Space18")]
+
+[node name="Board Space18" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.84698, 0, -2.66824)
+nearby_spaces = [NodePath("../Board Space17"), NodePath("../Board Space19")]
+
+[node name="Board Space19" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.48725, 0, -2.66824)
+nearby_spaces = [NodePath("../Board Space18"), NodePath("../Board Space20")]
+
+[node name="Board Space20" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.48725, 0, -1.32546)
+nearby_spaces = [NodePath("../Board Space19"), NodePath("../Board Space2")]
+
+[node name="Board Space5" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 1.5)
+nearby_spaces = [NodePath("../Board Space4"), NodePath("../Board Space6")]
+
+[node name="Board Space6" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 3)
+nearby_spaces = [NodePath("../Board Space5"), NodePath("../Board Space7"), NodePath("../Board Space11"), NodePath("../Board Space13")]
+
+[node name="Board Space11" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 4.46582)
+nearby_spaces = [NodePath("../Board Space6"), NodePath("../Board Space12")]
+
+[node name="Board Space12" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.03318, 0, 4.46582)
+nearby_spaces = [NodePath("../Board Space11"), NodePath("../Board Space13")]
+
+[node name="Board Space13" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.03318, 0, 3.03241)
+nearby_spaces = [NodePath("../Board Space6"), NodePath("../Board Space12")]
+
+[node name="Board Space7" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
+nearby_spaces = [NodePath("../Board Space6"), NodePath("../Board Space8")]
+
+[node name="Board Space8" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 3)
+nearby_spaces = [NodePath("../Board Space7"), NodePath("../Board Space9")]
+
+[node name="Board Space9" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+nearby_spaces = [NodePath("../Board Space8"), NodePath("../Board Space10"), NodePath("../Board Space21")]
+
+[node name="Board Space21" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.33673)
+nearby_spaces = [NodePath("../Board Space9"), NodePath("../Board Space22")]
+
+[node name="Board Space22" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.67605)
+nearby_spaces = [NodePath("../Board Space21")]
+
+[node name="Board Space10" parent="Spaces" node_paths=PackedStringArray("nearby_spaces") instance=ExtResource("1_d0x1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5)
+nearby_spaces = [NodePath("../Board Space9"), NodePath("../Board Space1")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.34184, 0.939758, 0, -0.939758, 0.34184, 0, 8.92205, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0.529919, -0.848048, 0, 0.848048, 0.529919, 1, 2.31635e-08, -3.70694e-08, -8, 3.75, 0)
+
+[node name="UiManager" parent="." instance=ExtResource("8_sbxgd")]

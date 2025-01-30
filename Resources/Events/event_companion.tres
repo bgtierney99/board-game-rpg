@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="eventData" load_steps=5 format=3 uid="uid://x5vxlmvg8ljv"]
+
+[ext_resource type="Texture2D" uid="uid://bbr1ts72ws4bm" path="res://Assets/Art/Spaces/companion_event.png" id="1_kl15x"]
+[ext_resource type="Script" path="res://Resources/Events/Actions/action_companion.gd" id="1_lkynb"]
+[ext_resource type="Script" path="res://Resources/Events/eventData.gd" id="2_5m343"]
+
+[sub_resource type="Resource" id="Resource_vd16h"]
+script = ExtResource("1_lkynb")
+turn_count = 0
+
+[resource]
+script = ExtResource("2_5m343")
+name = 6
+event_texture = ExtResource("1_kl15x")
+event_color = Color(0.247059, 0.407843, 0.819608, 1)
+event_action = SubResource("Resource_vd16h")

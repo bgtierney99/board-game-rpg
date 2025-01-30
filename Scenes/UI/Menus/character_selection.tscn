@@ -1,0 +1,123 @@
+[gd_scene load_steps=5 format=3 uid="uid://nttyph56n83n"]
+
+[ext_resource type="Script" path="res://Scripts/UI/character_selection.gd" id="1_hwojv"]
+[ext_resource type="Resource" uid="uid://bxg8bmxdqwic0" path="res://Resources/Tables/player_table.tres" id="2_q5lj1"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_vpam5"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ypmdg"]
+
+[node name="CharacterSelection" type="Control" node_paths=PackedStringArray("grid", "back_button", "confirm_button", "character_image", "character_label", "player_label")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hwojv")
+grid = NodePath("GridContainer")
+back_button = NodePath("HBoxContainer/Back")
+confirm_button = NodePath("HBoxContainer/Confirm")
+character_image = NodePath("Control/Character Image")
+character_label = NodePath("Control/Character Info")
+player_label = NodePath("Control/Current Player")
+player_table = ExtResource("2_q5lj1")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0862745, 0.196078, 0.282353, 1)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Character Image Background" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = 1100.0
+offset_top = 85.0
+offset_right = 1700.0
+offset_bottom = 685.0
+color = Color(0.0235294, 0.0784314, 0.12549, 1)
+
+[node name="Character Image" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = 1110.0
+offset_top = 95.0
+offset_right = 1690.0
+offset_bottom = 675.0
+
+[node name="Character Info" type="RichTextLabel" parent="Control"]
+layout_mode = 0
+offset_left = 1100.0
+offset_top = 694.0
+offset_right = 1700.0
+offset_bottom = 894.0
+scale = Vector2(0.99745, 1)
+theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+
+[node name="Current Player" type="RichTextLabel" parent="Control"]
+layout_mode = 0
+offset_left = 1110.0
+offset_top = 10.0
+offset_right = 1690.0
+offset_bottom = 85.0
+theme_override_font_sizes/bold_font_size = 48
+bbcode_enabled = true
+text = "[center][b]Player ???"
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 1369.0
+offset_bottom = 1345.0
+scale = Vector2(0.8, 0.8)
+pivot_offset = Vector2(10, 10)
+theme_override_constants/h_separation = 2
+theme_override_constants/v_separation = 2
+columns = 4
+
+[node name="RandomCharacter" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -3.0
+offset_top = 818.0
+offset_right = 261.0
+offset_bottom = 1082.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(150, 100)
+layout_mode = 0
+offset_left = 1225.0
+offset_top = 900.0
+offset_right = 1550.0
+offset_bottom = 1000.0
+alignment = 1
+
+[node name="Back" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(150, 100)
+layout_mode = 2
+focus_neighbor_right = NodePath("../Confirm")
+text = "Back"
+icon = SubResource("CanvasTexture_vpam5")
+
+[node name="Confirm" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(150, 100)
+layout_mode = 2
+focus_neighbor_left = NodePath("../Back")
+text = "Confirm"
+icon = SubResource("CanvasTexture_ypmdg")
+
+[connection signal="pressed" from="HBoxContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="HBoxContainer/Confirm" to="." method="_on_confirm_pressed"]

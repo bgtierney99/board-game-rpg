@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="pointRewards" load_steps=2 format=3 uid="uid://b1i6ubjtvw2ym"]
+
+[ext_resource type="Script" path="res://Resources/pointRewards.gd" id="1_r5gey"]
+
+[resource]
+script = ExtResource("1_r5gey")
+reward_list = {
+"battles_won": 5,
+"boss_defeated": 50,
+"companions_befriended": 5,
+"damage_to_boss": 1,
+"deaths": -10,
+"graves_robbed": 5,
+"items_collected": 5,
+"money_earned": 1,
+"money_lost": -1,
+"shopping_done": 5,
+"spaces_traveled": 1,
+"tasks_completed": 10
+}

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://deqjnscyv3pg"]
+
+[ext_resource type="PackedScene" uid="uid://v41ihlnujqft" path="res://Assets/Art/Characters/Models/toon_4.glb" id="1_5cbat"]
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_g8t1b"]
+
+[resource]
+script = ExtResource("1_g8t1b")
+model = ExtResource("1_5cbat")
+name = "Phil the Elephant"
+base_stats = {
+"Attack": 60,
+"Defense": 40,
+"HP": 80,
+"Speed": 20
+}
+world = 3
+smart_battler = true
+is_3D = false
+strategy = 2
+money = 0

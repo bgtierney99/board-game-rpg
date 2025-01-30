@@ -1,0 +1,132 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2ix4caw0f7y"]
+
+[ext_resource type="Script" path="res://Scripts/spaceProperties.gd" id="1_v5v1q"]
+[ext_resource type="PackedScene" uid="uid://dtpe4cp06jad" path="res://Assets/Models/space.glb" id="3_86cx7"]
+
+[node name="space" type="Node3D" groups=["Spaces"]]
+script = ExtResource("1_v5v1q")
+
+[node name="Points" type="Node" parent="."]
+
+[node name="Point1" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07, 0)
+
+[node name="Point2" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0.07, 0)
+
+[node name="Point3" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07, -0.25)
+
+[node name="Point4" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07, 0.25)
+
+[node name="Point5" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0.07, 0)
+
+[node name="Point6" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0.07, -0.25)
+
+[node name="Point7" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0.07, 0.25)
+
+[node name="Point8" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0.07, -0.25)
+
+[node name="Point9" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0.07, 0.25)
+
+[node name="Point10" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, 0.07, -0.125)
+
+[node name="Point11" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, 0.07, 0.125)
+
+[node name="Point12" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0.07, -0.125)
+
+[node name="Point13" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0.07, 0.125)
+
+[node name="Point14" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, 0.07, 0)
+
+[node name="Point15" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0.07, 0)
+
+[node name="Point16" type="Node3D" parent="Points"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07, -0.125)
+
+[node name="event_image" type="Sprite3D" parent="."]
+transform = Transform3D(0.6, 0, 0, 0, -2.62268e-08, 0.857, 0, -0.6, -3.74607e-08, 0, 0.015, 0)
+pixel_size = 0.004
+
+[node name="model" parent="." instance=ExtResource("3_86cx7")]
+
+[node name="DirectionControl" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -160.0
+offset_right = 160.0
+offset_bottom = 160.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Forward" type="Button" parent="DirectionControl"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 1
+offset_left = 105.0
+offset_right = 205.0
+offset_bottom = 100.0
+focus_neighbor_left = NodePath("../Left")
+focus_neighbor_right = NodePath("../Right")
+focus_neighbor_bottom = NodePath("../Back")
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "↑"
+
+[node name="Back" type="Button" parent="DirectionControl"]
+custom_minimum_size = Vector2(62, 62)
+layout_mode = 2
+offset_left = 105.0
+offset_top = 210.0
+offset_right = 205.0
+offset_bottom = 310.0
+focus_neighbor_left = NodePath("../Left")
+focus_neighbor_top = NodePath("../Forward")
+focus_neighbor_right = NodePath("../Right")
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "↓"
+
+[node name="Left" type="Button" parent="DirectionControl"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 1
+offset_top = 105.0
+offset_right = 100.0
+offset_bottom = 205.0
+focus_neighbor_top = NodePath("../Forward")
+focus_neighbor_right = NodePath("../Right")
+focus_neighbor_bottom = NodePath("../Back")
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "←"
+
+[node name="Right" type="Button" parent="DirectionControl"]
+custom_minimum_size = Vector2(62, 62)
+layout_mode = 2
+offset_left = 210.0
+offset_top = 105.0
+offset_right = 310.0
+offset_bottom = 205.0
+focus_neighbor_left = NodePath("../Left")
+focus_neighbor_top = NodePath("../Forward")
+focus_neighbor_bottom = NodePath("../Back")
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "→"

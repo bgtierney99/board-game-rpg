@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://dqqwyjpq70iq6"]
+
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_umodu"]
+[ext_resource type="PackedScene" uid="uid://yh8ix3qux6j2" path="res://Assets/Art/Characters/Models/tamer_2.glb" id="1_x15kl"]
+
+[resource]
+script = ExtResource("1_umodu")
+model = ExtResource("1_x15kl")
+name = "Carol the forest-dweller"
+base_stats = {
+"Attack": 40,
+"Defense": 58,
+"HP": 42,
+"Speed": 60
+}
+world = 2
+smart_battler = true
+is_3D = false
+strategy = 1
+money = 0

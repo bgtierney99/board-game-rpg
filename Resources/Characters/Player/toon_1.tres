@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://djduj5ucoucbd"]
+
+[ext_resource type="PackedScene" uid="uid://dqmk8i4eaaljq" path="res://Assets/Art/Characters/Models/toon_1.glb" id="1_fha28"]
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_yrh3m"]
+
+[resource]
+script = ExtResource("1_yrh3m")
+model = ExtResource("1_fha28")
+name = "Biff the Squirrel"
+base_stats = {
+"Attack": 42,
+"Defense": 40,
+"HP": 54,
+"Speed": 64
+}
+world = 3
+smart_battler = true
+is_3D = false
+strategy = 1
+money = 0

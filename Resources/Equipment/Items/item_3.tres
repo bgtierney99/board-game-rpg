@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=3 format=3 uid="uid://cg0lp0xoi8ggj"]
+
+[ext_resource type="Script" path="res://Resources/Equipment/lootData.gd" id="1_do12x"]
+[ext_resource type="PackedScene" uid="uid://br1452m7i3x4" path="res://Scenes/Objects/Items/spiked_cane.tscn" id="1_mq63u"]
+
+[resource]
+script = ExtResource("1_do12x")
+name = "Spiked Cane"
+model = ExtResource("1_mq63u")
+item_type = "Holdable"
+world = 1
+description = ""
+price = 500
+stats = {
+"additions": {
+"Attack": 10,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

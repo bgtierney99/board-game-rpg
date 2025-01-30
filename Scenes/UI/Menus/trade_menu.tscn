@@ -1,0 +1,95 @@
+[gd_scene load_steps=5 format=3 uid="uid://cnkbjhsfhwgug"]
+
+[ext_resource type="Script" path="res://Scripts/UI/TradeMenu.gd" id="1_4mrdo"]
+[ext_resource type="PackedScene" uid="uid://c4srwnr6xsx1c" path="res://Scenes/UI/Menus/inventory_slot.tscn" id="2_0365e"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_40m2b"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_316w3"]
+
+[node name="TradeMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4mrdo")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.203922, 0, 0.72549, 1)
+
+[node name="Grids" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InvGrid1" type="GridContainer" parent="Grids"]
+layout_mode = 1
+offset_left = 10.0
+offset_top = 33.0
+offset_right = 1546.0
+offset_bottom = 645.0
+scale = Vector2(0.8, 0.8)
+columns = 10
+
+[node name="InvGrid2" type="GridContainer" parent="Grids"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -500.0
+offset_right = 1546.0
+offset_bottom = 112.0
+grow_vertical = 0
+scale = Vector2(0.8, 0.8)
+columns = 10
+
+[node name="TradeSlot1" parent="." instance=ExtResource("2_0365e")]
+offset_left = 1400.0
+offset_top = 125.0
+offset_right = 1700.0
+offset_bottom = 425.0
+
+[node name="TradeSlot2" parent="." instance=ExtResource("2_0365e")]
+offset_left = 1400.0
+offset_top = 655.0
+offset_right = 1700.0
+offset_bottom = 955.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(125, 75)
+layout_mode = 0
+offset_left = 1393.0
+offset_top = 965.0
+offset_right = 1703.0
+offset_bottom = 1065.0
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Back" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(125, 75)
+layout_mode = 2
+focus_neighbor_right = NodePath("../Trade")
+text = "Back"
+icon = SubResource("CanvasTexture_40m2b")
+
+[node name="Trade" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(125, 75)
+layout_mode = 2
+focus_neighbor_left = NodePath("../Back")
+text = "Trade"
+icon = SubResource("CanvasTexture_316w3")
+
+[connection signal="pressed" from="HBoxContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="HBoxContainer/Trade" to="." method="_on_trade_pressed"]

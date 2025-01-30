@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=3 uid="uid://8mhsbkx3h0b2"]
+
+[ext_resource type="Script" path="res://Scripts/UI/CharacterButton.gd" id="1_2jln8"]
+[ext_resource type="PackedScene" uid="uid://6rvluknqcohs" path="res://Scenes/outline.tscn" id="2_b680h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7av7y"]
+bg_color = Color(0.0862745, 0.196078, 0.282353, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_esuce"]
+viewport_path = NodePath("SubViewport")
+
+[node name="CharacterButton" type="Button"]
+anchors_preset = -1
+anchor_right = 0.133
+anchor_bottom = 0.237
+offset_right = 0.639999
+offset_bottom = 0.039978
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_7av7y")
+icon = SubResource("ViewportTexture_esuce")
+script = ExtResource("1_2jln8")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 4
+
+[node name="SubViewport" type="SubViewport" parent="."]
+own_world_3d = true
+transparent_bg = true
+size = Vector2i(256, 256)
+
+[node name="Camera3D" type="Camera3D" parent="SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, 2.5)
+
+[node name="Outline" parent="SubViewport" instance=ExtResource("2_b680h")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3, 0)
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="SubViewport"]
+transform = Transform3D(0.819152, -0.573576, 0, 0.573576, 0.819152, 0, 0, 0, 1, 3, 1, 0)
+
+[node name="DirectionalLight3D5" type="DirectionalLight3D" parent="SubViewport"]
+transform = Transform3D(-0.819152, 0.573576, -8.74228e-08, 0.573576, 0.819152, 0, 7.16125e-08, -5.01436e-08, -1, -3, 1, 0)
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="SubViewport"]
+transform = Transform3D(-3.58063e-08, 2.50718e-08, -1, 0.573576, 0.819152, 0, 0.819152, -0.573576, -4.37114e-08, 0, 1, 3)
+
+[node name="DirectionalLight3D4" type="DirectionalLight3D" parent="SubViewport"]
+transform = Transform3D(-3.58063e-08, 2.50718e-08, 1, 0.573576, 0.819152, 0, -0.819152, 0.573576, -4.37114e-08, 0, 1, -3)
+
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]

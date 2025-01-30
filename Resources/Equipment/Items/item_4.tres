@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=3 format=3 uid="uid://eyjvdjd5btmv"]
+
+[ext_resource type="PackedScene" uid="uid://dd403ta6kapmm" path="res://Scenes/Objects/Items/pillow_armor.tscn" id="1_0xig0"]
+[ext_resource type="Script" path="res://Resources/Equipment/lootData.gd" id="1_5rcal"]
+
+[resource]
+script = ExtResource("1_5rcal")
+name = "Pillow Armor"
+model = ExtResource("1_0xig0")
+item_type = "Wearable"
+world = 3
+description = "Weak armor made of soft, fluffy pillows."
+price = 400
+stats = {
+"additions": {
+"Attack": 0,
+"Defense": 5,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0.0,
+"Defense": 0.0,
+"HP": 0.0,
+"Speed": 0.0
+}
+}

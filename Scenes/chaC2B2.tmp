@@ -1,0 +1,205 @@
+[gd_scene load_steps=6 format=3 uid="uid://nttyph56n83n"]
+
+[ext_resource type="Script" path="res://Scripts/character_selection.gd" id="1_g08bw"]
+[ext_resource type="Texture2D" uid="uid://bueykcynbkji8" path="res://Assets/Art/Characters/medieval_1.png" id="1_pl3rl"]
+[ext_resource type="PackedScene" uid="uid://bnib74k2p56m6" path="res://Scenes/character.tscn" id="2_853mu"]
+[ext_resource type="Resource" uid="uid://d0hw2b35hg5k4" path="res://Resources/Characters/medieval_1.tres" id="3_v37vx"]
+[ext_resource type="Resource" uid="uid://v6hj01ks4rmq" path="res://Resources/Characters/medieval_2.tres" id="4_3boyl"]
+
+[node name="Control" type="Control" node_paths=PackedStringArray("grid")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g08bw")
+grid = NodePath("GridContainer")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 1073.0
+offset_bottom = 1073.0
+scale = Vector2(0.8, 0.8)
+columns = 4
+
+[node name="B1" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B1" instance=ExtResource("2_853mu")]
+visible = false
+info = ExtResource("3_v37vx")
+
+[node name="B2" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B2" node_paths=PackedStringArray("camera", "image", "hp_manager", "InventoryManager") instance=ExtResource("2_853mu")]
+visible = false
+camera = NodePath("../../B1/Character/Camera3D")
+image = NodePath("../../B1/Character/Sprite3D")
+info = ExtResource("4_3boyl")
+hp_manager = NodePath("../../B1/Character/HealthComponent")
+InventoryManager = NodePath("../../B1/Character/InventoryComponent")
+
+[node name="B3" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B3" node_paths=PackedStringArray("camera", "image", "hp_manager", "InventoryManager") instance=ExtResource("2_853mu")]
+visible = false
+camera = NodePath("../../B1/Character/Camera3D")
+image = NodePath("../../B1/Character/Sprite3D")
+hp_manager = NodePath("../../B1/Character/HealthComponent")
+InventoryManager = NodePath("../../B1/Character/InventoryComponent")
+
+[node name="B4" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B4" node_paths=PackedStringArray("camera", "image", "hp_manager", "InventoryManager") instance=ExtResource("2_853mu")]
+visible = false
+camera = NodePath("../../B1/Character/Camera3D")
+image = NodePath("../../B1/Character/Sprite3D")
+hp_manager = NodePath("../../B1/Character/HealthComponent")
+InventoryManager = NodePath("../../B1/Character/InventoryComponent")
+
+[node name="B5" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B5" node_paths=PackedStringArray("camera", "image", "hp_manager", "InventoryManager") instance=ExtResource("2_853mu")]
+visible = false
+camera = NodePath("../../B1/Character/Camera3D")
+image = NodePath("../../B1/Character/Sprite3D")
+hp_manager = NodePath("../../B1/Character/HealthComponent")
+InventoryManager = NodePath("../../B1/Character/InventoryComponent")
+
+[node name="B6" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B6" node_paths=PackedStringArray("camera", "image", "hp_manager", "InventoryManager") instance=ExtResource("2_853mu")]
+visible = false
+camera = NodePath("../../B1/Character/Camera3D")
+image = NodePath("../../B1/Character/Sprite3D")
+hp_manager = NodePath("../../B1/Character/HealthComponent")
+InventoryManager = NodePath("../../B1/Character/InventoryComponent")
+
+[node name="B7" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B7" node_paths=PackedStringArray("camera", "image", "hp_manager", "InventoryManager") instance=ExtResource("2_853mu")]
+visible = false
+camera = NodePath("../../B1/Character/Camera3D")
+image = NodePath("../../B1/Character/Sprite3D")
+hp_manager = NodePath("../../B1/Character/HealthComponent")
+InventoryManager = NodePath("../../B1/Character/InventoryComponent")
+
+[node name="B8" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B8" node_paths=PackedStringArray("camera", "image", "hp_manager", "InventoryManager") instance=ExtResource("2_853mu")]
+visible = false
+camera = NodePath("../../B1/Character/Camera3D")
+image = NodePath("../../B1/Character/Sprite3D")
+hp_manager = NodePath("../../B1/Character/HealthComponent")
+InventoryManager = NodePath("../../B1/Character/InventoryComponent")
+
+[node name="B9" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B9" node_paths=PackedStringArray("camera", "image", "hp_manager", "InventoryManager") instance=ExtResource("2_853mu")]
+visible = false
+camera = NodePath("../../B1/Character/Camera3D")
+image = NodePath("../../B1/Character/Sprite3D")
+hp_manager = NodePath("../../B1/Character/HealthComponent")
+InventoryManager = NodePath("../../B1/Character/InventoryComponent")
+
+[node name="B10" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B10" node_paths=PackedStringArray("camera", "image", "hp_manager", "InventoryManager") instance=ExtResource("2_853mu")]
+visible = false
+camera = NodePath("../../B1/Character/Camera3D")
+image = NodePath("../../B1/Character/Sprite3D")
+hp_manager = NodePath("../../B1/Character/HealthComponent")
+InventoryManager = NodePath("../../B1/Character/InventoryComponent")
+
+[node name="B11" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B11" node_paths=PackedStringArray("camera", "image", "hp_manager", "InventoryManager") instance=ExtResource("2_853mu")]
+visible = false
+camera = NodePath("../../B1/Character/Camera3D")
+image = NodePath("../../B1/Character/Sprite3D")
+hp_manager = NodePath("../../B1/Character/HealthComponent")
+InventoryManager = NodePath("../../B1/Character/InventoryComponent")
+
+[node name="B12" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B12" node_paths=PackedStringArray("camera", "image", "hp_manager", "InventoryManager") instance=ExtResource("2_853mu")]
+visible = false
+camera = NodePath("../../B1/Character/Camera3D")
+image = NodePath("../../B1/Character/Sprite3D")
+hp_manager = NodePath("../../B1/Character/HealthComponent")
+InventoryManager = NodePath("../../B1/Character/InventoryComponent")
+
+[node name="B13" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B13" node_paths=PackedStringArray("camera", "image", "hp_manager", "InventoryManager") instance=ExtResource("2_853mu")]
+visible = false
+camera = NodePath("../../B1/Character/Camera3D")
+image = NodePath("../../B1/Character/Sprite3D")
+hp_manager = NodePath("../../B1/Character/HealthComponent")
+InventoryManager = NodePath("../../B1/Character/InventoryComponent")
+
+[node name="B14" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B14" node_paths=PackedStringArray("camera", "image", "hp_manager", "InventoryManager") instance=ExtResource("2_853mu")]
+visible = false
+camera = NodePath("../../B1/Character/Camera3D")
+image = NodePath("../../B1/Character/Sprite3D")
+hp_manager = NodePath("../../B1/Character/HealthComponent")
+InventoryManager = NodePath("../../B1/Character/InventoryComponent")
+
+[node name="B15" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B15" node_paths=PackedStringArray("camera", "image", "hp_manager", "InventoryManager") instance=ExtResource("2_853mu")]
+visible = false
+camera = NodePath("../../B1/Character/Camera3D")
+image = NodePath("../../B1/Character/Sprite3D")
+hp_manager = NodePath("../../B1/Character/HealthComponent")
+InventoryManager = NodePath("../../B1/Character/InventoryComponent")
+
+[node name="B16" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pl3rl")
+
+[node name="Character" parent="GridContainer/B16" node_paths=PackedStringArray("camera", "image", "hp_manager", "InventoryManager") instance=ExtResource("2_853mu")]
+visible = false
+camera = NodePath("../../B1/Character/Camera3D")
+image = NodePath("../../B1/Character/Sprite3D")
+hp_manager = NodePath("../../B1/Character/HealthComponent")
+InventoryManager = NodePath("../../B1/Character/InventoryComponent")

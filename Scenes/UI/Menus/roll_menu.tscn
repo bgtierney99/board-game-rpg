@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd065pfp6wm0s"]
+
+[ext_resource type="Script" path="res://Scripts/UI/roll_menu.gd" id="1_bb3bf"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2fisf"]
+font_size = 128
+
+[node name="RollMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bb3bf")
+
+[node name="Value" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -300.0
+offset_right = 300.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_2fisf")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -51.5
+offset_top = -40.0
+offset_right = 51.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Back" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Roll")
+focus_neighbor_right = NodePath("../Roll")
+text = "BACK"
+
+[node name="Roll" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Back")
+focus_neighbor_right = NodePath("../Back")
+text = "ROLL"
+
+[connection signal="pressed" from="HBoxContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="HBoxContainer/Roll" to="." method="_on_roll_pressed"]

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://bsik3dlpf2q0j"]
+
+[ext_resource type="PackedScene" uid="uid://cft2yj4lyhtdx" path="res://Assets/Art/Characters/Models/toon_3.glb" id="1_sh23p"]
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_uu6mh"]
+
+[resource]
+script = ExtResource("1_uu6mh")
+model = ExtResource("1_sh23p")
+name = "Sylvia the Deer"
+base_stats = {
+"Attack": 40,
+"Defense": 40,
+"HP": 50,
+"Speed": 70
+}
+world = 3
+smart_battler = true
+is_3D = false
+strategy = 2
+money = 0

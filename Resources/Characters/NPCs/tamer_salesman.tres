@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://bnxl8oljk58bg"]
+
+[ext_resource type="PackedScene" uid="uid://dkj7lgst501mm" path="res://Assets/Art/Characters/Models/tamer_1.glb" id="1_h22do"]
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_pqror"]
+
+[resource]
+script = ExtResource("1_pqror")
+model = ExtResource("1_h22do")
+name = "Tamer Salesman"
+base_stats = {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+world = 2
+smart_battler = true
+is_3D = false
+strategy = 0
+money = 3000

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://dfwkwehat20gj"]
+
+[ext_resource type="PackedScene" uid="uid://c4uqyrkkfku0" path="res://Assets/Art/Characters/Models/steampunk_3.glb" id="1_14t2s"]
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_hnodm"]
+
+[resource]
+script = ExtResource("1_hnodm")
+model = ExtResource("1_14t2s")
+name = "Dox Smith"
+base_stats = {
+"Attack": 45,
+"Defense": 50,
+"HP": 40,
+"Speed": 65
+}
+world = 1
+smart_battler = true
+is_3D = false
+strategy = 1
+money = 0

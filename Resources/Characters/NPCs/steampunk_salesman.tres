@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://c6yb1181lr8j5"]
+
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_0ckt4"]
+[ext_resource type="PackedScene" uid="uid://um72qch2q3m0" path="res://Assets/Art/Characters/Models/steampunk_1.glb" id="1_vjxcf"]
+
+[resource]
+script = ExtResource("1_0ckt4")
+model = ExtResource("1_vjxcf")
+name = "Steampunk Salesman"
+base_stats = {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+world = 1
+smart_battler = true
+is_3D = false
+strategy = 0
+money = 3000

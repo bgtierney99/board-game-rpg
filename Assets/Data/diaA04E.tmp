@@ -1,0 +1,207 @@
+{
+	"dialogue": [
+		{
+			"id": "hello",
+			"speaker": "Someone",
+			"text": "Hello {PlayerName}",
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end_dialogue",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "check_space_for_others",
+			"speaker": "The Controller",
+			"text": "You've crossed paths with {Subject}! What will you do?",
+			"response": [
+				{
+					"value": "Fight",
+					"action": {
+						"value": "",
+						"parameters": []
+					}
+				},
+				{
+					"value": "Trade",
+					"action": {
+						"value": "",
+						"parameters": []
+					}
+				},
+				{
+					"value": "Ignore",
+					"action": {
+						"value": "",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "empty_inventory",
+			"speaker": "The Controller",
+			"text": "Oh no! {Subject} has nothing to wager!",
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "prize_found",
+			"speaker": "The Controller",
+			"text": "You landed on a prize space! What'd you get?",
+			"response": [
+				{
+					"value": "Open it!",
+					"action": {
+						"value": "",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "companion_found",
+			"speaker": "The Controller",
+			"text": "Something popped out from hiding! What is it?",
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "player_grave",
+			"speaker": "The Controller",
+			"text": "New items can be found at this grave site.",
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "no_grave",
+			"speaker": "The Controller",
+			"text": "You didn't have anything to leave behind. What a shame...",
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "turn_2_reached",
+			"speaker": "The Controller",
+			"text": "We've reached turn 2! How stupendous!!!",
+			"response": [
+				{
+					"value": "Next",
+					"action": {
+						"value": "next",
+						"parameters": ["turn_2_reached_next"]
+					}
+				}
+			]
+		},
+		{
+			"id": "turn_2_reached_next",
+			"speaker": "The Controller",
+			"text": "More dialogue? Wonderful!!",
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end_dialogue",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "boss_battle_begin",
+			"speaker": "The Controller",
+			"text": "Let's begin, shall we?",
+			"response": [
+				{
+					"value": "Close",
+					"action": {
+						"value": "end_dialogue",
+						"parameters": []
+					}
+				}
+			]
+		},
+		{
+			"id": "task_001",
+			"character_name": "Villager Lady",
+			"task_id": "task_002",
+			"text": {
+				"available": "Can someone get me some things? I need it and I'll give you this weapon.",
+				"active": "Did you get the stuff yet? Come see me when you have it please.",
+				"completed": "Hey! Thanks so much! Here's your reward as promised!"
+			},
+			"type": "task_offer",
+			"response": {
+				"available": {
+					"accept": {
+						"text": "Yeah, sure!",
+						"action": "start_task",
+						"parameters": [
+							"task_002"
+						]
+					},
+					"decline": {
+						"text": "Nah, I'm good.",
+						"action": "close_dialogue"
+					},
+					"steal": {
+						"text": "FIGHT",
+						"action": "do_battle",
+						"parameters": [
+							"current_player",
+							"character_name"
+						]
+					}
+				},
+				"active": {
+					"continue": {
+						"text": "Sorry! Will do!",
+						"action": "close_dialogue"
+					}
+				},
+				"completed": {
+					"accept_reward": {
+						"text": "Thank you!",
+						"action": "accept_reward",
+						"parameters": [
+							"task_002"
+						]
+					}
+				}
+			}
+		}
+	]
+}

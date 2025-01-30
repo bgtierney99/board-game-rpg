@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=4 format=3 uid="uid://bvttrwcaapyeq"]
+
+[ext_resource type="Resource" uid="uid://c3pwjqemhqqx6" path="res://Resources/Equipment/Effects/effect_teleporter.tres" id="1_x3jiw"]
+[ext_resource type="Script" path="res://Resources/Equipment/lootData.gd" id="2_l5gpl"]
+[ext_resource type="PackedScene" uid="uid://cse3qf7gw64be" path="res://Scenes/Objects/Items/teleporter.tscn" id="2_t7s16"]
+
+[resource]
+script = ExtResource("2_l5gpl")
+name = "Teleporter"
+model = ExtResource("2_t7s16")
+item_type = ""
+world = 0
+effect = ExtResource("1_x3jiw")
+description = "A device that will automatically transport the holder to a safe location."
+price = 1500
+stats = {
+"additions": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

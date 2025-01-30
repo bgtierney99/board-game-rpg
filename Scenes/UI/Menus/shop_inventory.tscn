@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://btbvmq6edn1g0"]
+
+[ext_resource type="PackedScene" uid="uid://cmi3hmo3lw3mg" path="res://Scenes/UI/Menus/inventory_menu.tscn" id="1_31okg"]
+[ext_resource type="Script" path="res://Scripts/UI/ShopInventory.gd" id="2_d6kr3"]
+
+[node name="ShopInventory" instance=ExtResource("1_31okg")]
+script = ExtResource("2_d6kr3")
+
+[node name="Money" type="RichTextLabel" parent="." index="3"]
+layout_mode = 0
+offset_right = 154.0
+offset_bottom = 30.0
+bbcode_enabled = true

@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0ib74dj43bqt"]
+
+[ext_resource type="PackedScene" uid="uid://bnib74k2p56m6" path="res://Scenes/Characters/character.tscn" id="1_qxu8m"]
+[ext_resource type="Resource" uid="uid://b8j8utw62dmcw" path="res://Resources/Characters/Enemies/the_controller.tres" id="2_gl773"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_2da3t"]
+viewport_path = NodePath("SubViewport")
+
+[node name="The Controller" instance=ExtResource("1_qxu8m")]
+info = ExtResource("2_gl773")
+
+[node name="Icon" parent="." index="0"]
+texture = SubResource("ViewportTexture_2da3t")
+
+[node name="HealthBarBackground" parent="SubViewport" index="2"]
+visible = false

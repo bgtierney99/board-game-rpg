@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://b5vc65oxl14xs"]
+
+[ext_resource type="Script" path="res://Scripts/CharacterActions.gd" id="1_po636"]
+[ext_resource type="Texture2D" uid="uid://bueykcynbkji8" path="res://Assets/Art/Characters/medieval_1.png" id="2_dw7im"]
+[ext_resource type="Script" path="res://Scripts/Components/HealthComponent.gd" id="3_6gwwm"]
+[ext_resource type="Script" path="res://Scripts/Components/InventoryComponent.gd" id="4_js71f"]
+
+[node name="Player" type="Node3D" node_paths=PackedStringArray("image", "hp_manager", "InventoryManager")]
+script = ExtResource("1_po636")
+image = NodePath("Sprite3D")
+hp_manager = NodePath("HealthComponent")
+InventoryManager = NodePath("InventoryComponent")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+pixel_size = 0.005
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture_filter = 2
+texture = ExtResource("2_dw7im")
+
+[node name="HealthComponent" type="Node" parent="."]
+script = ExtResource("3_6gwwm")
+
+[node name="InventoryComponent" type="Node" parent="."]
+script = ExtResource("4_js71f")

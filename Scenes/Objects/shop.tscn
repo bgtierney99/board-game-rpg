@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://dwtwenrkfh6u0"]
+
+[ext_resource type="Script" path="res://Scripts/shop.gd" id="1_k0yqh"]
+[ext_resource type="Script" path="res://Scripts/Components/InventoryComponent.gd" id="2_iw05e"]
+[ext_resource type="PackedScene" uid="uid://bnib74k2p56m6" path="res://Scenes/Characters/character.tscn" id="3_2h6sf"]
+[ext_resource type="Resource" uid="uid://ds7vr0wscrxqf" path="res://Resources/Characters/NPCs/sci-fi_salesman.tres" id="4_60w2h"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_771am"]
+
+[node name="Shop" type="Node3D" node_paths=PackedStringArray("InventoryManager")]
+script = ExtResource("1_k0yqh")
+shop_inventory = Array[Resource("res://Resources/Equipment/lootData.gd")]([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
+InventoryManager = NodePath("InventoryComponent")
+
+[node name="InventoryComponent" type="Node" parent="."]
+script = ExtResource("2_iw05e")
+inventory_size = 40
+
+[node name="Shopkeeper" parent="." instance=ExtResource("3_2h6sf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.01127)
+info = ExtResource("4_60w2h")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("BoxMesh_771am")

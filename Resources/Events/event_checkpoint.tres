@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="eventData" load_steps=5 format=3 uid="uid://b2vssap0pvvl1"]
+
+[ext_resource type="Script" path="res://Resources/Events/Actions/action_checkpoint.gd" id="1_diwcs"]
+[ext_resource type="Texture2D" uid="uid://cnyei3g5npxn1" path="res://Assets/Art/Spaces/checkpoint_event.png" id="1_dstjq"]
+[ext_resource type="Script" path="res://Resources/Events/eventData.gd" id="2_bdjft"]
+
+[sub_resource type="Resource" id="Resource_48nk4"]
+script = ExtResource("1_diwcs")
+turn_count = 0
+
+[resource]
+script = ExtResource("2_bdjft")
+name = 3
+event_texture = ExtResource("1_dstjq")
+event_color = Color(1, 0.764706, 0.807843, 1)
+event_action = SubResource("Resource_48nk4")

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DiskEffect" load_steps=2 format=3 uid="uid://ckovv2mmc05ci"]
+
+[ext_resource type="Script" path="res://Resources/Equipment/Effects/DiskEffect.gd" id="1_vytfp"]
+
+[resource]
+script = ExtResource("1_vytfp")
+min_roll = 1
+max_roll = 3
+description = "Generates a roll of 1, 2, or 3."

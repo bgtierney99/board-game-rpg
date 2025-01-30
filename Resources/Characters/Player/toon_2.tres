@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://ootx52v4iwnr"]
+
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_04knv"]
+[ext_resource type="PackedScene" uid="uid://b7d6q5jpbnp53" path="res://Assets/Art/Characters/Models/toon_2.glb" id="1_p2wcv"]
+
+[resource]
+script = ExtResource("1_04knv")
+model = ExtResource("1_p2wcv")
+name = "Bart the Bear"
+base_stats = {
+"Attack": 70,
+"Defense": 45,
+"HP": 45,
+"Speed": 40
+}
+world = 3
+smart_battler = true
+is_3D = false
+strategy = 2
+money = 0

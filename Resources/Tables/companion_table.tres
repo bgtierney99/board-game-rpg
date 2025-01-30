@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="dataTable" load_steps=4 format=3 uid="uid://c03dy7yvjtamn"]
+
+[ext_resource type="Script" path="res://Resources/Tables/dataTable.gd" id="1_jx6xu"]
+[ext_resource type="Resource" uid="uid://c2u55riowynnx" path="res://Resources/Equipment/Companions/companion_1.tres" id="2_dwi51"]
+[ext_resource type="Resource" uid="uid://b2uhqmrxoqsxh" path="res://Resources/Equipment/Companions/companion_2.tres" id="3_bnuwn"]
+
+[resource]
+script = ExtResource("1_jx6xu")
+table = Array[Resource]([ExtResource("2_dwi51"), ExtResource("3_bnuwn")])

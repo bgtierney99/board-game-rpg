@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://ndby0sgqngqd"]
+
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_d3enr"]
+[ext_resource type="PackedScene" uid="uid://dkj7lgst501mm" path="res://Assets/Art/Characters/Models/tamer_1.glb" id="1_ns3yi"]
+
+[resource]
+script = ExtResource("1_d3enr")
+model = ExtResource("1_ns3yi")
+name = "Joe the Farmer"
+base_stats = {
+"Attack": 54,
+"Defense": 64,
+"HP": 42,
+"Speed": 40
+}
+world = 2
+smart_battler = true
+is_3D = false
+strategy = 2
+money = 0

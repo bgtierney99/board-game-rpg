@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DiskEffect" load_steps=2 format=3 uid="uid://cdt5kao21hgqy"]
+
+[ext_resource type="Script" path="res://Resources/Equipment/Effects/DiskEffect.gd" id="1_llmsx"]
+
+[resource]
+script = ExtResource("1_llmsx")
+min_roll = 12
+max_roll = 12
+description = "Generates a roll of 12."

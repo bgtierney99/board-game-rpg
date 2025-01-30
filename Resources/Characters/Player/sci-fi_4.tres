@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://cgfgglqhvknio"]
+
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_00mt5"]
+[ext_resource type="PackedScene" uid="uid://dkbhhbk3jhqo7" path="res://Assets/Art/Characters/Models/sci-fi_4.glb" id="1_lt155"]
+
+[resource]
+script = ExtResource("1_00mt5")
+model = ExtResource("1_lt155")
+name = "Gallium the Electric Golem"
+base_stats = {
+"Attack": 100,
+"Defense": 50,
+"HP": 30,
+"Speed": 20
+}
+world = 0
+smart_battler = true
+is_3D = false
+strategy = 2
+money = 0

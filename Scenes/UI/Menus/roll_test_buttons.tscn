@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://811w67a8hcbu"]
+
+[ext_resource type="Script" path="res://Scripts/UI/roll_test_buttons.gd" id="1_l43f3"]
+
+[node name="Roll Test" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l43f3")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="1" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="2" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "2	"
+
+[node name="3" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "3"
+
+[node name="4" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "4"
+
+[node name="5" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "5"
+
+[node name="6" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "6"
+
+[node name="Random" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "Random"
+
+[connection signal="pressed" from="GridContainer/1" to="." method="_on_1_pressed"]
+[connection signal="pressed" from="GridContainer/2" to="." method="_on_2_pressed"]
+[connection signal="pressed" from="GridContainer/3" to="." method="_on_3_pressed"]
+[connection signal="pressed" from="GridContainer/4" to="." method="_on_4_pressed"]
+[connection signal="pressed" from="GridContainer/5" to="." method="_on_5_pressed"]
+[connection signal="pressed" from="GridContainer/6" to="." method="_on_6_pressed"]
+[connection signal="pressed" from="GridContainer/Random" to="." method="_on_random_pressed"]

@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyphiuj8fpmf7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lijgb"]
+bg_color = Color(0, 0.215686, 0.305882, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(5.17406e-07, 0.179106, 0.257113, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_og2bg"]
+bg_color = Color(0, 0.215686, 0.305882, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="Button" type="Button"]
+custom_minimum_size = Vector2(200, 60)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_lijgb")
+theme_override_styles/focus = SubResource("StyleBoxFlat_og2bg")
+text = "Container"

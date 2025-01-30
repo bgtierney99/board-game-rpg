@@ -1,0 +1,151 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0k8p4aoijfkd"]
+
+[ext_resource type="Script" path="res://Scripts/UI/BattleMenu.gd" id="1_oluqs"]
+
+[node name="BattleMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oluqs")
+
+[node name="Options" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fight" type="Button" parent="Options"]
+custom_minimum_size = Vector2(400, 250)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -250.0
+offset_right = 200.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "FIGHT"
+
+[node name="Heal" type="Button" parent="Options"]
+custom_minimum_size = Vector2(200, 125)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -125.0
+offset_right = 200.0
+grow_vertical = 0
+text = "INVENTORY"
+
+[node name="Attacks" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Mid" type="Button" parent="Attacks"]
+custom_minimum_size = Vector2(400, 250)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -250.0
+offset_right = 200.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "MID-ROLL"
+
+[node name="Low" type="Button" parent="Attacks"]
+custom_minimum_size = Vector2(400, 250)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -700.0
+offset_top = -250.0
+offset_right = -300.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "LOW-ROLL"
+
+[node name="High" type="Button" parent="Attacks"]
+custom_minimum_size = Vector2(400, 250)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 300.0
+offset_top = -250.0
+offset_right = 700.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "HIGH-ROLL"
+
+[node name="Targets" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Inventory" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Back" type="Button" parent="Inventory"]
+custom_minimum_size = Vector2(200, 125)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -125.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "BACK"
+
+[node name="TurnOrder" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.85
+anchor_top = 0.4
+anchor_right = 1.0
+anchor_bottom = 0.6
+offset_top = 51.0
+offset_bottom = -84.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[connection signal="pressed" from="Options/Fight" to="." method="_on_fight_pressed"]
+[connection signal="pressed" from="Options/Heal" to="." method="_on_heal_pressed"]
+[connection signal="pressed" from="Attacks/Mid" to="." method="_on_mid_pressed"]
+[connection signal="pressed" from="Attacks/Low" to="." method="_on_low_pressed"]
+[connection signal="pressed" from="Attacks/High" to="." method="_on_high_pressed"]
+[connection signal="pressed" from="Inventory/Back" to="." method="_on_back_pressed"]

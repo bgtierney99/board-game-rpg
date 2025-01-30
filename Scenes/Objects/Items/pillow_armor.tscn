@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd403ta6kapmm"]
+
+[sub_resource type="TubeTrailMesh" id="TubeTrailMesh_ti1kl"]
+
+[node name="PillowArmor" type="Node3D"]
+
+[node name="model" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("TubeTrailMesh_ti1kl")
+
+[node name="Camera3D" type="Camera3D" parent="model"]
+transform = Transform3D(1, 0, 0, 0, 0.922733, 0.385439, 0, -0.385439, 0.922733, 0, 0.662994, 1.68234)

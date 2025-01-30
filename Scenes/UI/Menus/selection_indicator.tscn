@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://x6imf42bphr2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_43c1t"]
+bg_color = Color(0, 0.552941, 0.2, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.0352941, 0.184314, 0, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[node name="SelectionIndicator" type="Button"]
+custom_minimum_size = Vector2(48, 48)
+offset_right = 64.0
+offset_bottom = 64.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_43c1t")

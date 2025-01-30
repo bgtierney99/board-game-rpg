@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://d0hw2b35hg5k4"]
+
+[ext_resource type="PackedScene" uid="uid://um72qch2q3m0" path="res://Assets/Art/Characters/Models/steampunk_1.glb" id="1_j06ew"]
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_qh566"]
+
+[resource]
+script = ExtResource("1_qh566")
+model = ExtResource("1_j06ew")
+name = "Bron Windflier"
+base_stats = {
+"Attack": 45,
+"Defense": 45,
+"HP": 55,
+"Speed": 55
+}
+world = 1
+smart_battler = true
+is_3D = false
+strategy = 1
+money = 0

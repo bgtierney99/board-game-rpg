@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://cxrenwrjv8ow0"]
+
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_1k787"]
+[ext_resource type="PackedScene" uid="uid://b8qg3knqvajyr" path="res://Assets/Art/Characters/Models/tamer_4.glb" id="1_gxfyk"]
+
+[resource]
+script = ExtResource("1_1k787")
+model = ExtResource("1_gxfyk")
+name = "Emily the researcher"
+base_stats = {
+"Attack": 35,
+"Defense": 55,
+"HP": 65,
+"Speed": 45
+}
+world = 2
+smart_battler = true
+is_3D = false
+strategy = 1
+money = 0

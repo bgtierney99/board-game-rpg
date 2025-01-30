@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=3 format=3 uid="uid://c2u55riowynnx"]
+
+[ext_resource type="Script" path="res://Resources/Equipment/lootData.gd" id="1_6iky8"]
+[ext_resource type="PackedScene" uid="uid://cy0lwb3yhv3cr" path="res://Scenes/Objects/Companions/robot_horse.tscn" id="1_trtbk"]
+
+[resource]
+script = ExtResource("1_6iky8")
+name = "Robot Horse"
+model = ExtResource("1_trtbk")
+item_type = "Companion"
+world = 0
+description = "A horse... but, like, robotic."
+price = 5000
+stats = {
+"additions": {
+"Attack": 10,
+"Defense": 5,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 1,
+"Speed": 1
+}
+}

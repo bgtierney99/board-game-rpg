@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://bkesphhgetid5"]
+
+[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_64u5h"]
+[ext_resource type="PackedScene" uid="uid://dqmk8i4eaaljq" path="res://Assets/Art/Characters/Models/toon_1.glb" id="1_mbq1l"]
+
+[resource]
+script = ExtResource("1_64u5h")
+model = ExtResource("1_mbq1l")
+name = "Toon Salesman"
+base_stats = {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+world = 3
+smart_battler = true
+is_3D = false
+strategy = 0
+money = 3000

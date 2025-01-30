@@ -1,0 +1,75 @@
+[gd_scene load_steps=8 format=3 uid="uid://bnib74k2p56m6"]
+
+[ext_resource type="Script" path="res://Scripts/CharacterActions.gd" id="1_734ht"]
+[ext_resource type="PackedScene" uid="uid://dg0xwa74lbpeu" path="res://Scenes/outline_camera.tscn" id="2_1x4eq"]
+[ext_resource type="PackedScene" uid="uid://8858ltyflkui" path="res://Scenes/UI/Menus/health_bar.tscn" id="2_vrdfj"]
+[ext_resource type="Script" path="res://Scripts/Components/HealthComponent.gd" id="3_gokeo"]
+[ext_resource type="Script" path="res://Scripts/Components/InventoryComponent.gd" id="4_7pb7b"]
+[ext_resource type="Script" path="res://Scripts/Components/Input/EnemyInputComponent.gd" id="6_skofx"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_ok47i"]
+viewport_path = NodePath("SubViewport")
+
+[node name="GameCharacter" type="Node3D" node_paths=PackedStringArray("HPManager", "InventoryManager", "InputManager")]
+script = ExtResource("1_734ht")
+HPManager = NodePath("HealthComponent")
+InventoryManager = NodePath("InventoryComponent")
+InputManager = NodePath("InputComponent")
+
+[node name="Icon" type="Sprite3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.65, 0)
+offset = Vector2(0, 256)
+pixel_size = 0.005
+alpha_cut = 2
+texture_filter = 2
+texture = SubResource("ViewportTexture_ok47i")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+own_world_3d = true
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1024, 1024)
+
+[node name="Camera3D" parent="SubViewport" instance=ExtResource("2_1x4eq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.795, 2.5)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.50243)
+directional_shadow_mode = 0
+directional_shadow_fade_start = 1.0
+sky_mode = 1
+
+[node name="HealthBarBackground" type="ColorRect" parent="SubViewport"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -210.0
+offset_top = 50.0
+offset_right = 210.0
+offset_bottom = 150.0
+grow_horizontal = 2
+color = Color(0.0814891, 0, 0.487449, 1)
+
+[node name="HealthBar" parent="SubViewport/HealthBarBackground" instance=ExtResource("2_vrdfj")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -40.0
+offset_right = -200.0
+offset_bottom = -40.0
+scale = Vector2(2, 2)
+
+[node name="HealthComponent" type="Node" parent="."]
+script = ExtResource("3_gokeo")
+
+[node name="InventoryComponent" type="Node" parent="."]
+script = ExtResource("4_7pb7b")
+inventory_size = 40
+
+[node name="InputComponent" type="Node" parent="." node_paths=PackedStringArray("character")]
+script = ExtResource("6_skofx")
+character = NodePath("..")

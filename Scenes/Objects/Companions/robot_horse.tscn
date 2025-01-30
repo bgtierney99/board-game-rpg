@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cy0lwb3yhv3cr"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_ot3po"]
+height = 0.3
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_7gj8k"]
+radius = 0.05
+height = 0.5
+
+[node name="MonsterGel" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.922733, 0.385439, 0, -0.385439, 0.922733, 0, 1.076, 1.5)
+
+[node name="model" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("SphereMesh_ot3po")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="model"]
+transform = Transform3D(0.892019, 0.451999, 0, -0.451999, 0.892019, 0, 0, 0, 1, 0.423275, 0.308139, 0)
+mesh = SubResource("CapsuleMesh_7gj8k")

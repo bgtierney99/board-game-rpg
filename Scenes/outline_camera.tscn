@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dg0xwa74lbpeu"]
+
+[ext_resource type="PackedScene" uid="uid://6rvluknqcohs" path="res://Scenes/outline.tscn" id="1_0jhqc"]
+
+[node name="Camera3D" type="Camera3D"]
+
+[node name="Outline" parent="." instance=ExtResource("1_0jhqc")]

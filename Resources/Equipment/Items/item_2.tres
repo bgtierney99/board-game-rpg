@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=4 format=3 uid="uid://chc8ymoglxufa"]
+
+[ext_resource type="Resource" uid="uid://diau1mcwgobdy" path="res://Resources/Equipment/Effects/effect_monster_gel.tres" id="1_duphj"]
+[ext_resource type="Script" path="res://Resources/Equipment/lootData.gd" id="1_itjxn"]
+[ext_resource type="PackedScene" uid="uid://mqlc37057igx" path="res://Scenes/Objects/Items/monster_gel.tscn" id="2_55uf4"]
+
+[resource]
+script = ExtResource("1_itjxn")
+name = "Monster Gel"
+model = ExtResource("2_55uf4")
+item_type = "Consumable"
+world = 2
+effect = ExtResource("1_duphj")
+description = "A gelatonous substance produced from monsters..."
+price = 300
+stats = {
+"additions": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

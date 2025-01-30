@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvav61066tt7k"]
+
+[ext_resource type="PackedScene" uid="uid://cmi3hmo3lw3mg" path="res://Scenes/UI/Menus/inventory_menu.tscn" id="1_gjb3h"]
+
+[node name="BattleInventory" instance=ExtResource("1_gjb3h")]

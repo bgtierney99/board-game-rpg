@@ -1,0 +1,66 @@
+[gd_scene load_steps=13 format=3 uid="uid://ciktxmx1fkm0u"]
+
+[ext_resource type="Script" path="res://Scripts/UI/UIManager.gd" id="1_fq3dt"]
+[ext_resource type="PackedScene" uid="uid://811w67a8hcbu" path="res://Scenes/UI/Menus/roll_test_buttons.tscn" id="1_r31u8"]
+[ext_resource type="PackedScene" uid="uid://c4gd0v4dt2fcg" path="res://Scenes/UI/Menus/player_actions.tscn" id="4_2k11b"]
+[ext_resource type="PackedScene" uid="uid://cd065pfp6wm0s" path="res://Scenes/UI/Menus/roll_menu.tscn" id="6_f4j2b"]
+[ext_resource type="PackedScene" uid="uid://dd3n172t202si" path="res://Scenes/UI/Menus/board_inventory.tscn" id="6_isnpy"]
+[ext_resource type="PackedScene" uid="uid://c5ari1g22sgbn" path="res://Scenes/UI/Menus/battle_menu.tscn" id="7_6si26"]
+[ext_resource type="PackedScene" uid="uid://u86wlwm1f20a" path="res://Scenes/UI/Menus/dialogue_box.tscn" id="7_qltn2"]
+[ext_resource type="PackedScene" uid="uid://dvav61066tt7k" path="res://Scenes/UI/Menus/battle_inventory.tscn" id="8_7lxdt"]
+[ext_resource type="Script" path="res://Scripts/UI/BattleInventory.gd" id="8_ky5cx"]
+[ext_resource type="PackedScene" uid="uid://cnkbjhsfhwgug" path="res://Scenes/UI/Menus/trade_menu.tscn" id="9_uv6gl"]
+[ext_resource type="PackedScene" uid="uid://btbvmq6edn1g0" path="res://Scenes/UI/Menus/shop_inventory.tscn" id="10_j58it"]
+[ext_resource type="PackedScene" uid="uid://cq0jx3o3ugy72" path="res://Scenes/UI/Menus/map_menu.tscn" id="10_vaxsu"]
+
+[node name="UiManager" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fq3dt")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Roll Test" parent="." instance=ExtResource("1_r31u8")]
+visible = false
+layout_mode = 1
+
+[node name="PlayerActions" parent="." instance=ExtResource("4_2k11b")]
+visible = false
+layout_mode = 1
+
+[node name="RollMenu" parent="." instance=ExtResource("6_f4j2b")]
+visible = false
+layout_mode = 1
+
+[node name="DialogueBox" parent="." instance=ExtResource("7_qltn2")]
+visible = false
+layout_mode = 1
+
+[node name="BattleMenu" parent="." instance=ExtResource("7_6si26")]
+visible = false
+layout_mode = 1
+
+[node name="BoardInventory" parent="." instance=ExtResource("6_isnpy")]
+visible = false
+layout_mode = 1
+
+[node name="BattleInventory" parent="." instance=ExtResource("8_7lxdt")]
+visible = false
+layout_mode = 1
+script = ExtResource("8_ky5cx")
+
+[node name="ShopInventory" parent="." instance=ExtResource("10_j58it")]
+visible = false
+layout_mode = 1
+
+[node name="TradeMenu" parent="." instance=ExtResource("9_uv6gl")]
+visible = false
+layout_mode = 1
+
+[node name="MapMenu" parent="." instance=ExtResource("10_vaxsu")]
+visible = false
+layout_mode = 1

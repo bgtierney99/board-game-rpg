@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="dataTable" load_steps=18 format=3 uid="uid://bxg8bmxdqwic0"]
+
+[ext_resource type="Script" path="res://Resources/Tables/dataTable.gd" id="1_i1ydy"]
+[ext_resource type="Resource" uid="uid://d0hw2b35hg5k4" path="res://Resources/Characters/Player/steampunk_1.tres" id="2_2mohj"]
+[ext_resource type="Resource" uid="uid://v6hj01ks4rmq" path="res://Resources/Characters/Player/steampunk_2.tres" id="3_uys7m"]
+[ext_resource type="Resource" uid="uid://dfwkwehat20gj" path="res://Resources/Characters/Player/steampunk_3.tres" id="4_hx2ms"]
+[ext_resource type="Resource" uid="uid://bfi7syv7hkixo" path="res://Resources/Characters/Player/steampunk_4.tres" id="5_xyo01"]
+[ext_resource type="Resource" uid="uid://jiy1wvjhnfbo" path="res://Resources/Characters/Player/sci-fi_1.tres" id="6_d0nwg"]
+[ext_resource type="Resource" uid="uid://yw7d4ya0kifq" path="res://Resources/Characters/Player/sci-fi_2.tres" id="7_1pjin"]
+[ext_resource type="Resource" uid="uid://crhvc6i7vrnne" path="res://Resources/Characters/Player/sci-fi_3.tres" id="8_qksij"]
+[ext_resource type="Resource" uid="uid://cgfgglqhvknio" path="res://Resources/Characters/Player/sci-fi_4.tres" id="9_ha2wu"]
+[ext_resource type="Resource" uid="uid://ndby0sgqngqd" path="res://Resources/Characters/Player/tamer_1.tres" id="10_jsg5k"]
+[ext_resource type="Resource" uid="uid://dqqwyjpq70iq6" path="res://Resources/Characters/Player/tamer_2.tres" id="11_vpuah"]
+[ext_resource type="Resource" uid="uid://lda1xgem6xm7" path="res://Resources/Characters/Player/tamer_3.tres" id="12_iexny"]
+[ext_resource type="Resource" uid="uid://cxrenwrjv8ow0" path="res://Resources/Characters/Player/tamer_4.tres" id="13_fqisv"]
+[ext_resource type="Resource" uid="uid://djduj5ucoucbd" path="res://Resources/Characters/Player/toon_1.tres" id="14_ap8p7"]
+[ext_resource type="Resource" uid="uid://ootx52v4iwnr" path="res://Resources/Characters/Player/toon_2.tres" id="15_3u618"]
+[ext_resource type="Resource" uid="uid://bsik3dlpf2q0j" path="res://Resources/Characters/Player/toon_3.tres" id="16_nixtf"]
+[ext_resource type="Resource" uid="uid://deqjnscyv3pg" path="res://Resources/Characters/Player/toon_4.tres" id="17_2n7xe"]
+
+[resource]
+script = ExtResource("1_i1ydy")
+table = Array[Resource]([ExtResource("2_2mohj"), ExtResource("3_uys7m"), ExtResource("4_hx2ms"), ExtResource("5_xyo01"), ExtResource("6_d0nwg"), ExtResource("7_1pjin"), ExtResource("8_qksij"), ExtResource("9_ha2wu"), ExtResource("10_jsg5k"), ExtResource("11_vpuah"), ExtResource("12_iexny"), ExtResource("13_fqisv"), ExtResource("14_ap8p7"), ExtResource("15_3u618"), ExtResource("16_nixtf"), ExtResource("17_2n7xe")])

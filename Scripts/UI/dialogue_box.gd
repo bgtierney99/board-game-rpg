@@ -4,14 +4,19 @@ class_name DialogueBox
 @onready var speaker_label = $SpeakerBackground/SpeakerBox/MarginContainer/Label
 @onready var text_label = $TextBackground/TextBox/MarginContainer/Label
 @onready var button_container = $TextBackground/ButtonContainer
+var text_tween:Tween
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	DialogueManager.dialogue_finished.connect(reset)
 	
 func Input_Event(event):
-	if event.is_action_pressed("ui_cancel"):
-		print("No pausing during dialogue!")
+	#pressing the confirm action skips the text
+	if event.is_action_pressed("ui_accept"):
+		await get_tree().create_timer(0.1).timeout
+		text_tween.pause()
+		text_tween.custom_step(999)
+		text_tween.kill()
 
 func reset():
 	text_label.text = ""
@@ -24,11 +29,15 @@ func show_box(speaker: String, text:String, button_elements):
 	text_label.text = text
 	#type dialogue one character at a time
 	text_label.visible_ratio = 0
-	var tween = create_tween()
+	text_tween = create_tween()
 	var text_speed:float = 40.0 #characters per second
 	var tween_time:float = text.length() / text_speed
-	tween.tween_property(text_label, "visible_ratio", 1, tween_time)
-	await tween.finished
+	text_tween.tween_property(text_label, "visible_ratio", 1, tween_time)
+	await text_tween.finished
+	text_label.visible_ratio = 1
+	add_buttons_to_box(button_elements)
+	
+func add_buttons_to_box(button_elements):
 	#enemy should show the box for a short time then immediately close it
 	var input_manager = GameManager.current_player.InputManager
 	if input_manager is EnemyInputComponent:
@@ -36,9 +45,6 @@ func show_box(speaker: String, text:String, button_elements):
 		var result_button = input_manager.dialogue_button_selection(button_elements)
 		await select_option(result_button["action"], result_button["parameters"])
 		return
-	add_buttons_to_box(button_elements)
-	
-func add_buttons_to_box(button_elements):
 	#remove old buttons
 	clear_buttons()
 	var dialogueButton = preload("res://Scenes/UI/Menus/dialogue_box_button.tscn")

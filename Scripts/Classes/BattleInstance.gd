@@ -12,7 +12,7 @@ var loser_list:Array
 var battle_points: Dictionary
 var battle_over = false
 var current_state
-var prize_pool:Array = []
+var prize_pool:Array = Array()
 var prize_money = 0
 
 enum BATTLE_STATE {

@@ -19,8 +19,7 @@ func spin(min=min_num, max=max_num):
 	max_num = clampi(max, min, 999)
 	min_num = clampi(min, 1, max)
 	randomize()
-	print("Old rotation: ", $model.rotation)
-	var old_rot = $model.rotation
+	$model.global_rotation = Vector3.ZERO
 	var new_rot = Vector3(0, 0, deg_to_rad(randi_range(1, 3)*360))
 	var old_pos = $model.global_position
 	var new_pos = old_pos+Vector3(0, randi_range(1, 3)*0.3, 0)
@@ -29,13 +28,10 @@ func spin(min=min_num, max=max_num):
 	tween.tween_property($model, "global_position", new_pos, 0.25)
 	tween.chain().tween_property($model, "global_position", old_pos, 0.25)
 	await tween.finished
-	$model.rotation = old_rot
 	$AnimationPlayer.play("spin")
 
 func generate_result():
 	var number_label = $NumberMesh
-	number_label.transparency = 0.0
-	$Hologram.transparency = 0.0
 	number_label.visible = true
 	var num_arr = []
 	for i in range(min_num, max_num+1):

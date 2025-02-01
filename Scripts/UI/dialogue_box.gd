@@ -8,6 +8,10 @@ class_name DialogueBox
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	DialogueManager.dialogue_finished.connect(reset)
+	
+func Input_Event(event):
+	if event.is_action_pressed("ui_cancel"):
+		print("No pausing during dialogue!")
 
 func reset():
 	text_label.text = ""

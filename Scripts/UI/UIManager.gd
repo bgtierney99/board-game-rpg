@@ -16,7 +16,8 @@ func _ready():
 			child.visible = false
 
 func _input(event):
-	pass
+	if state:
+		state.Input_Event(event)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

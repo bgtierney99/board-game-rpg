@@ -1,6 +1,6 @@
 extends Node
 
-var trade_players = []
+var trade_players = Array()
 var trade_active = false
 
 signal trade_finished

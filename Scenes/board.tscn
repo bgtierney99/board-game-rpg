@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://bwqe4q4ogy3t1"]
+[gd_scene load_steps=67 format=3 uid="uid://bwqe4q4ogy3t1"]
 
 [ext_resource type="PackedScene" uid="uid://b2ix4caw0f7y" path="res://Scenes/Objects/space.tscn" id="1_d0x1m"]
 [ext_resource type="Script" path="res://Scripts/Board.gd" id="1_r8ymi"]
@@ -21,7 +21,6 @@
 [ext_resource type="Resource" uid="uid://be7pn1alt2ps2" path="res://Resources/Events/event_prize.tres" id="13_ekujx"]
 [ext_resource type="Resource" uid="uid://bdvq80v5ub86k" path="res://Resources/Events/event_trap_damage.tres" id="14_44brm"]
 [ext_resource type="Script" path="res://Resources/Events/Actions/action_trap_stuck.gd" id="15_ir6rb"]
-[ext_resource type="Resource" uid="uid://bdtr78wr0bc3y" path="res://Resources/Events/event_trap_stuck.tres" id="15_tswti"]
 [ext_resource type="Script" path="res://Resources/Events/eventData.gd" id="16_4epk6"]
 [ext_resource type="Resource" uid="uid://ceo7e43w3fmd6" path="res://Resources/Events/event_expedition.tres" id="16_nxasj"]
 [ext_resource type="Resource" uid="uid://b2vssap0pvvl1" path="res://Resources/Events/event_checkpoint.tres" id="22_2e2nb"]
@@ -427,7 +426,6 @@ item_pool = Array[ExtResource("3_7jq4b")]([SubResource("Resource_qujjm"), SubRes
 event_pool = Array[ExtResource("3_7jq4b")]([SubResource("Resource_xs7vy"), SubResource("Resource_wmru5"), SubResource("Resource_v0e0u"), SubResource("Resource_6yx3v"), SubResource("Resource_v2dns"), SubResource("Resource_06883"), SubResource("Resource_sxws8")])
 main_camera = NodePath("Board Camera")
 overhead_camera = NodePath("Overhead Camera")
-test_space = ExtResource("15_tswti")
 
 [node name="PlayerInfo" parent="." instance=ExtResource("12_qmttr")]
 

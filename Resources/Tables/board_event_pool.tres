@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="dataTable" load_steps=2 format=3 uid="uid://bdv2gcwalxfpg"]
+
+[ext_resource type="Script" path="res://Resources/Tables/dataTable.gd" id="1_sswpw"]
+
+[resource]
+script = ExtResource("1_sswpw")
+table = null

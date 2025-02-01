@@ -32,8 +32,6 @@ func _ready():
 	GameManager.respawn_player.connect(respawn)
 	#setup players
 	player_setup(GameManager.player_data)
-	
-	
 
 func generate_spaces(space_list: Array):
 	var space_scene = preload("res://Scenes/Objects/space.tscn")

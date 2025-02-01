@@ -1,9 +1,8 @@
-[gd_scene load_steps=67 format=3 uid="uid://bwqe4q4ogy3t1"]
+[gd_scene load_steps=43 format=3 uid="uid://bwqe4q4ogy3t1"]
 
 [ext_resource type="PackedScene" uid="uid://b2ix4caw0f7y" path="res://Scenes/Objects/space.tscn" id="1_d0x1m"]
 [ext_resource type="Script" path="res://Scripts/Board.gd" id="1_r8ymi"]
 [ext_resource type="Resource" uid="uid://bixddetwuif4r" path="res://Resources/Equipment/Items/item_1.tres" id="2_glwe7"]
-[ext_resource type="Script" path="res://Resources/weightedStack.gd" id="3_7jq4b"]
 [ext_resource type="Resource" uid="uid://chc8ymoglxufa" path="res://Resources/Equipment/Items/item_2.tres" id="4_ayiji"]
 [ext_resource type="PackedScene" uid="uid://fnd4ocn5rmes" path="res://Scenes/Objects/Items/disk.tscn" id="4_h8i5x"]
 [ext_resource type="Resource" uid="uid://5u4xi3vryrcm" path="res://Resources/Events/event_boss.tres" id="5_8nru4"]
@@ -15,112 +14,11 @@
 [ext_resource type="Resource" uid="uid://bvttrwcaapyeq" path="res://Resources/Equipment/Items/item_6.tres" id="8_lpsuy"]
 [ext_resource type="Resource" uid="uid://mt1k2nb3incv" path="res://Resources/Equipment/Items/item_7.tres" id="9_ufwgi"]
 [ext_resource type="Resource" uid="uid://b0hl536ft6wkl" path="res://Resources/Events/event_basic.tres" id="10_owiyp"]
-[ext_resource type="Resource" uid="uid://x5vxlmvg8ljv" path="res://Resources/Events/event_companion.tres" id="11_fbos8"]
-[ext_resource type="Resource" uid="uid://dasu23qqhlh0c" path="res://Resources/Events/event_encounter.tres" id="12_gcel7"]
 [ext_resource type="PackedScene" uid="uid://cac1a31c0rtw6" path="res://Scenes/UI/Menus/player_info_overlay.tscn" id="12_qmttr"]
-[ext_resource type="Resource" uid="uid://be7pn1alt2ps2" path="res://Resources/Events/event_prize.tres" id="13_ekujx"]
-[ext_resource type="Resource" uid="uid://bdvq80v5ub86k" path="res://Resources/Events/event_trap_damage.tres" id="14_44brm"]
-[ext_resource type="Script" path="res://Resources/Events/Actions/action_trap_stuck.gd" id="15_ir6rb"]
-[ext_resource type="Script" path="res://Resources/Events/eventData.gd" id="16_4epk6"]
-[ext_resource type="Resource" uid="uid://ceo7e43w3fmd6" path="res://Resources/Events/event_expedition.tres" id="16_nxasj"]
 [ext_resource type="Resource" uid="uid://b2vssap0pvvl1" path="res://Resources/Events/event_checkpoint.tres" id="22_2e2nb"]
 [ext_resource type="Script" path="res://Resources/Events/Actions/action_basic.gd" id="23_fpxf7"]
 [ext_resource type="Resource" uid="uid://ocoie2pwnpsy" path="res://Resources/Events/event_shop.tres" id="23_iu6u7"]
 [ext_resource type="PackedScene" uid="uid://dwtwenrkfh6u0" path="res://Scenes/Objects/shop.tscn" id="24_e0w36"]
-
-[sub_resource type="Resource" id="Resource_qujjm"]
-script = ExtResource("3_7jq4b")
-resource = ExtResource("2_glwe7")
-count = 4
-weight = 2
-
-[sub_resource type="Resource" id="Resource_nmeby"]
-script = ExtResource("3_7jq4b")
-resource = ExtResource("4_ayiji")
-count = 20
-weight = 10
-
-[sub_resource type="Resource" id="Resource_08bp8"]
-script = ExtResource("3_7jq4b")
-resource = ExtResource("5_sl5xx")
-count = 1
-weight = 1
-
-[sub_resource type="Resource" id="Resource_s8d6n"]
-script = ExtResource("3_7jq4b")
-resource = ExtResource("6_pahwg")
-count = -1
-weight = 1
-
-[sub_resource type="Resource" id="Resource_hko6e"]
-script = ExtResource("3_7jq4b")
-resource = ExtResource("7_n8jpm")
-count = 1
-weight = 1
-
-[sub_resource type="Resource" id="Resource_scfjn"]
-script = ExtResource("3_7jq4b")
-resource = ExtResource("8_lpsuy")
-count = 4
-weight = 2
-
-[sub_resource type="Resource" id="Resource_sk7rl"]
-script = ExtResource("3_7jq4b")
-resource = ExtResource("9_ufwgi")
-count = 4
-weight = 2
-
-[sub_resource type="Resource" id="Resource_xs7vy"]
-script = ExtResource("3_7jq4b")
-resource = ExtResource("10_owiyp")
-count = -1
-weight = 7
-
-[sub_resource type="Resource" id="Resource_wmru5"]
-script = ExtResource("3_7jq4b")
-resource = ExtResource("11_fbos8")
-count = -1
-weight = 2
-
-[sub_resource type="Resource" id="Resource_v0e0u"]
-script = ExtResource("3_7jq4b")
-resource = ExtResource("12_gcel7")
-count = -1
-weight = 2
-
-[sub_resource type="Resource" id="Resource_6yx3v"]
-script = ExtResource("3_7jq4b")
-resource = ExtResource("13_ekujx")
-count = -1
-weight = 3
-
-[sub_resource type="Resource" id="Resource_v2dns"]
-script = ExtResource("3_7jq4b")
-resource = ExtResource("14_44brm")
-count = -1
-weight = 1
-
-[sub_resource type="Resource" id="Resource_se7me"]
-script = ExtResource("15_ir6rb")
-turn_count = 1
-
-[sub_resource type="Resource" id="Resource_qrvcl"]
-script = ExtResource("16_4epk6")
-name = 8
-event_color = Color(0.564706, 0.596078, 0.941176, 1)
-event_action = SubResource("Resource_se7me")
-
-[sub_resource type="Resource" id="Resource_06883"]
-script = ExtResource("3_7jq4b")
-resource = SubResource("Resource_qrvcl")
-count = -1
-weight = 1
-
-[sub_resource type="Resource" id="Resource_sxws8"]
-script = ExtResource("3_7jq4b")
-resource = ExtResource("16_nxasj")
-count = -1
-weight = 1
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0r5cx"]
 albedo_color = Color(0, 0.596078, 0.243137, 1)
@@ -422,8 +320,6 @@ outline_color = Color(0.368627, 0, 0.0823529, 1)
 [node name="Board" type="Node3D" node_paths=PackedStringArray("main_camera", "overhead_camera")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
 script = ExtResource("1_r8ymi")
-item_pool = Array[ExtResource("3_7jq4b")]([SubResource("Resource_qujjm"), SubResource("Resource_nmeby"), SubResource("Resource_08bp8"), SubResource("Resource_s8d6n"), SubResource("Resource_hko6e"), SubResource("Resource_scfjn"), SubResource("Resource_sk7rl")])
-event_pool = Array[ExtResource("3_7jq4b")]([SubResource("Resource_xs7vy"), SubResource("Resource_wmru5"), SubResource("Resource_v0e0u"), SubResource("Resource_6yx3v"), SubResource("Resource_v2dns"), SubResource("Resource_06883"), SubResource("Resource_sxws8")])
 main_camera = NodePath("Board Camera")
 overhead_camera = NodePath("Overhead Camera")
 

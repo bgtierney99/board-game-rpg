@@ -10,7 +10,7 @@ func action(player:GameCharacter):
 	match response:
 		"tame":
 			reset_event.emit()
-			var companion_table = GameManager.get_table("companion_table")
+			var companion_table = GameManager.get_table("weighted_companion_pool")
 			var companion = companion_data
 			if not companion:
 				companion = companion_table.table.pick_random()

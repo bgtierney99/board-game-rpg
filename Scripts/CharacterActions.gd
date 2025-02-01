@@ -43,7 +43,7 @@ func _input(event):
 	pass
 	
 func ready():
-	pass
+	health_bar.visible = false
 	
 func _process(delta):
 	pass

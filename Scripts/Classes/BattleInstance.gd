@@ -36,6 +36,10 @@ func sort_speed(a, b):
 func change_battle_state(new_state:BATTLE_STATE):
 	match new_state:
 		BATTLE_STATE.START_SET:
+			for battler in battler_list:
+				if battler.is_in_group("Players"):
+					continue
+				battler.health_bar.visible = true
 			full_set = GameManager.unique_copy(extra_turns)
 			full_set.append_array(battler_list)
 			extra_turns.clear()
@@ -65,6 +69,8 @@ func change_battle_state(new_state:BATTLE_STATE):
 			elif not full_set.is_empty():
 				change_battle_state(BATTLE_STATE.ACTION)
 		BATTLE_STATE.END_SET:
+			for battler in battler_list:
+				battler.health_bar.visible = false
 			BattleManager.setCurrentBattle(null)
 			if not battle_over:
 				BattleManager.set_finished.emit()

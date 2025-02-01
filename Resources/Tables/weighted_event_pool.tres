@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="dataTable" load_steps=17 format=3 uid="uid://bdv2gcwalxfpg"]
+
+[ext_resource type="Script" path="res://Resources/Tables/dataTable.gd" id="1_sswpw"]
+[ext_resource type="Resource" uid="uid://b0hl536ft6wkl" path="res://Resources/Events/event_basic.tres" id="2_fdgxx"]
+[ext_resource type="Script" path="res://Resources/weightedStack.gd" id="3_eakev"]
+[ext_resource type="Resource" uid="uid://x5vxlmvg8ljv" path="res://Resources/Events/event_companion.tres" id="4_m6luk"]
+[ext_resource type="Resource" uid="uid://dasu23qqhlh0c" path="res://Resources/Events/event_encounter.tres" id="5_mj1wo"]
+[ext_resource type="Resource" uid="uid://be7pn1alt2ps2" path="res://Resources/Events/event_prize.tres" id="6_kq8y1"]
+[ext_resource type="Resource" uid="uid://bdvq80v5ub86k" path="res://Resources/Events/event_trap_damage.tres" id="7_xrf6p"]
+[ext_resource type="Resource" uid="uid://bdtr78wr0bc3y" path="res://Resources/Events/event_trap_stuck.tres" id="8_0us07"]
+[ext_resource type="Resource" uid="uid://ceo7e43w3fmd6" path="res://Resources/Events/event_expedition.tres" id="9_1qiei"]
+
+[sub_resource type="Resource" id="Resource_h5elc"]
+script = ExtResource("3_eakev")
+resource = ExtResource("2_fdgxx")
+count = -1
+weight = 7
+
+[sub_resource type="Resource" id="Resource_tvmn2"]
+script = ExtResource("3_eakev")
+resource = ExtResource("4_m6luk")
+count = -1
+weight = 2
+
+[sub_resource type="Resource" id="Resource_22nk6"]
+script = ExtResource("3_eakev")
+resource = ExtResource("5_mj1wo")
+count = -1
+weight = 2
+
+[sub_resource type="Resource" id="Resource_gop5n"]
+script = ExtResource("3_eakev")
+resource = ExtResource("6_kq8y1")
+count = -1
+weight = 3
+
+[sub_resource type="Resource" id="Resource_8gei4"]
+script = ExtResource("3_eakev")
+resource = ExtResource("7_xrf6p")
+count = -1
+weight = 1
+
+[sub_resource type="Resource" id="Resource_e2ux8"]
+script = ExtResource("3_eakev")
+resource = ExtResource("8_0us07")
+count = -1
+weight = 1
+
+[sub_resource type="Resource" id="Resource_vndhs"]
+script = ExtResource("3_eakev")
+resource = ExtResource("9_1qiei")
+count = -1
+weight = 1
+
+[resource]
+script = ExtResource("1_sswpw")
+table = Array[Resource]([SubResource("Resource_h5elc"), SubResource("Resource_tvmn2"), SubResource("Resource_22nk6"), SubResource("Resource_gop5n"), SubResource("Resource_8gei4"), SubResource("Resource_e2ux8"), SubResource("Resource_vndhs")])

@@ -5,13 +5,13 @@ var current_round = 1
 
 @export var space_distance_threshold:float = 2
 @export var space_height_threshold:float = 0.75
-@export var item_pool: Array[weightedStack]
-@export var event_pool: Array[weightedStack]
 @export var main_camera: Camera3D
 @export var overhead_camera: Camera3D
 @export var test_space:eventData
 @onready var round_text = $RoundText
 @onready var death_text = $DeathText
+@onready var item_pool = GameManager.get_table("weighted_item_pool").table.duplicate()
+@onready var event_pool = GameManager.get_table("weighted_event_pool").table.duplicate()
 
 var all_spaces:Array
 var boardData:Dictionary

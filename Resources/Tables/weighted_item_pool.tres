@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="dataTable" load_steps=17 format=3 uid="uid://dqcilbsu4ft6t"]
+
+[ext_resource type="Script" path="res://Resources/Tables/dataTable.gd" id="1_6n0tx"]
+[ext_resource type="Resource" uid="uid://bixddetwuif4r" path="res://Resources/Equipment/Items/item_1.tres" id="2_58x8v"]
+[ext_resource type="Script" path="res://Resources/weightedStack.gd" id="3_o1bht"]
+[ext_resource type="Resource" uid="uid://chc8ymoglxufa" path="res://Resources/Equipment/Items/item_2.tres" id="4_c33f0"]
+[ext_resource type="Resource" uid="uid://cg0lp0xoi8ggj" path="res://Resources/Equipment/Items/item_3.tres" id="5_xgud2"]
+[ext_resource type="Resource" uid="uid://eyjvdjd5btmv" path="res://Resources/Equipment/Items/item_4.tres" id="6_232q7"]
+[ext_resource type="Resource" uid="uid://b5yhwj3bcggls" path="res://Resources/Equipment/Items/item_5.tres" id="7_steit"]
+[ext_resource type="Resource" uid="uid://bvttrwcaapyeq" path="res://Resources/Equipment/Items/item_6.tres" id="8_3a0mx"]
+[ext_resource type="Resource" uid="uid://mt1k2nb3incv" path="res://Resources/Equipment/Items/item_7.tres" id="9_sj4wd"]
+
+[sub_resource type="Resource" id="Resource_6leu5"]
+script = ExtResource("3_o1bht")
+resource = ExtResource("2_58x8v")
+count = 4
+weight = 2
+
+[sub_resource type="Resource" id="Resource_j3xvo"]
+script = ExtResource("3_o1bht")
+resource = ExtResource("4_c33f0")
+count = 10
+weight = 10
+
+[sub_resource type="Resource" id="Resource_tnqho"]
+script = ExtResource("3_o1bht")
+resource = ExtResource("5_xgud2")
+count = 1
+weight = 1
+
+[sub_resource type="Resource" id="Resource_pecne"]
+script = ExtResource("3_o1bht")
+resource = ExtResource("6_232q7")
+count = 1
+weight = 1
+
+[sub_resource type="Resource" id="Resource_whkf8"]
+script = ExtResource("3_o1bht")
+resource = ExtResource("7_steit")
+count = 1
+weight = 1
+
+[sub_resource type="Resource" id="Resource_nejtu"]
+script = ExtResource("3_o1bht")
+resource = ExtResource("8_3a0mx")
+count = 4
+weight = 2
+
+[sub_resource type="Resource" id="Resource_5bnvh"]
+script = ExtResource("3_o1bht")
+resource = ExtResource("9_sj4wd")
+count = 4
+weight = 2
+
+[resource]
+script = ExtResource("1_6n0tx")
+table = Array[Resource]([SubResource("Resource_6leu5"), SubResource("Resource_j3xvo"), SubResource("Resource_tnqho"), SubResource("Resource_pecne"), SubResource("Resource_whkf8"), SubResource("Resource_nejtu"), SubResource("Resource_5bnvh")])

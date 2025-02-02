@@ -3,17 +3,27 @@ class_name action_companion
 
 @export var companion_data:lootData
 
+func get_random_companion():
+	var total_weight = 0
+	var current_total_weight = 0
+	var companion_pool = GameManager.get_table("weighted_companion_pool").table
+	for stack in companion_pool:
+		total_weight += stack["weight"]
+	var rand_weight = randi_range(0, total_weight)
+	for stack in companion_pool:
+		current_total_weight += stack["weight"]
+		if rand_weight <= current_total_weight:
+			return stack["resource"]
+
 func action(player:GameCharacter):
-	print("Companion event")
 	await DialogueManager.run_dialogue("companion_found")
 	var response = await DialogueManager.option_selected
 	match response:
 		"tame":
 			reset_event.emit()
-			var companion_table = GameManager.get_table("weighted_companion_pool")
 			var companion = companion_data
 			if not companion:
-				companion = companion_table.table.pick_random()
+				companion = get_random_companion()
 			DialogueManager.text_vars["Companion"] = companion.name
 			var rand_chance = randf()
 			#percentage chance that the creature damages the player

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BoardLocation" load_steps=3 format=3 uid="uid://dm4uetf8802yx"]
+
+[ext_resource type="PackedScene" uid="uid://du0sbcbi6hjwy" path="res://Scenes/Locations/Sci-Fi/energy_pond.tscn" id="1_7gnd7"]
+[ext_resource type="Script" path="res://Resources/Locations/BoardLocation.gd" id="1_14g5q"]
+
+[resource]
+script = ExtResource("1_14g5q")
+world = 0
+scene = ExtResource("1_7gnd7")

@@ -33,7 +33,42 @@ func _ready():
 	#setup players
 	player_setup(GameManager.player_data)
 
-func generate_spaces(space_list: Array):
+func assemble_board_locations():
+	var criteria_table_settings = load("res://Resources/Tables/Board Generation/board_gen_criteria.tres").table
+	var criteria_table_worlds = load("res://Resources/Tables/Board Generation/board_gen_criteria_worlds.tres").table
+	criteria_table_settings.shuffle()
+	var location_chunks = $Chunks.get_children()
+	var current_chunk_index = 0
+	#Prioritize areas from each world, then specific settings/types of locations
+	for criteria_table in [criteria_table_worlds, criteria_table_settings]:
+		for criteria in criteria_table:
+			#For each entry in the current criteria, check if any have already been selected
+			var entry_selected = false
+			for entry in criteria.table:
+				if entry.selected:
+					entry_selected = true
+			if entry_selected:
+				continue
+			#Assuming the iteration continues, pick a board location from the list and assign it to the current chunk
+			location_chunks[current_chunk_index].add_child(criteria.table.pick_random().scene.instantiate())
+			current_chunk_index += 1
+			if current_chunk_index == location_chunks.size():
+				break
+	#if all chunks are not filled after the criteria is satisfied, add random board locations to the remaining chunks
+	if current_chunk_index < location_chunks.size()-1:
+		var all_locations_table = load("res://Resources/Tables/Board Generation/criteria_all_locations.tres").table.duplicate()
+		for location in all_locations_table:
+			if location.selected:
+				all_locations_table.erase(location)
+		while current_chunk_index < location_chunks.size():
+			location_chunks[current_chunk_index].add_child(all_locations_table.pick_random().scene.instantiate())
+			current_chunk_index += 1
+			if current_chunk_index == location_chunks.size():
+				break
+		
+
+func generate_spaces():
+	var space_list = $Spaces.get_children()
 	var space_scene = preload("res://Scenes/Objects/space.tscn")
 	var space_positions = Array()
 	var space_dict := {}
@@ -62,6 +97,7 @@ func generate_spaces(space_list: Array):
 			new_space.add_to_group("Spaces")
 			new_space.position = space_pos
 			space_list.append(new_space)
+	return space_list
 
 func link_spaces(space_list: Array):
 	#link spaces together
@@ -133,9 +169,10 @@ func get_random_space():
 			return stack["resource"]
 
 func space_setup():
-	generate_spaces($Spaces.get_children())
-	link_spaces($Spaces.get_children())
-	for space in $Spaces.get_children():
+	#assemble_board_locations()
+	var space_list = generate_spaces()
+	link_spaces(space_list)
+	for space in space_list:
 		set_space_data(space)
 
 func player_setup(info_list):

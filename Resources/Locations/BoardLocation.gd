@@ -1,6 +1,7 @@
 extends Resource
 class_name BoardLocation
 
+@export var selected:bool = false
 @export var world:GameManager.WORLD
 @export var scene:PackedScene
 

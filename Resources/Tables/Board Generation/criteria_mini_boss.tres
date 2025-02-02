@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="dataTable" load_steps=2 format=3 uid="uid://l37ccb50v8aw"]
+
+[ext_resource type="Script" path="res://Resources/Tables/dataTable.gd" id="1_b34ux"]
+
+[resource]
+script = ExtResource("1_b34ux")
+table = Array[Resource]([])

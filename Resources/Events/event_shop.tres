@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="eventData" load_steps=4 format=3 uid="uid://ocoie2pwnpsy"]
+[gd_resource type="Resource" script_class="eventData" load_steps=5 format=3 uid="uid://ocoie2pwnpsy"]
 
 [ext_resource type="Script" path="res://Resources/Events/Actions/action_shop.gd" id="1_tfsnh"]
 [ext_resource type="Script" path="res://Resources/Events/eventData.gd" id="2_1oio1"]
+[ext_resource type="Texture2D" uid="uid://djfsfwym60ixo" path="res://Assets/Art/Spaces/shop_event.png" id="2_o5dbb"]
 
 [sub_resource type="Resource" id="Resource_bmuau"]
 script = ExtResource("1_tfsnh")
@@ -10,5 +11,6 @@ turn_count = 0
 [resource]
 script = ExtResource("2_1oio1")
 name = 10
-event_color = Color(1, 1, 1, 1)
+event_texture = ExtResource("2_o5dbb")
+event_color = Color(0.635294, 0.635294, 0.635294, 1)
 event_action = SubResource("Resource_bmuau")

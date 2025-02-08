@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="BoardLocation" load_steps=2 format=3 uid="uid://336tvhrwaevj"]
+
+[ext_resource type="Script" path="res://Resources/Locations/BoardLocation.gd" id="1_jllmg"]
+
+[resource]
+script = ExtResource("1_jllmg")
+selected = false
+world = 3

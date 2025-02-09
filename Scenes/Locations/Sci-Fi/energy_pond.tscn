@@ -61,7 +61,7 @@ size = Vector3(3, 0.2, 4)
 
 [node name="EnergyPond" type="Node3D"]
 
-[node name="Spaces" type="Node" parent="."]
+[node name="Spaces" type="Node3D" parent="."]
 
 [node name="space" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.267, 14)
@@ -197,7 +197,7 @@ mesh = SubResource("BoxMesh_gxluw")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.227379, -9.01605)
 mesh = SubResource("BoxMesh_ls2dt")
 
-[node name="Trees" type="Node" parent="."]
+[node name="Trees" type="Node3D" parent="."]
 
 [node name="Tree" type="MeshInstance3D" parent="Trees"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 1.21131, 13)

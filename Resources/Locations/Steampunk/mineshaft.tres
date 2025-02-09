@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BoardLocation" load_steps=3 format=3 uid="uid://dha722offtl0v"]
+
+[ext_resource type="PackedScene" uid="uid://dpool8tksxrdh" path="res://Scenes/Locations/Steampunk/mineshaft.tscn" id="1_34kth"]
+[ext_resource type="Script" path="res://Resources/Locations/BoardLocation.gd" id="2_t0s7l"]
+
+[resource]
+script = ExtResource("2_t0s7l")
+selected = false
+world = 1
+scene = ExtResource("1_34kth")

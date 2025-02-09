@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="BoardLocation" load_steps=2 format=3 uid="uid://dha722offtl0v"]
-
-[ext_resource type="Script" path="res://Resources/Locations/BoardLocation.gd" id="1_3h7fh"]
-
-[resource]
-script = ExtResource("1_3h7fh")
-selected = false
-world = 1

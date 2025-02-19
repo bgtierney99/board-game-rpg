@@ -1,6 +1,7 @@
 extends Control
 class_name InventorySlot
 
+const SLOT_SCENE:PackedScene = preload("res://Scenes/UI/Menus/inventory_slot.tscn")
 @onready var slot_type = null
 @onready var item_button = $ItemButton
 @onready var details_panel = $DetailsPanel
@@ -29,6 +30,10 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+static func new_slot() -> InventorySlot:
+	var new_slot:InventorySlot = SLOT_SCENE.instantiate()
+	return new_slot
 
 func _on_item_button_focus_entered():
 	close_usage_panel()

@@ -31,7 +31,7 @@ func _on_inventory_updated():
 		update_slot(current_inventory[i], inv_grid.get_child(i))
 
 func setup_slots(item, grid):
-	var slot = slot_scene.instantiate()
+	var slot = InventorySlot.new_slot()
 	slot.set_script(slot_script)
 	grid.add_child(slot)
 	slot.shop_scenario = shop_scenario

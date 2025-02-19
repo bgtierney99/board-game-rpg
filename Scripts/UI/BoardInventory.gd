@@ -32,7 +32,7 @@ func enter():
 	close.grab_focus()
 
 func setup_slots(item, grid):
-	var slot = slot_scene.instantiate()
+	var slot = InventorySlot.new_slot()
 	slot.set_script(slot_script)
 	grid.add_child(slot)
 	slot.pet_companion.connect(_on_pet_companion)

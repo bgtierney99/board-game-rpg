@@ -6,7 +6,6 @@ class_name InventoryMenu
 var move_slot
 var current_inventory
 var current_equipment
-var slot_scene = preload("res://Scenes/UI/Menus/inventory_slot.tscn")
 var slot_script = preload("res://Scripts/UI/InventorySlot.gd")
 var source_menu_state = "PlayerActions"
 
@@ -30,7 +29,7 @@ func enter():
 	close.grab_focus()
 
 func setup_slots(item, grid):
-	var slot = slot_scene.instantiate()
+	var slot = InventorySlot.new_slot()
 	slot.set_script(slot_script)
 	grid.add_child(slot)
 	slot.use_item.connect(_on_use_item)

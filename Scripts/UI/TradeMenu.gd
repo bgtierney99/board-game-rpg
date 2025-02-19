@@ -3,7 +3,6 @@ class_name TradeMenu
 
 var player_inventories = []
 @onready var grids:Array = $Grids.get_children()
-var slot_scene = preload("res://Scenes/UI/Menus/inventory_slot.tscn")
 #var slot_script = preload("res://Scripts/UI/InventorySlot.gd")
 var source_menu_state = "PlayerActions"
 var current_trade_index = 0
@@ -38,7 +37,7 @@ func enter():
 	grids[0].get_child(0).item_button.grab_focus()
 
 func setup_slot(item, grid):
-	var slot = slot_scene.instantiate()
+	var slot = InventorySlot.new_slot()
 	slot.size = slot.size/1.5
 	grid.add_child(slot)
 	slot.slot_type = null

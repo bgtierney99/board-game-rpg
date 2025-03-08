@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://fnd4ocn5rmes"]
 
-[ext_resource type="Script" path="res://Scripts/Objects/disk.gd" id="1_cnmue"]
+[ext_resource type="Script" uid="uid://bgtcup6w215eo" path="res://Scripts/Objects/disk.gd" id="1_cnmue"]
 [ext_resource type="PackedScene" uid="uid://c3a06b7aylud5" path="res://Assets/Art/Items/Models/disk.glb" id="2_3u3tt"]
 [ext_resource type="Material" uid="uid://nj26087cj34l" path="res://Resources/Materials/hologram.tres" id="2_uchq3"]
 [ext_resource type="PackedScene" uid="uid://6rvluknqcohs" path="res://Scenes/outline.tscn" id="3_ac8yi"]
@@ -257,8 +257,8 @@ tracks/9/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pxyhs"]
 _data = {
-"RESET": SubResource("Animation_8miq2"),
-"spin": SubResource("Animation_8qlgj")
+&"RESET": SubResource("Animation_8miq2"),
+&"spin": SubResource("Animation_8qlgj")
 }
 
 [node name="Disk" type="Node3D"]

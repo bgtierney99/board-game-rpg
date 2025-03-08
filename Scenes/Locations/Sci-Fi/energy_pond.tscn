@@ -1,9 +1,9 @@
 [gd_scene load_steps=21 format=3 uid="uid://du0sbcbi6hjwy"]
 
 [ext_resource type="PackedScene" uid="uid://b2ix4caw0f7y" path="res://Scenes/Objects/space.tscn" id="1_we3g0"]
-[ext_resource type="Script" path="res://Resources/Events/Actions/action_shop.gd" id="2_iyfa6"]
+[ext_resource type="Script" uid="uid://0yovp55fqmds" path="res://Resources/Events/Actions/action_shop.gd" id="2_iyfa6"]
 [ext_resource type="Resource" uid="uid://ocoie2pwnpsy" path="res://Resources/Events/event_shop.tres" id="3_pqi81"]
-[ext_resource type="Script" path="res://Resources/Events/Actions/action_fishing.gd" id="4_nyfkr"]
+[ext_resource type="Script" uid="uid://cjhqjrwg3g3cy" path="res://Resources/Events/Actions/action_fishing.gd" id="4_nyfkr"]
 [ext_resource type="Resource" uid="uid://cyjnf0aibbxcr" path="res://Resources/Events/event_fishing.tres" id="5_l2l7g"]
 
 [sub_resource type="Resource" id="Resource_cdojo"]

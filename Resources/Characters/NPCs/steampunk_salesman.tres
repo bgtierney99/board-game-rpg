@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://c6yb1181lr8j5"]
 
-[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_0ckt4"]
+[ext_resource type="Script" uid="uid://bmc5qvjxp3njc" path="res://Resources/Characters/characterInfo.gd" id="1_0ckt4"]
 [ext_resource type="PackedScene" uid="uid://um72qch2q3m0" path="res://Assets/Art/Characters/Models/steampunk_1.glb" id="1_vjxcf"]
 
 [resource]

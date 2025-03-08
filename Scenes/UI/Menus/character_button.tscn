@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://8mhsbkx3h0b2"]
 
-[ext_resource type="Script" path="res://Scripts/UI/CharacterButton.gd" id="1_2jln8"]
+[ext_resource type="Script" uid="uid://v6aq7ise132n" path="res://Scripts/UI/CharacterButton.gd" id="1_2jln8"]
 [ext_resource type="PackedScene" uid="uid://6rvluknqcohs" path="res://Scenes/outline.tscn" id="2_b680h"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7av7y"]

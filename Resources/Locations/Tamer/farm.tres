@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="BoardLocation" load_steps=2 format=3 uid="uid://cnss5a1gcb83b"]
 
-[ext_resource type="Script" path="res://Resources/Locations/BoardLocation.gd" id="1_560jh"]
+[ext_resource type="Script" uid="uid://0gtxjgq573fi" path="res://Resources/Locations/BoardLocation.gd" id="1_560jh"]
 
 [resource]
 script = ExtResource("1_560jh")

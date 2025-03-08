@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://cgfgglqhvknio"]
 
-[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_00mt5"]
+[ext_resource type="Script" uid="uid://bmc5qvjxp3njc" path="res://Resources/Characters/characterInfo.gd" id="1_00mt5"]
 [ext_resource type="PackedScene" uid="uid://dkbhhbk3jhqo7" path="res://Assets/Art/Characters/Models/sci-fi_4.glb" id="1_lt155"]
 
 [resource]

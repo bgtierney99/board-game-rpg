@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="eventData" load_steps=5 format=3 uid="uid://5u4xi3vryrcm"]
 
 [ext_resource type="Texture2D" uid="uid://ck1ujdbdtiur1" path="res://Assets/Art/Spaces/boss_event.png" id="1_huql0"]
-[ext_resource type="Script" path="res://Resources/Events/Actions/action_boss.gd" id="1_wj3r6"]
-[ext_resource type="Script" path="res://Resources/Events/eventData.gd" id="3_3jhlm"]
+[ext_resource type="Script" uid="uid://brfd2rvbise7y" path="res://Resources/Events/Actions/action_boss.gd" id="1_wj3r6"]
+[ext_resource type="Script" uid="uid://bxvfqlf6mdequ" path="res://Resources/Events/eventData.gd" id="3_3jhlm"]
 
 [sub_resource type="Resource" id="Resource_exv42"]
 script = ExtResource("1_wj3r6")

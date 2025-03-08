@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="dataTable" load_steps=4 format=3 uid="uid://c03dy7yvjtamn"]
 
-[ext_resource type="Script" path="res://Resources/Tables/dataTable.gd" id="1_jx6xu"]
+[ext_resource type="Script" uid="uid://bpu38p04v7blv" path="res://Resources/Tables/dataTable.gd" id="1_jx6xu"]
 [ext_resource type="Resource" uid="uid://c2u55riowynnx" path="res://Resources/Equipment/Companions/companion_1.tres" id="2_dwi51"]
 [ext_resource type="Resource" uid="uid://b2uhqmrxoqsxh" path="res://Resources/Equipment/Companions/companion_2.tres" id="3_bnuwn"]
 

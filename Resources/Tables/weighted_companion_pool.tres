@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="dataTable" load_steps=7 format=3 uid="uid://8yf1llb4nbr0"]
 
-[ext_resource type="Script" path="res://Resources/Tables/dataTable.gd" id="1_mm7oo"]
+[ext_resource type="Script" uid="uid://bpu38p04v7blv" path="res://Resources/Tables/dataTable.gd" id="1_mm7oo"]
 [ext_resource type="Resource" uid="uid://c2u55riowynnx" path="res://Resources/Equipment/Companions/companion_1.tres" id="2_iiglp"]
-[ext_resource type="Script" path="res://Resources/weightedStack.gd" id="3_ltfn3"]
+[ext_resource type="Script" uid="uid://beli5lhcoy4kx" path="res://Resources/weightedStack.gd" id="3_ltfn3"]
 [ext_resource type="Resource" uid="uid://b2uhqmrxoqsxh" path="res://Resources/Equipment/Companions/companion_2.tres" id="4_3fnp5"]
 
 [sub_resource type="Resource" id="Resource_0yswh"]

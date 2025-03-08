@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="eventData" load_steps=5 format=3 uid="uid://be7pn1alt2ps2"]
 
 [ext_resource type="Texture2D" uid="uid://c8j5tb3e8347u" path="res://Assets/Art/Spaces/prize_event.png" id="1_f5c8v"]
-[ext_resource type="Script" path="res://Resources/Events/Actions/action_prize.gd" id="1_gtpa3"]
-[ext_resource type="Script" path="res://Resources/Events/eventData.gd" id="3_2uxmt"]
+[ext_resource type="Script" uid="uid://m8uo8o8y7uh4" path="res://Resources/Events/Actions/action_prize.gd" id="1_gtpa3"]
+[ext_resource type="Script" uid="uid://bxvfqlf6mdequ" path="res://Resources/Events/eventData.gd" id="3_2uxmt"]
 
 [sub_resource type="Resource" id="Resource_o5gto"]
 script = ExtResource("1_gtpa3")

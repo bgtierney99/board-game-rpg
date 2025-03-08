@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bacfbgy8l2ccj"]
 
-[ext_resource type="Script" path="res://Scripts/UI/main.gd" id="1_5s0tp"]
+[ext_resource type="Script" uid="uid://cv5dbc6t58cvo" path="res://Scripts/UI/main.gd" id="1_5s0tp"]
 [ext_resource type="ButtonGroup" uid="uid://pyiy1iw2u8vn" path="res://Resources/button_group_num_characters.tres" id="2_ddsem"]
 [ext_resource type="ButtonGroup" uid="uid://cp3vdceiu2tot" path="res://Resources/button_group_num_players.tres" id="3_7d5nd"]
 

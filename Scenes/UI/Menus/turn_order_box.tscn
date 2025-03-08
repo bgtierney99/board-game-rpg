@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bujdwqi3mjtp6"]
 
-[ext_resource type="Script" path="res://Scripts/UI/turn_order_box.gd" id="1_sgd3l"]
+[ext_resource type="Script" uid="uid://d4eu2xcof6ngi" path="res://Scripts/UI/turn_order_box.gd" id="1_sgd3l"]
 
 [sub_resource type="Theme" id="Theme_2d64m"]
 default_font_size = 24

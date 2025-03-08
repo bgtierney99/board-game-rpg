@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b2ix4caw0f7y"]
 
-[ext_resource type="Script" path="res://Scripts/spaceProperties.gd" id="1_v5v1q"]
+[ext_resource type="Script" uid="uid://b42a7bbj8l8o3" path="res://Scripts/spaceProperties.gd" id="1_v5v1q"]
 [ext_resource type="PackedScene" uid="uid://dtpe4cp06jad" path="res://Assets/Models/space.glb" id="3_86cx7"]
 
 [node name="space" type="Node3D" groups=["Spaces"]]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://clauivk5prmhg"]
 
-[ext_resource type="Script" path="res://Scripts/UI/BattleRewardPopup.gd" id="1_f7l2b"]
+[ext_resource type="Script" uid="uid://diim8r8cy0t1y" path="res://Scripts/UI/BattleRewardPopup.gd" id="1_f7l2b"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_etdxw"]
 bg_color = Color(0.0862745, 0.196078, 0.282353, 1)

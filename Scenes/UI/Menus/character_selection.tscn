@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://nttyph56n83n"]
 
-[ext_resource type="Script" path="res://Scripts/UI/character_selection.gd" id="1_hwojv"]
+[ext_resource type="Script" uid="uid://b4ldl6jaja7pg" path="res://Scripts/UI/character_selection.gd" id="1_hwojv"]
 [ext_resource type="Resource" uid="uid://bxg8bmxdqwic0" path="res://Resources/Tables/player_table.tres" id="2_q5lj1"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_vpam5"]

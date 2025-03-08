@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://b8j8utw62dmcw"]
 
-[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_3fv37"]
+[ext_resource type="Script" uid="uid://bmc5qvjxp3njc" path="res://Resources/Characters/characterInfo.gd" id="1_3fv37"]
 [ext_resource type="PackedScene" uid="uid://bkutmerhnu7ub" path="res://Assets/Art/Characters/Models/the_controller.glb" id="1_84xhw"]
 
 [resource]

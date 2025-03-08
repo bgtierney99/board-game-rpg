@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="DiskEffect" load_steps=2 format=3 uid="uid://ckovv2mmc05ci"]
 
-[ext_resource type="Script" path="res://Resources/Equipment/Effects/DiskEffect.gd" id="1_vytfp"]
+[ext_resource type="Script" uid="uid://cp2g70pwkehuk" path="res://Resources/Equipment/Effects/DiskEffect.gd" id="1_vytfp"]
 
 [resource]
 script = ExtResource("1_vytfp")

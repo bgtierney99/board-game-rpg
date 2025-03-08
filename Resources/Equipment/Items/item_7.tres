@@ -2,7 +2,7 @@
 
 [ext_resource type="Resource" uid="uid://ckovv2mmc05ci" path="res://Resources/Equipment/Effects/effect_1-2-3_disk.tres" id="1_u8xg3"]
 [ext_resource type="PackedScene" uid="uid://fnd4ocn5rmes" path="res://Scenes/Objects/Items/disk.tscn" id="2_71tp6"]
-[ext_resource type="Script" path="res://Resources/Equipment/lootData.gd" id="3_048lh"]
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="3_048lh"]
 
 [resource]
 script = ExtResource("3_048lh")

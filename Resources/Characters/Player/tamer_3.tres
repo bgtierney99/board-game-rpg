@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://lda1xgem6xm7"]
 
-[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_iquue"]
+[ext_resource type="Script" uid="uid://bmc5qvjxp3njc" path="res://Resources/Characters/characterInfo.gd" id="1_iquue"]
 [ext_resource type="PackedScene" uid="uid://bcqmxyywa8j6a" path="res://Assets/Art/Characters/Models/tamer_3.glb" id="1_j2ok4"]
 
 [resource]

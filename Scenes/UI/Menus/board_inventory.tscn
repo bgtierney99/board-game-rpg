@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dd3n172t202si"]
 
 [ext_resource type="PackedScene" uid="uid://cmi3hmo3lw3mg" path="res://Scenes/UI/Menus/inventory_menu.tscn" id="1_swbx2"]
-[ext_resource type="Script" path="res://Scripts/UI/BoardInventory.gd" id="2_558e3"]
+[ext_resource type="Script" uid="uid://kem3tx8fomto" path="res://Scripts/UI/BoardInventory.gd" id="2_558e3"]
 
 [node name="BoardInventory" instance=ExtResource("1_swbx2")]
 script = ExtResource("2_558e3")

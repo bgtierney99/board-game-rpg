@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://crhvc6i7vrnne"]
 
 [ext_resource type="PackedScene" uid="uid://brfccnp0aq1kn" path="res://Assets/Art/Characters/Models/sci-fi_3.glb" id="1_07o08"]
-[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_p1ypn"]
+[ext_resource type="Script" uid="uid://bmc5qvjxp3njc" path="res://Resources/Characters/characterInfo.gd" id="1_p1ypn"]
 
 [resource]
 script = ExtResource("1_p1ypn")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c5ari1g22sgbn"]
 
-[ext_resource type="Script" path="res://Scripts/UI/BattleMenu.gd" id="1_2k7ho"]
+[ext_resource type="Script" uid="uid://dyuap6y77btwt" path="res://Scripts/UI/BattleMenu.gd" id="1_2k7ho"]
 [ext_resource type="PackedScene" uid="uid://clauivk5prmhg" path="res://Scenes/UI/Menus/battle_reward_popup.tscn" id="2_onp7g"]
 
 [node name="BattleMenu" type="Control"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dwtwenrkfh6u0"]
+[gd_scene load_steps=7 format=3 uid="uid://dwtwenrkfh6u0"]
 
-[ext_resource type="Script" path="res://Scripts/shop.gd" id="1_k0yqh"]
-[ext_resource type="Script" path="res://Scripts/Components/InventoryComponent.gd" id="2_iw05e"]
+[ext_resource type="Script" uid="uid://xskxkjsoi185" path="res://Scripts/shop.gd" id="1_k0yqh"]
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="2_i8amy"]
+[ext_resource type="Script" uid="uid://cynhcd3qbkhou" path="res://Scripts/Components/InventoryComponent.gd" id="2_iw05e"]
 [ext_resource type="PackedScene" uid="uid://bnib74k2p56m6" path="res://Scenes/Characters/character.tscn" id="3_2h6sf"]
 [ext_resource type="Resource" uid="uid://ds7vr0wscrxqf" path="res://Resources/Characters/NPCs/sci-fi_salesman.tres" id="4_60w2h"]
 
@@ -9,7 +10,7 @@
 
 [node name="Shop" type="Node3D" node_paths=PackedStringArray("InventoryManager")]
 script = ExtResource("1_k0yqh")
-shop_inventory = Array[Resource("res://Resources/Equipment/lootData.gd")]([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
+shop_inventory = Array[ExtResource("2_i8amy")]([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
 InventoryManager = NodePath("InventoryComponent")
 
 [node name="InventoryComponent" type="Node" parent="."]

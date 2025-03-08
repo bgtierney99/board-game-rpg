@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=3 uid="uid://bnib74k2p56m6"]
 
-[ext_resource type="Script" path="res://Scripts/CharacterActions.gd" id="1_734ht"]
+[ext_resource type="Script" uid="uid://2foxbibpwwjw" path="res://Scripts/CharacterActions.gd" id="1_734ht"]
 [ext_resource type="PackedScene" uid="uid://dg0xwa74lbpeu" path="res://Scenes/outline_camera.tscn" id="2_1x4eq"]
 [ext_resource type="PackedScene" uid="uid://8858ltyflkui" path="res://Scenes/UI/Menus/health_bar.tscn" id="2_vrdfj"]
-[ext_resource type="Script" path="res://Scripts/Components/HealthComponent.gd" id="3_gokeo"]
-[ext_resource type="Script" path="res://Scripts/Components/InventoryComponent.gd" id="4_7pb7b"]
-[ext_resource type="Script" path="res://Scripts/Components/Input/EnemyInputComponent.gd" id="6_skofx"]
+[ext_resource type="Script" uid="uid://b7ormlypp8dsk" path="res://Scripts/Components/HealthComponent.gd" id="3_gokeo"]
+[ext_resource type="Script" uid="uid://cynhcd3qbkhou" path="res://Scripts/Components/InventoryComponent.gd" id="4_7pb7b"]
+[ext_resource type="Script" uid="uid://xmyyla6lju2i" path="res://Scripts/Components/Input/EnemyInputComponent.gd" id="6_skofx"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_ok47i"]
 viewport_path = NodePath("SubViewport")

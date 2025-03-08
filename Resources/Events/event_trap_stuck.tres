@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="eventData" load_steps=5 format=3 uid="uid://bdtr78wr0bc3y"]
 
-[ext_resource type="Script" path="res://Resources/Events/Actions/action_trap_stuck.gd" id="1_5h2ri"]
-[ext_resource type="Script" path="res://Resources/Events/eventData.gd" id="1_bxlpp"]
+[ext_resource type="Script" uid="uid://fsi83j6d3pvl" path="res://Resources/Events/Actions/action_trap_stuck.gd" id="1_5h2ri"]
+[ext_resource type="Script" uid="uid://bxvfqlf6mdequ" path="res://Resources/Events/eventData.gd" id="1_bxlpp"]
 [ext_resource type="Texture2D" uid="uid://dpd37avg60s0x" path="res://Assets/Art/Spaces/trap_stuck_event.png" id="2_cxwfx"]
 
 [sub_resource type="Resource" id="Resource_pde6m"]

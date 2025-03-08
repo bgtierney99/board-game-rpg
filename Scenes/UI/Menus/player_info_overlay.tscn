@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cac1a31c0rtw6"]
 
-[ext_resource type="Script" path="res://Scripts/UI/PlayerInfo.gd" id="1_yltif"]
+[ext_resource type="Script" uid="uid://cdkyg3k4pefvo" path="res://Scripts/UI/PlayerInfo.gd" id="1_yltif"]
 [ext_resource type="PackedScene" uid="uid://8858ltyflkui" path="res://Scenes/UI/Menus/health_bar.tscn" id="2_sffw4"]
 
 [node name="PlayerInfo" type="Control"]

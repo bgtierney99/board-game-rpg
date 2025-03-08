@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="dataTable" load_steps=6 format=3 uid="uid://cebjl1on8ydf6"]
 
-[ext_resource type="Script" path="res://Resources/Tables/dataTable.gd" id="1_rgu4t"]
+[ext_resource type="Script" uid="uid://bpu38p04v7blv" path="res://Resources/Tables/dataTable.gd" id="1_rgu4t"]
 [ext_resource type="Resource" uid="uid://clyw5sylht184" path="res://Resources/Tables/Board Generation/criteria_expedition.tres" id="2_7xy37"]
 [ext_resource type="Resource" uid="uid://bbgjlarg4sn0" path="res://Resources/Tables/Board Generation/criteria_fishing.tres" id="3_dxys5"]
 [ext_resource type="Resource" uid="uid://l37ccb50v8aw" path="res://Resources/Tables/Board Generation/criteria_mini_boss.tres" id="8_qw738"]

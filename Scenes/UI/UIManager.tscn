@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://ciktxmx1fkm0u"]
 
-[ext_resource type="Script" path="res://Scripts/UI/UIManager.gd" id="1_fq3dt"]
+[ext_resource type="Script" uid="uid://dik2yblf1kyhi" path="res://Scripts/UI/UIManager.gd" id="1_fq3dt"]
 [ext_resource type="PackedScene" uid="uid://811w67a8hcbu" path="res://Scenes/UI/Menus/roll_test_buttons.tscn" id="1_r31u8"]
 [ext_resource type="PackedScene" uid="uid://c4gd0v4dt2fcg" path="res://Scenes/UI/Menus/player_actions.tscn" id="4_2k11b"]
 [ext_resource type="PackedScene" uid="uid://cd065pfp6wm0s" path="res://Scenes/UI/Menus/roll_menu.tscn" id="6_f4j2b"]
@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c5ari1g22sgbn" path="res://Scenes/UI/Menus/battle_menu.tscn" id="7_6si26"]
 [ext_resource type="PackedScene" uid="uid://u86wlwm1f20a" path="res://Scenes/UI/Menus/dialogue_box.tscn" id="7_qltn2"]
 [ext_resource type="PackedScene" uid="uid://dvav61066tt7k" path="res://Scenes/UI/Menus/battle_inventory.tscn" id="8_7lxdt"]
-[ext_resource type="Script" path="res://Scripts/UI/BattleInventory.gd" id="8_ky5cx"]
+[ext_resource type="Script" uid="uid://7a3ohj1vos72" path="res://Scripts/UI/BattleInventory.gd" id="8_ky5cx"]
 [ext_resource type="PackedScene" uid="uid://cnkbjhsfhwgug" path="res://Scenes/UI/Menus/trade_menu.tscn" id="9_uv6gl"]
 [ext_resource type="PackedScene" uid="uid://btbvmq6edn1g0" path="res://Scenes/UI/Menus/shop_inventory.tscn" id="10_j58it"]
 [ext_resource type="PackedScene" uid="uid://cq0jx3o3ugy72" path="res://Scenes/UI/Menus/map_menu.tscn" id="10_vaxsu"]

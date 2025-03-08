@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://811w67a8hcbu"]
 
-[ext_resource type="Script" path="res://Scripts/UI/roll_test_buttons.gd" id="1_l43f3"]
+[ext_resource type="Script" uid="uid://blnw4cdu0wfim" path="res://Scripts/UI/roll_test_buttons.gd" id="1_l43f3"]
 
 [node name="Roll Test" type="Control"]
 layout_mode = 3

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cnkbjhsfhwgug"]
 
-[ext_resource type="Script" path="res://Scripts/UI/TradeMenu.gd" id="1_4mrdo"]
+[ext_resource type="Script" uid="uid://2cirame8ixta" path="res://Scripts/UI/TradeMenu.gd" id="1_4mrdo"]
 [ext_resource type="PackedScene" uid="uid://c4srwnr6xsx1c" path="res://Scenes/UI/Menus/inventory_slot.tscn" id="2_0365e"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_40m2b"]

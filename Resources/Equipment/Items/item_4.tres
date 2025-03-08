@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="lootData" load_steps=3 format=3 uid="uid://eyjvdjd5btmv"]
 
 [ext_resource type="PackedScene" uid="uid://dd403ta6kapmm" path="res://Scenes/Objects/Items/pillow_armor.tscn" id="1_0xig0"]
-[ext_resource type="Script" path="res://Resources/Equipment/lootData.gd" id="1_5rcal"]
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_5rcal"]
 
 [resource]
 script = ExtResource("1_5rcal")

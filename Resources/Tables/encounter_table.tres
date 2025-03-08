@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="dataTable" load_steps=3 format=3 uid="uid://b37xbpcwtr2rp"]
 
-[ext_resource type="Script" path="res://Resources/Tables/dataTable.gd" id="1_rihn0"]
+[ext_resource type="Script" uid="uid://bpu38p04v7blv" path="res://Resources/Tables/dataTable.gd" id="1_rihn0"]
 [ext_resource type="Resource" uid="uid://dg0tnbyiyx3sh" path="res://Resources/Characters/Enemies/legfish.tres" id="2_5mcae"]
 
 [resource]

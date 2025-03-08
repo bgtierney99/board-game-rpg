@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CharacterInfo" load_steps=3 format=3 uid="uid://v6hj01ks4rmq"]
 
 [ext_resource type="PackedScene" uid="uid://cmi28unp4ey8f" path="res://Assets/Art/Characters/Models/steampunk_2.glb" id="1_frkws"]
-[ext_resource type="Script" path="res://Resources/Characters/characterInfo.gd" id="1_tnjvw"]
+[ext_resource type="Script" uid="uid://bmc5qvjxp3njc" path="res://Resources/Characters/characterInfo.gd" id="1_tnjvw"]
 
 [resource]
 script = ExtResource("1_tnjvw")

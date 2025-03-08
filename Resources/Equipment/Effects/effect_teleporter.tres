@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="TeleportEffect" load_steps=3 format=3 uid="uid://c3pwjqemhqqx6"]
 
-[ext_resource type="Script" path="res://Resources/Equipment/Effects/TeleportEffect.gd" id="1_4xv3f"]
+[ext_resource type="Script" uid="uid://bbnskimckbwee" path="res://Resources/Equipment/Effects/TeleportEffect.gd" id="1_4xv3f"]
 [ext_resource type="Resource" uid="uid://b2vssap0pvvl1" path="res://Resources/Events/event_checkpoint.tres" id="2_3a8tc"]
 
 [resource]

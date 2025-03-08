@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="dataTable" load_steps=18 format=3 uid="uid://bxg8bmxdqwic0"]
 
-[ext_resource type="Script" path="res://Resources/Tables/dataTable.gd" id="1_i1ydy"]
+[ext_resource type="Script" uid="uid://bpu38p04v7blv" path="res://Resources/Tables/dataTable.gd" id="1_i1ydy"]
 [ext_resource type="Resource" uid="uid://d0hw2b35hg5k4" path="res://Resources/Characters/Player/steampunk_1.tres" id="2_2mohj"]
 [ext_resource type="Resource" uid="uid://v6hj01ks4rmq" path="res://Resources/Characters/Player/steampunk_2.tres" id="3_uys7m"]
 [ext_resource type="Resource" uid="uid://dfwkwehat20gj" path="res://Resources/Characters/Player/steampunk_3.tres" id="4_hx2ms"]

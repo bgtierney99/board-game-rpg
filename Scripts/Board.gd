@@ -14,7 +14,7 @@ var current_round = 1
 @onready var event_pool = GameManager.get_table("weighted_event_pool").table.duplicate()
 
 var all_spaces:Array
-var boardData:Dictionary
+var boardData:Dictionary[String, Dictionary]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

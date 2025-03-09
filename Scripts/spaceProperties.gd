@@ -3,7 +3,7 @@ class_name BoardSpace
 
 @onready var points = $Points
 
-@export var adjacent_spaces: Dictionary = {"Forward": null, "Back": null, "Left": null, "Right": null}
+@export var adjacent_spaces: Dictionary[String, BoardSpace] = {"Forward": null, "Back": null, "Left": null, "Right": null}
 @export var ActionManager:EventAction
 @export var event_data: eventData:
 	set(value):

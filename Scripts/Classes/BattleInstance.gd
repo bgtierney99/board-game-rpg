@@ -9,7 +9,7 @@ var battler_list:Array
 var extra_turns: Array
 var full_set: Array
 var loser_list:Array
-var battle_points: Dictionary
+var battle_points: Dictionary[GameCharacter, int]
 var battle_over = false
 var current_state
 var prize_pool:Array = Array()

@@ -7,7 +7,7 @@ class_name GameCharacter
 @export var dialogue_key:String
 var money = 0
 var equipment := {"Holdable": null, "Wearable": null, "Companion": null, "Consumable": null}
-var final_stats: Dictionary
+var final_stats: Dictionary[String, int]
 var in_battle:bool = false
 var is_dead:bool = false
 var turn_count = 0

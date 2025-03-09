@@ -3,7 +3,7 @@ class_name EnemyInputComponent
 
 var action_seconds: float = 0.2
 var goal_space
-var space_weights:Dictionary = {}
+var space_weights:Dictionary[BoardSpace, int] = {}
 var go_for_boss = false
 
 func _ready():

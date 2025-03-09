@@ -422,7 +422,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -12)
 [node name="Circle" parent="Spaces/space4/model" index="0"]
 mesh = SubResource("ArrayMesh_4tuqh")
 
-[node name="space5" parent="Spaces" instance=ExtResource("1_d0x1m")]
+[node name="space5" parent="Spaces" node_paths=PackedStringArray("adjacent_spaces") instance=ExtResource("1_d0x1m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -12)
 adjacent_spaces = {}
 

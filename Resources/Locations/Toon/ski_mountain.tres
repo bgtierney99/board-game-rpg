@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="BoardLocation" load_steps=2 format=3 uid="uid://336tvhrwaevj"]
+[gd_resource type="Resource" script_class="BoardLocation" load_steps=3 format=3 uid="uid://336tvhrwaevj"]
 
 [ext_resource type="Script" uid="uid://0gtxjgq573fi" path="res://Resources/Locations/BoardLocation.gd" id="1_jllmg"]
+[ext_resource type="PackedScene" uid="uid://tmnhdfjorkva" path="res://Scenes/Locations/Toon/ski_mountain.tscn" id="1_x0xe1"]
 
 [resource]
 script = ExtResource("1_jllmg")
 selected = false
 world = 3
+scene = ExtResource("1_x0xe1")

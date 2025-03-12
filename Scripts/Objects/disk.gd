@@ -19,14 +19,15 @@ func spin(min=min_num, max=max_num):
 	max_num = clampi(max, min, 999)
 	min_num = clampi(min, 1, max)
 	randomize()
+	var variance_num = randi_range(1, 3)
 	$model.global_rotation = Vector3.ZERO
-	var new_rot = Vector3(0, 0, deg_to_rad(randi_range(1, 3)*360))
+	var new_rot = Vector3(0, 0, deg_to_rad(variance_num*360))
 	var old_pos = $model.global_position
-	var new_pos = old_pos+Vector3(0, randi_range(1, 3)*0.3, 0)
+	var new_pos = old_pos+Vector3(0, variance_num*0.3, 0)
 	var tween = get_tree().create_tween().set_parallel(true)
-	tween.tween_property($model, "rotation", new_rot, 0.5)
-	tween.tween_property($model, "global_position", new_pos, 0.25)
-	tween.chain().tween_property($model, "global_position", old_pos, 0.25)
+	tween.tween_property($model, "rotation", new_rot, 0.25*variance_num)
+	tween.tween_property($model, "global_position", new_pos, 0.125*variance_num)
+	tween.chain().tween_property($model, "global_position", old_pos, 0.125*variance_num)
 	await tween.finished
 	$AnimationPlayer.play("spin")
 

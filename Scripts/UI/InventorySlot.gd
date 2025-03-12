@@ -36,7 +36,7 @@ static func new_slot() -> InventorySlot:
 	return new_slot
 
 func _on_item_button_focus_entered():
-	close_usage_panel()
+	usage_panel.visible = false
 	if item:
 		details_panel.visible = true
 
@@ -44,14 +44,15 @@ func open_usage_panel():
 	if item:
 		usage_panel.visible = true
 		vbox_container.get_children().back().grab_focus()
-
-func close_usage_panel():
-	usage_panel.visible = false
-	item_button.grab_focus()
+		vbox_container.get_child(0).focus_neighbor_top = vbox_container.get_children().back().get_path()
+		vbox_container.get_children().back().focus_neighbor_bottom = vbox_container.get_child(0).get_path()
+		#item_button.focus_mode = FOCUS_NONE
 
 func _on_item_button_focus_exited():
 	if get_viewport().gui_get_focus_owner() != null:
+		print("There's a focus!")
 		if get_viewport().gui_get_focus_owner().get_parent() != vbox_container:
+			print("Parent is not %s: %s"%[vbox_container, get_viewport().gui_get_focus_owner().get_parent()])
 			usage_panel.visible = false
 	details_panel.visible = false
 
@@ -114,9 +115,17 @@ func add_usage_button(text: String, button_signal: Signal):
 	var button = Button.new()
 	button.custom_minimum_size = Vector2(0, 32)
 	button.text = text
-	button.focus_previous = get_path_to(item_button)
 	button.pressed.connect(select_option.bind(button_signal))
 	vbox_container.add_child(button)
+	button.focus_previous = get_path_to(item_button)
+	button.focus_neighbor_left = vbox_container.get_child(0).get_path()
+	button.focus_neighbor_right = vbox_container.get_children().back().get_path()
+	if vbox_container.get_child_count() > 1:
+		var button_index = vbox_container.get_children().find(button)
+		var prev_button:Button = vbox_container.get_child(button_index-1)
+		button.focus_neighbor_top = prev_button.get_path()
+		prev_button.focus_neighbor_bottom = button.get_path()
+	
 	
 func button_action(function, parameters):
 	var callable = Callable(self, function)
@@ -134,4 +143,5 @@ func _on_discard_button_pressed():
 
 func select_option(button_signal:Signal):
 	button_signal.emit(self)
+	item_button.focus_mode = FOCUS_ALL
 	item_button.grab_focus()

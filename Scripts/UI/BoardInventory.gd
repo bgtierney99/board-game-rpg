@@ -49,7 +49,7 @@ func setup_slots(item, grid):
 		slot.set_empty()
 
 func _on_pet_companion(slot):
-	print("%s gave %s some pets. %s enjoyed that."%GameManager.current_player.name, slot.item.name, slot.item.name)
+	print("%s gave %s some pets. %s enjoyed that."%[GameManager.current_player.name, slot.item.name, slot.item.name])
 	#TODO: replace this print statement with a pet animation from the player and a reaction animation from the companion
 
 func _on_unequip_item(e_slot):

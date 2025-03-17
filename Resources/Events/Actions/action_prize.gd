@@ -18,7 +18,6 @@ func action(player:GameCharacter):
 			GameManager.rotate_player_toward_target(player, container.global_position)
 			var new_items = container.open()
 			await GameManager.continue_game
-			reset_event.emit()
 			if new_items.is_empty():
 				var rand_chance = randf()
 				#percentage chance that empty containers damage the player

@@ -21,7 +21,6 @@ func action(player:GameCharacter):
 	enemy.money = enemy.info.money
 	space.add_child(enemy)
 	enemy.global_position = space.global_position+Vector3(0, 0, -1)
-	reset_event.emit()
 	GameManager.rotate_player_toward_target(player, enemy.position)
 	var battler_list = [enemy]
 	battler_list.append_array(space.occupants)

@@ -135,7 +135,6 @@ func set_space_data(space: BoardSpace):
 				var item_list = set_prizes()
 				#create a container to put the contents into
 				space.ActionManager.setup_container(item_list)
-	
 	space.set_event_data()
 	GameManager.set_spawnpoint.connect(set_spawn)
 	space.occupants_changed.connect(position_players.bind(space))
@@ -401,7 +400,6 @@ func do_round(round_num):
 
 func spin_disk(min, max):
 	max = clampi(max+current_player.get_speed_offset(), 1, 999)
-	#min = 1
 	#max = 1
 	await $Disk.spin(min, max)
 
@@ -436,7 +434,7 @@ func set_grave_space(player):
 				print("Container is owned by ", child.loot_owner)
 		var grave_inventory = GameManager.unique_copy(player.InventoryManager.inventory)
 		grave_inventory.append_array(player.equipment.values())
-		grave_space.setup_container(grave_inventory)
+		grave_space.ActionManager.setup_container(grave_inventory)
 		player.InventoryManager.clear()
 		for key in player.equipment.keys():
 			player.equipment[key] = null

@@ -1,8 +1,6 @@
 extends Resource
 class_name eventData
 
-signal reset_event
-
 var player:GameCharacter
 var space:BoardSpace
 

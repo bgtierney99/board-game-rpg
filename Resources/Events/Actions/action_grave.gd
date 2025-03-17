@@ -17,4 +17,3 @@ func action(player:GameCharacter):
 	var inventory_manager = player.InventoryManager
 	inventory_manager.add_items(new_items)
 	GameManager.add_points(player.name, "graves_robbed")
-	reset_event.emit()

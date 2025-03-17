@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b2ix4caw0f7y" path="res://Scenes/Objects/space.tscn" id="1_d0x1m"]
 [ext_resource type="Script" uid="uid://b4widvab7we44" path="res://Scripts/Board.gd" id="1_r8ymi"]
-[ext_resource type="Resource" uid="uid://x5vxlmvg8ljv" path="res://Resources/Events/event_companion.tres" id="2_bb5wj"]
+[ext_resource type="Resource" uid="uid://dasu23qqhlh0c" path="res://Resources/Events/event_encounter.tres" id="2_bb5wj"]
 [ext_resource type="Resource" uid="uid://bixddetwuif4r" path="res://Resources/Equipment/Items/item_1.tres" id="2_glwe7"]
 [ext_resource type="Resource" uid="uid://chc8ymoglxufa" path="res://Resources/Equipment/Items/item_2.tres" id="4_ayiji"]
 [ext_resource type="PackedScene" uid="uid://fnd4ocn5rmes" path="res://Scenes/Objects/Items/disk.tscn" id="4_h8i5x"]
@@ -38,6 +38,7 @@ size = Vector3(1, 1, 0.2)
 [sub_resource type="Resource" id="Resource_j50v2"]
 script = ExtResource("23_fpxf7")
 turn_count = 0
+single_use = false
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pxril"]
 

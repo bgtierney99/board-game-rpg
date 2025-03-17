@@ -20,7 +20,6 @@ func action(player:GameCharacter):
 	var response = await DialogueManager.option_selected
 	match response:
 		"tame":
-			reset_event.emit()
 			var companion = companion_data
 			if not companion:
 				companion = get_random_companion()

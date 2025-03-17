@@ -7,6 +7,7 @@
 [sub_resource type="Resource" id="Resource_o5gto"]
 script = ExtResource("1_gtpa3")
 turn_count = 0
+single_use = true
 
 [resource]
 script = ExtResource("3_2uxmt")

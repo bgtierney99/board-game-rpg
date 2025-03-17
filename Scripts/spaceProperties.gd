@@ -21,19 +21,13 @@ func _ready():
 	$DirectionControl.visible = false
 	get_node("model").get_node("Circle").get_mesh().resource_local_to_scene = true
 	set_event_data()
-	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
-	pass
 
 func set_event_data():
 	if get_child_count() > 0 and event_data:
-		if event_data.event_action and not ActionManager:
+		#if event_data.event_action and not ActionManager:
+		if event_data.event_action:
 			ActionManager = event_data.event_action.duplicate()
 			ActionManager.space = self
-			ActionManager.reset_event.connect(reset_event)
-		#event_data.space = self
-		#event_data.Actionreset_event.connect(reset_event)
 		get_node("event_image").texture = event_data.event_texture
 		var material = StandardMaterial3D.new()
 		material.albedo_color = event_data.event_color
@@ -119,3 +113,6 @@ func event():
 			trigger_player.turn_count -= 1
 		else:
 			trigger_player.turn_count = ActionManager.turn_count
+		#if they're still not waiting and it's a one-time action, reset it
+		if trigger_player.turn_count == 0 and ActionManager.single_use:
+			reset_event()

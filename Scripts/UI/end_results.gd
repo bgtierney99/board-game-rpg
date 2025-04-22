@@ -7,6 +7,7 @@ var player_results_scene = load("res://Scenes/UI/Menus/player_results.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	show_player_info()
+	GameManager.scene_loaded.emit()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

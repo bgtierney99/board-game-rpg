@@ -17,6 +17,7 @@ func _ready():
 	num_characters_group.get_buttons()[GameManager.num_characters-1].button_pressed = true
 	go.grab_focus()
 	num_players_group.get_buttons()[GameManager.num_players].button_pressed = true
+	GameManager.scene_loaded.emit()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -50,4 +51,4 @@ func setNumPlayers(button):
 
 func _on_go_pressed():
 	randomize()
-	get_tree().change_scene_to_file("res://Scenes/UI/Menus/character_selection.tscn")
+	await GameManager.change_scene("res://Scenes/UI/Menus/character_selection.tscn")

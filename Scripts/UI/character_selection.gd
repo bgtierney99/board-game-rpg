@@ -34,13 +34,9 @@ func _ready():
 	button.pressed.connect(random_selection.bind(button))
 	button.focus_next = get_path_to(confirm_button)
 	grid.add_child(button)
-	
 	grid.get_children().back().grab_focus()
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+	GameManager.scene_loaded.emit()
+	print("Character select loaded")
 
 func random_selection(character_button):
 	character_image.texture = random_image
@@ -107,7 +103,7 @@ func _on_confirm_pressed():
 				if p.name == "Random":
 					p = pick_random_character()
 				GameManager.player_data.append(p.character_info)
-			get_tree().change_scene_to_file("res://Scenes/board.tscn")
+			GameManager.change_scene("res://Scenes/board.tscn")
 		else:
 			current_player += 1
 			move_selection()
@@ -120,7 +116,7 @@ func _on_back_pressed():
 		set_selection(null)
 	else:
 		if current_player == 0:
-			get_tree().change_scene_to_file("res://Scenes/main.tscn")
+			GameManager.change_scene("res://Scenes/main.tscn")
 			return
 		current_player -= 1
 		player_list[current_player].selected = false

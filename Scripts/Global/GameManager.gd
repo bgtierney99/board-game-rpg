@@ -8,6 +8,7 @@ signal send_num_result(value)
 signal set_spawnpoint(player)
 signal respawn_player(player)
 signal continue_game
+signal scene_loaded
 
 #player action signals
 signal action_done
@@ -58,4 +59,17 @@ func calc_damage(attack_stat, defense_stat, damage_roll):
 
 func win_game():
 	#transition to the points reward screen
-	get_tree().change_scene_to_file("res://Scenes/UI/Menus/end_results.tscn")
+	change_scene("res://Scenes/UI/Menus/end_results.tscn")
+
+func change_scene(new_scene:String):
+	if not new_scene.contains(".tscn"):
+		print("Not a valid scene file!")
+		return
+	var loading_screen = load("res://Scenes/UI/Menus/loading_screen.tscn").instantiate()
+	add_child(loading_screen)
+	await get_tree().create_timer(0.1).timeout
+	get_tree().change_scene_to_file(new_scene)
+	await scene_loaded
+	remove_child(loading_screen)
+	loading_screen.queue_free()
+	print("Loading screen gone")

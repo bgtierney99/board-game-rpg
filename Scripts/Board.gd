@@ -31,7 +31,8 @@ func _ready():
 	GameManager.send_num_result.connect(manage_result)
 	GameManager.respawn_player.connect(respawn)
 	#setup players
-	player_setup(GameManager.player_data)
+	await player_setup(GameManager.player_data)
+	GameManager.scene_loaded.emit()
 
 func assemble_board_locations():
 	var criteria_table_settings = load("res://Resources/Tables/Board Generation/board_gen_criteria.tres").table
@@ -206,8 +207,6 @@ func player_setup(info_list):
 	$PlayerInfo.init_info()
 	$PlayerInfo.setup_boss_health(boss)
 	main_camera.make_current()
-	await move_camera(boss)
-	await DialogueManager.run_dialogue("intro_speech_boss")
 	do_round(1)
 
 func move_camera(subject):
@@ -394,6 +393,9 @@ func do_round(round_num):
 	round_text.visible = false
 	#Some kind of logic keeping track of reaching specific turns can go here
 	match round_num:
+		1:
+			await move_camera(get_tree().get_nodes_in_group("Boss")[0])
+			await DialogueManager.run_dialogue("intro_speech_boss")
 		7:
 			print("Round 7 reached!")
 	start_turn(current_player)

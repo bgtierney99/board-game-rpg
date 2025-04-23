@@ -24,8 +24,8 @@ var player_list:Array[GameCharacter] = []
 var current_player:GameCharacter = null
 var current_space:BoardSpace = null
 var space_check_subject:GameCharacter = null
-var point_rewards = load("res://Resources/point_rewards.tres")
 var player_points = {}
+var point_rewards = load("res://Resources/point_rewards.tres")
 enum WORLD {SCIFI, STEAMPUNK, TAMER, TOON, BOARD}
 
 func unique_copy(arr: Array):
@@ -57,6 +57,12 @@ func calc_damage(attack_stat, defense_stat, damage_roll):
 	var percent_calc:float = float((damage_roll-1)/5.5)
 	return round(percent_calc*attack_stat*defense_calc)
 
+func reset_to_main():
+	print("Resetting game.")
+	UIManager._on_reset_state()
+	await GameManager.change_scene("res://Scenes/main.tscn")
+	get_tree().reload_current_scene()
+
 func win_game():
 	#transition to the points reward screen
 	change_scene("res://Scenes/UI/Menus/end_results.tscn")
@@ -72,4 +78,3 @@ func change_scene(new_scene:String):
 	await scene_loaded
 	remove_child(loading_screen)
 	loading_screen.queue_free()
-	print("Loading screen gone")

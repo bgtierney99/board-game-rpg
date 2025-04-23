@@ -14,6 +14,10 @@ func _process(delta):
 func enter():
 	visible = true
 	$Move.grab_focus()
+	
+func Input_Event(event):
+	if event.is_action_pressed("ui_cancel"):
+		UIManager.change_state("PauseMenu")
 
 func _on_move_pressed():
 	move_to_num.emit()

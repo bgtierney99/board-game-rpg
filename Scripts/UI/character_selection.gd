@@ -36,7 +36,6 @@ func _ready():
 	grid.add_child(button)
 	grid.get_children().back().grab_focus()
 	GameManager.scene_loaded.emit()
-	print("Character select loaded")
 
 func random_selection(character_button):
 	character_image.texture = random_image

@@ -6,4 +6,3 @@ func action(player:GameCharacter):
 	await player.HPManager.take_damage(damage)
 	if not player.is_dead:
 		await DialogueManager.run_dialogue("trap_damage_reaction")
-

@@ -1,8 +1,7 @@
-[gd_scene load_steps=45 format=4 uid="uid://bwqe4q4ogy3t1"]
+[gd_scene load_steps=44 format=4 uid="uid://bwqe4q4ogy3t1"]
 
 [ext_resource type="PackedScene" uid="uid://b2ix4caw0f7y" path="res://Scenes/Objects/space.tscn" id="1_d0x1m"]
 [ext_resource type="Script" uid="uid://b4widvab7we44" path="res://Scripts/Board.gd" id="1_r8ymi"]
-[ext_resource type="Resource" uid="uid://dasu23qqhlh0c" path="res://Resources/Events/event_encounter.tres" id="2_bb5wj"]
 [ext_resource type="Resource" uid="uid://bixddetwuif4r" path="res://Resources/Equipment/Items/item_1.tres" id="2_glwe7"]
 [ext_resource type="Resource" uid="uid://chc8ymoglxufa" path="res://Resources/Equipment/Items/item_2.tres" id="4_ayiji"]
 [ext_resource type="PackedScene" uid="uid://fnd4ocn5rmes" path="res://Scenes/Objects/Items/disk.tscn" id="4_h8i5x"]
@@ -324,7 +323,6 @@ outline_color = Color(0.368627, 0, 0.0823529, 1)
 script = ExtResource("1_r8ymi")
 main_camera = NodePath("Board Camera")
 overhead_camera = NodePath("Overhead Camera")
-test_space = ExtResource("2_bb5wj")
 
 [node name="PlayerInfo" parent="." instance=ExtResource("12_qmttr")]
 

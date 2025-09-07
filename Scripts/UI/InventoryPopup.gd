@@ -38,4 +38,8 @@ func show_inventory(inventory:Array):
 
 func close_inventory():
 	inventory_panel.visible = false
+	#clear out the child slots
+	for child in grid_container.get_children():
+		grid_container.remove_child(child)
+		child.queue_free()
 	inv_closed.emit()

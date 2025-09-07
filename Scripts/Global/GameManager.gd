@@ -28,6 +28,16 @@ var player_points = {}
 var point_rewards = load("res://Resources/point_rewards.tres")
 enum WORLD {SCIFI, STEAMPUNK, TAMER, TOON, BOARD}
 
+func setDefaultValues():
+	num_characters = 16
+	num_players = 16
+	player_data = []
+	player_list = []
+	current_player = null
+	current_space = null
+	space_check_subject = null
+	player_points = {}
+
 func unique_copy(arr: Array):
 	var arr_copy = Array()
 	for element in arr:
@@ -61,7 +71,9 @@ func reset_to_main():
 	print("Resetting game.")
 	UIManager._on_reset_state()
 	await GameManager.change_scene("res://Scenes/main.tscn")
-	get_tree().reload_current_scene()
+	#get_tree().reload_current_scene()
+	#NOTE: reload_current_scene() doesn't seem to work. Need to do some custom thing to reset the GameManager variables.
+	setDefaultValues()
 
 func win_game():
 	#transition to the points reward screen
@@ -73,7 +85,7 @@ func change_scene(new_scene:String):
 		return
 	var loading_screen = load("res://Scenes/UI/Menus/loading_screen.tscn").instantiate()
 	add_child(loading_screen)
-	await get_tree().create_timer(0.1).timeout
+	await get_tree().create_timer(0).timeout
 	get_tree().change_scene_to_file(new_scene)
 	await scene_loaded
 	remove_child(loading_screen)

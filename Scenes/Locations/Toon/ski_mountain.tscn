@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://b2ix4caw0f7y" path="res://Scenes/Objects/space.tscn" id="1_insyp"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_h6h4e"]
-size = Vector3(50, 0.2, 50)
+size = Vector3(50, 0.5, 50)
 
 [sub_resource type="BoxMesh" id="BoxMesh_yytu5"]
 size = Vector3(50, 30, 10)

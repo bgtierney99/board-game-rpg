@@ -9,6 +9,7 @@ script = ExtResource("1_nhky7")
 min_fish_time = 2.0
 max_fish_time = 10.0
 turn_count = 0
+single_use = false
 
 [resource]
 script = ExtResource("2_owuj6")

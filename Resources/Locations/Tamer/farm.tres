@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="BoardLocation" load_steps=2 format=3 uid="uid://cnss5a1gcb83b"]
+[gd_resource type="Resource" script_class="BoardLocation" load_steps=3 format=3 uid="uid://cnss5a1gcb83b"]
 
 [ext_resource type="Script" uid="uid://0gtxjgq573fi" path="res://Resources/Locations/BoardLocation.gd" id="1_560jh"]
+[ext_resource type="PackedScene" uid="uid://8l1dytjkmkwu" path="res://Scenes/Locations/Tamer/farm.tscn" id="1_byhh8"]
 
 [resource]
 script = ExtResource("1_560jh")
 selected = false
 world = 2
+scene = ExtResource("1_byhh8")

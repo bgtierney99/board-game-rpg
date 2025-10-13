@@ -9,12 +9,14 @@
 [sub_resource type="Resource" id="Resource_cdojo"]
 script = ExtResource("2_iyfa6")
 turn_count = 0
+single_use = false
 
 [sub_resource type="Resource" id="Resource_wcldh"]
 script = ExtResource("4_nyfkr")
 min_fish_time = 2.0
 max_fish_time = 10.0
 turn_count = 0
+single_use = false
 
 [sub_resource type="Gradient" id="Gradient_2hxdt"]
 colors = PackedColorArray(0.236334, 0.236334, 0.236334, 1, 0.333139, 0.221401, 0.159092, 1)

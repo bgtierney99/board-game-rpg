@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://dbup60k5pvtwj"]
+
+[ext_resource type="PackedScene" uid="uid://b2ix4caw0f7y" path="res://Scenes/Objects/space.tscn" id="1_us5sj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l6fdm"]
+albedo_color = Color(0.470588, 1, 0.478431, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_us5sj"]
+material = SubResource("StandardMaterial3D_l6fdm")
+size = Vector3(30, 0.5, 30)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r86ql"]
+albedo_color = Color(1, 0.82283, 0.4752, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sk5ke"]
+material = SubResource("StandardMaterial3D_r86ql")
+size = Vector3(1.5, 0.025, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_r86ql"]
+material = SubResource("StandardMaterial3D_r86ql")
+size = Vector3(12, 0.025, 1.5)
+
+[node name="AnimalTown" type="Node3D"]
+
+[node name="Ground" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_us5sj")
+
+[node name="Spaces" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+
+[node name="space" parent="Spaces" instance=ExtResource("1_us5sj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, 4)
+
+[node name="space2" parent="Spaces" instance=ExtResource("1_us5sj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, 2)
+
+[node name="Paths" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+
+[node name="path1" type="MeshInstance3D" parent="Paths"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.26, 0)
+mesh = SubResource("BoxMesh_sk5ke")
+
+[node name="path2" type="MeshInstance3D" parent="Paths"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.75, 0.26, -4.25)
+mesh = SubResource("BoxMesh_r86ql")

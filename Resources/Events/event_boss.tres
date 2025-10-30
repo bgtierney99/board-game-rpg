@@ -6,12 +6,9 @@
 
 [sub_resource type="Resource" id="Resource_exv42"]
 script = ExtResource("1_wj3r6")
-turn_count = 0
-single_use = false
 
 [resource]
 script = ExtResource("3_3jhlm")
 name = 4
 event_texture = ExtResource("1_huql0")
-event_color = Color(0, 0, 0, 1)
 event_action = SubResource("Resource_exv42")

@@ -6,7 +6,6 @@
 
 [sub_resource type="Resource" id="Resource_m2prk"]
 script = ExtResource("1_tpn0f")
-turn_count = 0
 single_use = true
 
 [resource]

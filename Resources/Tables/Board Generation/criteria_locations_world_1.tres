@@ -1,7 +1,9 @@
-[gd_resource type="Resource" script_class="dataTable" load_steps=2 format=3 uid="uid://c4awah2arl1gl"]
+[gd_resource type="Resource" script_class="dataTable" load_steps=4 format=3 uid="uid://c4awah2arl1gl"]
 
 [ext_resource type="Script" uid="uid://bpu38p04v7blv" path="res://Resources/Tables/dataTable.gd" id="1_5f82f"]
+[ext_resource type="Resource" uid="uid://dcj7a44fj4jqu" path="res://Resources/Locations/Sci-Fi/alleyway.tres" id="2_3kj71"]
+[ext_resource type="Resource" uid="uid://dm4uetf8802yx" path="res://Resources/Locations/Sci-Fi/energy_pond.tres" id="3_j4w0o"]
 
 [resource]
 script = ExtResource("1_5f82f")
-table = Array[Resource]([])
+table = Array[Resource]([ExtResource("2_3kj71"), ExtResource("3_j4w0o")])

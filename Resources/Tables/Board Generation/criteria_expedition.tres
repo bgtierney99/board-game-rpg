@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="dataTable" load_steps=2 format=3 uid="uid://clyw5sylht184"]
+[gd_resource type="Resource" script_class="dataTable" load_steps=3 format=3 uid="uid://clyw5sylht184"]
 
 [ext_resource type="Script" uid="uid://bpu38p04v7blv" path="res://Resources/Tables/dataTable.gd" id="1_a61cm"]
+[ext_resource type="Resource" uid="uid://dha722offtl0v" path="res://Resources/Locations/Steampunk/mineshaft.tres" id="2_x0y14"]
 
 [resource]
 script = ExtResource("1_a61cm")
-table = Array[Resource]([])
+table = Array[Resource]([ExtResource("2_x0y14")])

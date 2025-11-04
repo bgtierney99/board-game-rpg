@@ -1,7 +1,10 @@
-[gd_resource type="Resource" script_class="dataTable" load_steps=2 format=3 uid="uid://da7wlwca3fnxm"]
+[gd_resource type="Resource" script_class="dataTable" load_steps=5 format=3 uid="uid://da7wlwca3fnxm"]
 
 [ext_resource type="Script" uid="uid://bpu38p04v7blv" path="res://Resources/Tables/dataTable.gd" id="1_wak1d"]
+[ext_resource type="Resource" uid="uid://dcj7a44fj4jqu" path="res://Resources/Locations/Sci-Fi/alleyway.tres" id="2_82etm"]
+[ext_resource type="Resource" uid="uid://cnss5a1gcb83b" path="res://Resources/Locations/Tamer/farm.tres" id="3_wdxit"]
+[ext_resource type="Resource" uid="uid://dqf2gewo655rm" path="res://Resources/Locations/Tamer/tamer_city.tres" id="4_iqecl"]
 
 [resource]
 script = ExtResource("1_wak1d")
-table = Array[Resource]([])
+table = Array[Resource]([ExtResource("2_82etm"), ExtResource("3_wdxit"), ExtResource("4_iqecl")])

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BoardLocation" load_steps=3 format=3 uid="uid://k4up5vp0edmj"]
+
+[ext_resource type="PackedScene" uid="uid://dbup60k5pvtwj" path="res://Scenes/Locations/Toon/animal_town.tscn" id="1_vdjwq"]
+[ext_resource type="Script" uid="uid://0gtxjgq573fi" path="res://Resources/Locations/BoardLocation.gd" id="2_wkv3r"]
+
+[resource]
+script = ExtResource("2_wkv3r")
+world = 3
+scene = ExtResource("1_vdjwq")

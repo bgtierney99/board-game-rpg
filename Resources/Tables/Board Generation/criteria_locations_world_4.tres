@@ -1,7 +1,9 @@
-[gd_resource type="Resource" script_class="dataTable" load_steps=2 format=3 uid="uid://dv6vt2qwtcjuy"]
+[gd_resource type="Resource" script_class="dataTable" load_steps=4 format=3 uid="uid://dv6vt2qwtcjuy"]
 
 [ext_resource type="Script" uid="uid://bpu38p04v7blv" path="res://Resources/Tables/dataTable.gd" id="1_crx6d"]
+[ext_resource type="Resource" uid="uid://k4up5vp0edmj" path="res://Resources/Locations/Toon/animal_town.tres" id="2_p1d8w"]
+[ext_resource type="Resource" uid="uid://336tvhrwaevj" path="res://Resources/Locations/Toon/ski_mountain.tres" id="3_itypc"]
 
 [resource]
 script = ExtResource("1_crx6d")
-table = Array[Resource]([])
+table = Array[Resource]([ExtResource("2_p1d8w"), ExtResource("3_itypc")])

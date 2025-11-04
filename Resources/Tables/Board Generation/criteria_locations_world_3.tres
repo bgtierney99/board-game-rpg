@@ -1,7 +1,9 @@
-[gd_resource type="Resource" script_class="dataTable" load_steps=2 format=3 uid="uid://byixy8pbsw8tv"]
+[gd_resource type="Resource" script_class="dataTable" load_steps=4 format=3 uid="uid://byixy8pbsw8tv"]
 
 [ext_resource type="Script" uid="uid://bpu38p04v7blv" path="res://Resources/Tables/dataTable.gd" id="1_mkxt5"]
+[ext_resource type="Resource" uid="uid://cnss5a1gcb83b" path="res://Resources/Locations/Tamer/farm.tres" id="2_m7byr"]
+[ext_resource type="Resource" uid="uid://dqf2gewo655rm" path="res://Resources/Locations/Tamer/tamer_city.tres" id="3_3mxdh"]
 
 [resource]
 script = ExtResource("1_mkxt5")
-table = Array[Resource]([])
+table = Array[Resource]([ExtResource("2_m7byr"), ExtResource("3_3mxdh")])

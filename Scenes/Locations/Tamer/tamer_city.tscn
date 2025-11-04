@@ -101,7 +101,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0033025742, -0.020015717, 0
 mesh = SubResource("BoxMesh_04v36")
 surface_material_override/0 = SubResource("StandardMaterial3D_of6po")
 
-[node name="Paths" type="Node" parent="."]
+[node name="Paths" type="Node3D" parent="."]
 
 [node name="path1" type="MeshInstance3D" parent="Paths"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.25, 5.0307264)
@@ -120,7 +120,7 @@ mesh = SubResource("BoxMesh_1i73m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.946906, 0.25, -5.754549)
 mesh = SubResource("BoxMesh_w1gca")
 
-[node name="Spaces" type="Node" parent="."]
+[node name="Spaces" type="Node3D" parent="."]
 
 [node name="space" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.286399, 14)
@@ -237,7 +237,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.286399, 2)
 [node name="space15" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.286399, -6)
 
-[node name="ParkingLot" type="Node" parent="."]
+[node name="ParkingLot" type="Node3D" parent="."]
 
 [node name="Snailhicle1" type="MeshInstance3D" parent="ParkingLot"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.35782, 1, 13)

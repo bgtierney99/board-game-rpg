@@ -36,8 +36,6 @@ size = Vector3(1, 1, 0.2)
 
 [sub_resource type="Resource" id="Resource_j50v2"]
 script = ExtResource("23_fpxf7")
-turn_count = 0
-single_use = false
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pxril"]
 
@@ -393,6 +391,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 100)
 transform = Transform3D(1.25, 0, 0, 0, 1, 0, 0, 0, 1.25, 0, 0.1, 0)
 event_data = ExtResource("22_2e2nb")
 
+[node name="Back" parent="Start/DirectionControl" index="1"]
+layout_mode = 0
+
+[node name="Right" parent="Start/DirectionControl" index="3"]
+layout_mode = 0
+
 [node name="Spaces" type="Node" parent="."]
 
 [node name="space1" parent="Spaces" instance=ExtResource("1_d0x1m")]
@@ -403,6 +407,12 @@ event_data = ExtResource("10_owiyp")
 [node name="Circle" parent="Spaces/space1/model" index="0"]
 mesh = SubResource("ArrayMesh_bvl7p")
 
+[node name="Back" parent="Spaces/space1/DirectionControl" index="1"]
+layout_mode = 0
+
+[node name="Right" parent="Spaces/space1/DirectionControl" index="3"]
+layout_mode = 0
+
 [node name="space2" parent="Spaces" instance=ExtResource("1_d0x1m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0.1, -2)
 event_data = ExtResource("22_2e2nb")
@@ -410,17 +420,35 @@ event_data = ExtResource("22_2e2nb")
 [node name="Circle" parent="Spaces/space2/model" index="0"]
 mesh = SubResource("ArrayMesh_odpuc")
 
+[node name="Back" parent="Spaces/space2/DirectionControl" index="1"]
+layout_mode = 0
+
+[node name="Right" parent="Spaces/space2/DirectionControl" index="3"]
+layout_mode = 0
+
 [node name="space3" parent="Spaces" instance=ExtResource("1_d0x1m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.1, -2)
 
 [node name="Circle" parent="Spaces/space3/model" index="0"]
 mesh = SubResource("ArrayMesh_dl8x3")
 
+[node name="Back" parent="Spaces/space3/DirectionControl" index="1"]
+layout_mode = 0
+
+[node name="Right" parent="Spaces/space3/DirectionControl" index="3"]
+layout_mode = 0
+
 [node name="space4" parent="Spaces" instance=ExtResource("1_d0x1m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.1, -12)
 
 [node name="Circle" parent="Spaces/space4/model" index="0"]
 mesh = SubResource("ArrayMesh_4tuqh")
+
+[node name="Back" parent="Spaces/space4/DirectionControl" index="1"]
+layout_mode = 0
+
+[node name="Right" parent="Spaces/space4/DirectionControl" index="3"]
+layout_mode = 0
 
 [node name="space5" parent="Spaces" instance=ExtResource("1_d0x1m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.1, -12)
@@ -429,11 +457,23 @@ adjacent_spaces = {}
 [node name="Circle" parent="Spaces/space5/model" index="0"]
 mesh = SubResource("ArrayMesh_by26n")
 
+[node name="Back" parent="Spaces/space5/DirectionControl" index="1"]
+layout_mode = 0
+
+[node name="Right" parent="Spaces/space5/DirectionControl" index="3"]
+layout_mode = 0
+
 [node name="space6" parent="Spaces" instance=ExtResource("1_d0x1m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.1, 4)
 
 [node name="Circle" parent="Spaces/space6/model" index="0"]
 mesh = SubResource("ArrayMesh_0dry6")
+
+[node name="Back" parent="Spaces/space6/DirectionControl" index="1"]
+layout_mode = 0
+
+[node name="Right" parent="Spaces/space6/DirectionControl" index="3"]
+layout_mode = 0
 
 [node name="space7" parent="Spaces" instance=ExtResource("1_d0x1m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0.1, -2)
@@ -441,11 +481,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0.1, -2)
 [node name="Circle" parent="Spaces/space7/model" index="0"]
 mesh = SubResource("ArrayMesh_7n2vf")
 
+[node name="Back" parent="Spaces/space7/DirectionControl" index="1"]
+layout_mode = 0
+
+[node name="Right" parent="Spaces/space7/DirectionControl" index="3"]
+layout_mode = 0
+
 [node name="space8" parent="Spaces" instance=ExtResource("1_d0x1m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.1, 4)
 
 [node name="Circle" parent="Spaces/space8/model" index="0"]
 mesh = SubResource("ArrayMesh_uqu80")
+
+[node name="Back" parent="Spaces/space8/DirectionControl" index="1"]
+layout_mode = 0
+
+[node name="Right" parent="Spaces/space8/DirectionControl" index="3"]
+layout_mode = 0
 
 [node name="space9" parent="Spaces" instance=ExtResource("1_d0x1m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0.1, 4)
@@ -453,12 +505,24 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0.1, 4)
 [node name="Circle" parent="Spaces/space9/model" index="0"]
 mesh = SubResource("ArrayMesh_fxw3d")
 
+[node name="Back" parent="Spaces/space9/DirectionControl" index="1"]
+layout_mode = 0
+
+[node name="Right" parent="Spaces/space9/DirectionControl" index="3"]
+layout_mode = 0
+
 [node name="shop_space_1" parent="Spaces" instance=ExtResource("1_d0x1m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.1, -14)
 event_data = ExtResource("23_iu6u7")
 
 [node name="Circle" parent="Spaces/shop_space_1/model" index="0"]
 mesh = SubResource("ArrayMesh_efa7o")
+
+[node name="Back" parent="Spaces/shop_space_1/DirectionControl" index="1"]
+layout_mode = 0
+
+[node name="Right" parent="Spaces/shop_space_1/DirectionControl" index="3"]
+layout_mode = 0
 
 [node name="Shop" parent="Spaces/shop_space_1" instance=ExtResource("24_e0w36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.33333)
@@ -471,6 +535,12 @@ event_data = ExtResource("23_iu6u7")
 [node name="Circle" parent="Spaces/shop_space_2/model" index="0"]
 mesh = SubResource("ArrayMesh_1mq85")
 
+[node name="Back" parent="Spaces/shop_space_2/DirectionControl" index="1"]
+layout_mode = 0
+
+[node name="Right" parent="Spaces/shop_space_2/DirectionControl" index="3"]
+layout_mode = 0
+
 [node name="Shop" parent="Spaces/shop_space_2" instance=ExtResource("24_e0w36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.33333)
 shop_inventory = Array[ExtResource("12_ardhx")]([ExtResource("5_sl5xx"), ExtResource("6_pahwg"), ExtResource("7_n8jpm")])
@@ -481,6 +551,12 @@ event_data = ExtResource("23_iu6u7")
 
 [node name="Circle" parent="Spaces/shop_space_3/model" index="0"]
 mesh = SubResource("ArrayMesh_1gmx5")
+
+[node name="Back" parent="Spaces/shop_space_3/DirectionControl" index="1"]
+layout_mode = 0
+
+[node name="Right" parent="Spaces/shop_space_3/DirectionControl" index="3"]
+layout_mode = 0
 
 [node name="Shop" parent="Spaces/shop_space_3" instance=ExtResource("24_e0w36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.33333)
@@ -493,6 +569,12 @@ event_data = ExtResource("23_iu6u7")
 [node name="Circle" parent="Spaces/shop_space_4/model" index="0"]
 mesh = SubResource("ArrayMesh_stgrc")
 
+[node name="Back" parent="Spaces/shop_space_4/DirectionControl" index="1"]
+layout_mode = 0
+
+[node name="Right" parent="Spaces/shop_space_4/DirectionControl" index="3"]
+layout_mode = 0
+
 [node name="Shop" parent="Spaces/shop_space_4" instance=ExtResource("24_e0w36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.33333)
 shop_inventory = Array[ExtResource("12_ardhx")]([ExtResource("9_ufwgi")])
@@ -503,6 +585,12 @@ event_data = ExtResource("5_8nru4")
 
 [node name="Circle" parent="Spaces/boss_space/model" index="0"]
 mesh = SubResource("ArrayMesh_1yp8a")
+
+[node name="Back" parent="Spaces/boss_space/DirectionControl" index="1"]
+layout_mode = 0
+
+[node name="Right" parent="Spaces/boss_space/DirectionControl" index="3"]
+layout_mode = 0
 
 [node name="RoundText" type="Label" parent="."]
 visible = false

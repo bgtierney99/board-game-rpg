@@ -1,0 +1,460 @@
+[gd_scene load_steps=11 format=3 uid="uid://ddpoynsma8lx7"]
+
+[ext_resource type="PackedScene" uid="uid://b2ix4caw0f7y" path="res://Scenes/Objects/space.tscn" id="1_5eurq"]
+[ext_resource type="Resource" uid="uid://b2vssap0pvvl1" path="res://Resources/Events/event_checkpoint.tres" id="2_q4fol"]
+[ext_resource type="Resource" uid="uid://5u4xi3vryrcm" path="res://Resources/Events/event_boss.tres" id="3_q4fol"]
+[ext_resource type="PackedScene" uid="uid://d0ib74dj43bqt" path="res://Scenes/Characters/boss.tscn" id="4_vd7sw"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_s7lg5"]
+size = Vector3(34, 0.1, 40)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_obcv2"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5eurq"]
+size = Vector3(1.5, 1, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_q4fol"]
+size = Vector3(1.5, 1, 12)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vd7sw"]
+albedo_color = Color(0.972549, 0.14509805, 0.18431373, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vd7sw"]
+size = Vector3(10, 1, 8)
+
+[node name="BossHub" type="Node3D"]
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -19)
+mesh = SubResource("BoxMesh_s7lg5")
+surface_material_override/0 = SubResource("StandardMaterial3D_obcv2")
+
+[node name="Platforms" type="Node3D" parent="."]
+
+[node name="platform1" type="MeshInstance3D" parent="Platforms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -6)
+mesh = SubResource("BoxMesh_5eurq")
+surface_material_override/0 = SubResource("StandardMaterial3D_obcv2")
+
+[node name="platform2" type="MeshInstance3D" parent="Platforms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -8.008593)
+mesh = SubResource("BoxMesh_5eurq")
+surface_material_override/0 = SubResource("StandardMaterial3D_obcv2")
+
+[node name="platform3" type="MeshInstance3D" parent="Platforms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -10.008593)
+mesh = SubResource("BoxMesh_5eurq")
+surface_material_override/0 = SubResource("StandardMaterial3D_obcv2")
+
+[node name="platform4" type="MeshInstance3D" parent="Platforms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, -12.008593)
+mesh = SubResource("BoxMesh_5eurq")
+surface_material_override/0 = SubResource("StandardMaterial3D_obcv2")
+
+[node name="platform5" type="MeshInstance3D" parent="Platforms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.5, -14.008593)
+mesh = SubResource("BoxMesh_5eurq")
+surface_material_override/0 = SubResource("StandardMaterial3D_obcv2")
+
+[node name="platform6" type="MeshInstance3D" parent="Platforms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, -16.008593)
+mesh = SubResource("BoxMesh_5eurq")
+surface_material_override/0 = SubResource("StandardMaterial3D_obcv2")
+
+[node name="bridge" type="MeshInstance3D" parent="Platforms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, -23.008593)
+mesh = SubResource("BoxMesh_q4fol")
+surface_material_override/0 = SubResource("StandardMaterial3D_vd7sw")
+
+[node name="boss_platform" type="MeshInstance3D" parent="Platforms"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, -33.00859)
+mesh = SubResource("BoxMesh_vd7sw")
+surface_material_override/0 = SubResource("StandardMaterial3D_obcv2")
+
+[node name="Start" parent="." instance=ExtResource("1_5eurq")]
+transform = Transform3D(1.25, 0, 0, 0, 1, 0, 0, 0, 1.25, 0, 0.100000955, 0)
+event_data = ExtResource("2_q4fol")
+
+[node name="Back" parent="Start/DirectionControl" index="1"]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 100.0
+offset_bottom = 100.0
+
+[node name="Right" parent="Start/DirectionControl" index="3"]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 100.0
+offset_bottom = 100.0
+
+[node name="The Controller" parent="." groups=["Boss"] instance=ExtResource("4_vd7sw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.051, -35.51636)
+
+[node name="Spaces" type="Node3D" parent="."]
+
+[node name="space" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.051, -2)
+
+[node name="space16" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.051, -2)
+
+[node name="space17" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.051, -2)
+
+[node name="space18" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.051, -2)
+
+[node name="space19" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -2)
+
+[node name="space41" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -4)
+
+[node name="space42" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -6)
+
+[node name="space43" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -8)
+
+[node name="space44" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -10)
+
+[node name="space45" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -12)
+
+[node name="space46" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -14)
+
+[node name="space47" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -16)
+
+[node name="space92" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -22)
+
+[node name="space99" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.051, -22)
+
+[node name="space100" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.051, -22)
+
+[node name="space93" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -24)
+
+[node name="space94" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -26)
+
+[node name="space95" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -28)
+
+[node name="space96" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -30)
+
+[node name="space97" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -32)
+
+[node name="space98" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -34)
+
+[node name="space101" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -22)
+
+[node name="space108" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.051, -22)
+
+[node name="space109" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.051, -22)
+
+[node name="space102" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -24)
+
+[node name="space103" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -26)
+
+[node name="space104" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -28)
+
+[node name="space105" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -30)
+
+[node name="space106" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -32)
+
+[node name="space107" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -34)
+
+[node name="space110" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -4)
+
+[node name="space111" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -6)
+
+[node name="space112" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -8)
+
+[node name="space113" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -10)
+
+[node name="space114" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -12)
+
+[node name="space115" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -14)
+
+[node name="space116" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -16)
+
+[node name="space117" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.051, -16)
+
+[node name="space118" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.051, -16)
+
+[node name="space48" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.051, -16)
+
+[node name="space49" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.051, -16)
+
+[node name="space20" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.051, -2)
+
+[node name="space21" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.051, -2)
+
+[node name="space80" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -2)
+
+[node name="space81" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.051, -2)
+
+[node name="space91" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.051, 0)
+
+[node name="space82" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.051, -2)
+
+[node name="space83" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -2)
+
+[node name="space84" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.051, -2)
+
+[node name="space85" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.051, -2)
+
+[node name="space86" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.051, -2)
+
+[node name="space23" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -2)
+
+[node name="space24" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -4)
+
+[node name="space25" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -6)
+
+[node name="space26" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -8)
+
+[node name="space27" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -10)
+
+[node name="space28" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -12)
+
+[node name="space29" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -14)
+
+[node name="space30" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -16)
+
+[node name="space31" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -18)
+
+[node name="space32" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -20)
+
+[node name="space87" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0.051, -20)
+
+[node name="space33" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -22)
+
+[node name="space34" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -24)
+
+[node name="space35" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -26)
+
+[node name="space36" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -28)
+
+[node name="space37" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -30)
+
+[node name="space38" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -32)
+
+[node name="space39" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -34)
+
+[node name="space64" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -4)
+
+[node name="space65" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -6)
+
+[node name="space66" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -8)
+
+[node name="space67" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -10)
+
+[node name="space68" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -12)
+
+[node name="space69" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -14)
+
+[node name="space70" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -16)
+
+[node name="space71" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -18)
+
+[node name="space72" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -20)
+
+[node name="space88" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0.051, -20)
+
+[node name="space73" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -22)
+
+[node name="space74" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -24)
+
+[node name="space75" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -26)
+
+[node name="space76" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -28)
+
+[node name="space77" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -30)
+
+[node name="space78" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -32)
+
+[node name="space79" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -34)
+
+[node name="space40" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.051, -36)
+
+[node name="space50" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.051, -36)
+
+[node name="space89" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.051, -38)
+
+[node name="space51" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.051, -36)
+
+[node name="space52" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.051, -36)
+
+[node name="space53" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.051, -36)
+
+[node name="space54" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.051, -36)
+
+[node name="space55" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.051, -36)
+
+[node name="space56" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.051, -36)
+
+[node name="space57" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.051, -36)
+
+[node name="space58" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.051, -36)
+
+[node name="space59" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.051, -36)
+
+[node name="space60" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.051, -36)
+
+[node name="space61" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.051, -36)
+
+[node name="space62" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.051, -36)
+
+[node name="space90" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.051, -38)
+
+[node name="space63" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.051, -36)
+
+[node name="space22" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.051, 0)
+
+[node name="space2" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.051, -4)
+
+[node name="space3" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.051, -6)
+
+[node name="space4" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.051, -8)
+
+[node name="space5" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.051, -10)
+
+[node name="space6" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.051, -12)
+
+[node name="space7" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.051, -14)
+
+[node name="space8" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.051, -16)
+
+[node name="space9" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.051, -18)
+
+[node name="space10" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.051, -20)
+
+[node name="space11" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.051, -22)
+
+[node name="space12" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.051, -24)
+
+[node name="space13" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.051, -26)
+
+[node name="space14" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.051, -28)
+
+[node name="space15" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.051, -30)
+
+[node name="checkpoint_space" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.051, -32)
+event_data = ExtResource("2_q4fol")
+
+[node name="boss_space" parent="Spaces" instance=ExtResource("1_5eurq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.051, -34)
+event_data = ExtResource("3_q4fol")
+
+[editable path="Start"]

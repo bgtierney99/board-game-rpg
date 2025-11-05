@@ -4,12 +4,14 @@ var current_player: GameCharacter
 var current_round = 1
 
 @export var space_distance_threshold:float = 2
-@export var space_height_threshold:float = 0.75
+@export var space_height_threshold:float = 1.5
 @export var main_camera: Camera3D
 @export var overhead_camera: Camera3D
 @export var test_space:eventData
 @onready var round_text = $RoundText
 @onready var death_text = $DeathText
+@onready var starting_space = $BossHub/Start
+@onready var spaces = $BossHub/Spaces
 @onready var item_pool = GameManager.get_table("weighted_item_pool").table.duplicate()
 @onready var event_pool = GameManager.get_table("weighted_event_pool").table.duplicate()
 
@@ -23,7 +25,7 @@ func _ready():
 	death_text.visible = false
 	#randomize board space effects if they don't have a static one set
 	space_setup()
-	$Start.adjacent_spaces["Forward"] = $Spaces.get_child(0)
+	starting_space.adjacent_spaces["Forward"] = spaces.get_child(0)
 	#connect signals
 	UIManager.state_list["PlayerActions"].move_to_num.connect(transition_cameras.bind($Disk.camera))
 	UIManager.state_list["RollMenu"].back_to_player.connect(transition_cameras.bind(main_camera))
@@ -66,11 +68,11 @@ func assemble_board_locations():
 				break
 	#Instantiate all the new areas into the world
 	for i in range(0, $Chunks.get_child_count()):
-		$Chunks.get_child(i).add_child(chunk_list[i].scene.instantiate())
+		location_chunks[i].add_child(chunk_list[i].scene.instantiate())
 		
 
 func generate_spaces():
-	var space_list = $Spaces.get_children()
+	var space_list = spaces.get_children()
 	var space_scene = preload("res://Scenes/Objects/space.tscn")
 	var space_positions = Array()
 	var space_dict := {}
@@ -95,7 +97,7 @@ func generate_spaces():
 	for space_pos in space_dict.keys():
 		if not space_positions.has(space_pos):
 			var new_space = space_scene.instantiate()
-			$Spaces.add_child(new_space)
+			spaces.add_child(new_space)
 			new_space.add_to_group("Spaces")
 			new_space.position = space_pos
 			space_list.append(new_space)
@@ -171,14 +173,13 @@ func get_random_space():
 
 func space_setup():
 	assemble_board_locations()
-	var space_list = generate_spaces()
+	var space_list = spaces.get_children()
 	link_spaces(space_list)
 	for space in space_list:
 		set_space_data(space)
 
 func player_setup(info_list):
 	var player_scene = preload("res://Scenes/Characters/character.tscn")
-	var starting_space = $Start
 	for i in range(GameManager.num_characters):
 		var player = player_scene.instantiate()
 		if not info_list.is_empty():
@@ -412,7 +413,7 @@ func set_spawn(player, space):
 func replace_space(event_data):
 	#find the spaces that can be set
 	var empty_spaces = Array()
-	for space in $Spaces.get_children():
+	for space in spaces.get_children():
 		var option_count = 0
 		for option in space.adjacent_spaces.values():
 			if option != null:

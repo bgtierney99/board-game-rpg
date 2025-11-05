@@ -8,15 +8,9 @@
 
 [sub_resource type="Resource" id="Resource_cdojo"]
 script = ExtResource("2_iyfa6")
-turn_count = 0
-single_use = false
 
 [sub_resource type="Resource" id="Resource_wcldh"]
 script = ExtResource("4_nyfkr")
-min_fish_time = 2.0
-max_fish_time = 10.0
-turn_count = 0
-single_use = false
 
 [sub_resource type="Gradient" id="Gradient_2hxdt"]
 colors = PackedColorArray(0.236334, 0.236334, 0.236334, 1, 0.333139, 0.221401, 0.159092, 1)
@@ -64,6 +58,7 @@ size = Vector3(3, 0.2, 4)
 [node name="EnergyPond" type="Node3D"]
 
 [node name="Spaces" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15)
 
 [node name="space" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.267, 14)
@@ -165,18 +160,19 @@ ActionManager = SubResource("Resource_wcldh")
 event_data = ExtResource("5_l2l7g")
 
 [node name="Ground" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15)
 mesh = SubResource("BoxMesh_q40ab")
 
 [node name="Water" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.278481, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.278481, -15)
 mesh = SubResource("PlaneMesh_25hk7")
 
 [node name="Fishing Hut" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.7446, 2.25, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.7446, 2.25, -15)
 mesh = SubResource("BoxMesh_xie4w")
 
 [node name="Bridge" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.635474, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.635474, -15)
 mesh = SubResource("BoxMesh_yiq0x")
 
 [node name="Bridge" type="MeshInstance3D" parent="Bridge"]
@@ -196,10 +192,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -0.165, 0)
 mesh = SubResource("BoxMesh_gxluw")
 
 [node name="Dock" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.227379, -9.01605)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.227379, -24.01605)
 mesh = SubResource("BoxMesh_ls2dt")
 
 [node name="Trees" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15)
 
 [node name="Tree" type="MeshInstance3D" parent="Trees"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 1.21131, 13)

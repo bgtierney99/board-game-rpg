@@ -5,6 +5,9 @@
 [sub_resource type="BoxMesh" id="BoxMesh_h6h4e"]
 size = Vector3(50, 0.5, 50)
 
+[sub_resource type="BoxMesh" id="BoxMesh_3j6yq"]
+size = Vector3(20, 10, 30)
+
 [sub_resource type="BoxMesh" id="BoxMesh_yytu5"]
 size = Vector3(50, 30, 10)
 
@@ -53,83 +56,18 @@ size = Vector3(6, 14, 2)
 [sub_resource type="BoxMesh" id="BoxMesh_pdbsj"]
 size = Vector3(10, 1, 38)
 
-[sub_resource type="BoxMesh" id="BoxMesh_3j6yq"]
-size = Vector3(20, 10, 30)
-
 [node name="SkiMountain" type="Node3D"]
 
 [node name="Floor" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -25)
 mesh = SubResource("BoxMesh_h6h4e")
 
-[node name="Mountain" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, -20)
-mesh = SubResource("BoxMesh_yytu5")
-
-[node name="Mountain2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 14, -12)
-mesh = SubResource("BoxMesh_y4a23")
-
-[node name="Mountain3" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 13, -7)
-mesh = SubResource("BoxMesh_vt2qh")
-
-[node name="Mountain4" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 12, -4)
-mesh = SubResource("BoxMesh_0juw0")
-
-[node name="Mountain5" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 11, -2)
-mesh = SubResource("BoxMesh_1d8j0")
-
-[node name="Mountain7" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 9, -2)
-mesh = SubResource("BoxMesh_mov1s")
-
-[node name="Mountain8" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 8, 0)
-mesh = SubResource("BoxMesh_tr8qd")
-
-[node name="Mountain10" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 6, 0)
-mesh = SubResource("BoxMesh_4ukh3")
-
-[node name="Mountain12" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 5, 2)
-mesh = SubResource("BoxMesh_7mxdl")
-
-[node name="Mountain13" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, 4)
-mesh = SubResource("BoxMesh_8nhcg")
-
-[node name="Mountain14" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 3, 4)
-mesh = SubResource("BoxMesh_reqhn")
-
-[node name="Mountain15" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 2, 4)
-mesh = SubResource("BoxMesh_ag7tx")
-
-[node name="Mountain16" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 1, 4)
-mesh = SubResource("BoxMesh_gko27")
-
-[node name="Mountain6" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 10, -2)
-mesh = SubResource("BoxMesh_lox7o")
-
-[node name="Mountain9" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 7, 0)
-mesh = SubResource("BoxMesh_iil4v")
-
-[node name="Slope1" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.618299, -0.785943, 0, 0.785943, 0.618299, 16, 15, -3.37379)
-mesh = SubResource("BoxMesh_pdbsj")
-
 [node name="LodgeBuilding" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 1.66606)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, -23.33394)
 mesh = SubResource("BoxMesh_3j6yq")
 
 [node name="Spaces" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -25)
 
 [node name="space" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30.0289, -24)
@@ -298,3 +236,86 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 26.0289, -10)
 
 [node name="space19" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 24.0289, -8)
+
+[node name="Mountains" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -25)
+
+[node name="Mountain" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, -20)
+mesh = SubResource("BoxMesh_yytu5")
+skeleton = NodePath("../..")
+
+[node name="Mountain2" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 14, -12)
+mesh = SubResource("BoxMesh_y4a23")
+skeleton = NodePath("../..")
+
+[node name="Mountain3" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 13, -7)
+mesh = SubResource("BoxMesh_vt2qh")
+skeleton = NodePath("../..")
+
+[node name="Mountain4" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 12, -4)
+mesh = SubResource("BoxMesh_0juw0")
+skeleton = NodePath("../..")
+
+[node name="Mountain5" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 11, -2)
+mesh = SubResource("BoxMesh_1d8j0")
+skeleton = NodePath("../..")
+
+[node name="Mountain7" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 9, -2)
+mesh = SubResource("BoxMesh_mov1s")
+skeleton = NodePath("../..")
+
+[node name="Mountain8" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 8, 0)
+mesh = SubResource("BoxMesh_tr8qd")
+skeleton = NodePath("../..")
+
+[node name="Mountain10" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 6, 0)
+mesh = SubResource("BoxMesh_4ukh3")
+skeleton = NodePath("../..")
+
+[node name="Mountain12" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 5, 2)
+mesh = SubResource("BoxMesh_7mxdl")
+skeleton = NodePath("../..")
+
+[node name="Mountain13" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, 4)
+mesh = SubResource("BoxMesh_8nhcg")
+skeleton = NodePath("../..")
+
+[node name="Mountain14" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 3, 4)
+mesh = SubResource("BoxMesh_reqhn")
+skeleton = NodePath("../..")
+
+[node name="Mountain15" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 2, 4)
+mesh = SubResource("BoxMesh_ag7tx")
+skeleton = NodePath("../..")
+
+[node name="Mountain16" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 1, 4)
+mesh = SubResource("BoxMesh_gko27")
+skeleton = NodePath("../..")
+
+[node name="Mountain6" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 10, -2)
+mesh = SubResource("BoxMesh_lox7o")
+skeleton = NodePath("../..")
+
+[node name="Mountain9" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 7, 0)
+mesh = SubResource("BoxMesh_iil4v")
+skeleton = NodePath("../..")
+
+[node name="Slope1" type="MeshInstance3D" parent="Mountains"]
+transform = Transform3D(1, 0, 0, 0, 0.618299, -0.785943, 0, 0.785943, 0.618299, 16, 15, -3.37379)
+mesh = SubResource("BoxMesh_pdbsj")
+skeleton = NodePath("../..")

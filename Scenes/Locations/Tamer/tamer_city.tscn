@@ -87,22 +87,22 @@ albedo_color = Color(0.28037116, 0.46411473, 0.9909515, 1)
 [node name="TamerCity" type="Node3D"]
 
 [node name="Lab" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.040211, 2.5, -25.99156)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.0402107, 2.5, -24.99156)
 mesh = SubResource("BoxMesh_8dq5k")
 surface_material_override/0 = SubResource("StandardMaterial3D_vs75i")
 
 [node name="MonsterRaceDome" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.3140316, 5.238893, -22.262165)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.314032, 5.238893, -21.262165)
 mesh = SubResource("CylinderMesh_8dq5k")
 surface_material_override/0 = SubResource("StandardMaterial3D_04v36")
 
 [node name="Ground" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0033025742, -0.020015717, -14.980261)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9966974, -0.020015717, -13.980261)
 mesh = SubResource("BoxMesh_04v36")
 surface_material_override/0 = SubResource("StandardMaterial3D_of6po")
 
 [node name="Paths" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -14)
 
 [node name="path1" type="MeshInstance3D" parent="Paths"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.25, 5.0307264)
@@ -122,7 +122,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.946906, 0.25, -5.754549)
 mesh = SubResource("BoxMesh_w1gca")
 
 [node name="Spaces" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -14)
 
 [node name="space" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.286399, 14)
@@ -240,7 +240,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.286399, 2)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.286399, -6)
 
 [node name="ParkingLot" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -14)
 
 [node name="Snailhicle1" type="MeshInstance3D" parent="ParkingLot"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.35782, 1, 13)

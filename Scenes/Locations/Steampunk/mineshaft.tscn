@@ -94,153 +94,153 @@ skeleton = NodePath("../..")
 [node name="Spaces" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.01, -14)
 
-[node name="space" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14)
 
-[node name="space2" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space2" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
 
-[node name="space3" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space3" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
 
-[node name="space13" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space13" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
 
-[node name="space19" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space19" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
 
-[node name="space20" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space20" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
 
-[node name="space21" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space21" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 
-[node name="space28" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space28" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 6)
 
-[node name="space29" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space29" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 4)
 
-[node name="space30" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space30" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 2)
 
-[node name="space22" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space22" parent="Spaces" instance=ExtResource("1_fph8b")]
 
-[node name="space23" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space23" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
 
-[node name="space24" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space24" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
 
-[node name="space25" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space25" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
 
-[node name="space26" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space26" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
 
-[node name="space27" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space27" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0.0271358)
 
-[node name="space14" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space14" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 8)
 
-[node name="space15" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space15" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 8)
 
-[node name="space16" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space16" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 8)
 
-[node name="space17" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space17" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 8)
 
-[node name="space18" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space18" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 8)
 
-[node name="space4" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space4" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 8)
 
-[node name="space31" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space31" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
 
-[node name="space6" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space6" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8)
 
-[node name="space7" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space7" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6)
 
-[node name="space8" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space8" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
 
-[node name="space9" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space9" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
 
-[node name="space10" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space10" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 
-[node name="space11" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space11" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
 
-[node name="space12" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space12" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
 event_data = ExtResource("2_a62ld")
 
-[node name="space32" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space32" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 7, -14)
 event_data = ExtResource("2_a62ld")
 
-[node name="space36" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space36" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 7, -14)
 event_data = ExtResource("2_a62ld")
 
-[node name="space37" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space37" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 7, -14)
 event_data = ExtResource("2_a62ld")
 
-[node name="space38" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space38" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 7, -14)
 event_data = ExtResource("2_a62ld")
 
-[node name="space39" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space39" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 7, -14)
 event_data = ExtResource("2_a62ld")
 
-[node name="space40" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space40" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 7, -14)
 event_data = ExtResource("2_a62ld")
 
-[node name="space41" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space41" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, -14)
 event_data = ExtResource("2_a62ld")
 
-[node name="space42" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space42" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 7, -14)
 event_data = ExtResource("2_a62ld")
 
-[node name="space43" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space43" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 7, -14)
 event_data = ExtResource("2_a62ld")
 
-[node name="space44" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space44" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 7, -14)
 event_data = ExtResource("2_a62ld")
 
-[node name="space45" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space45" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 7, -14)
 event_data = ExtResource("2_a62ld")
 
-[node name="space46" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space46" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 7, -14)
 event_data = ExtResource("2_a62ld")
 
-[node name="space47" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space47" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 7, -14)
 event_data = ExtResource("2_a62ld")
 
-[node name="space34" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space34" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 7, -12)
 event_data = ExtResource("2_a62ld")
 
-[node name="space35" parent="Spaces" instance=ExtResource("1_fph8b")]
+[node name="mineshaft_space35" parent="Spaces" instance=ExtResource("1_fph8b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 7, -10)
 event_data = ExtResource("2_a62ld")
 

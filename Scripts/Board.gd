@@ -173,10 +173,14 @@ func get_random_space():
 
 func space_setup():
 	assemble_board_locations()
-	var space_list = spaces.get_children()
+	#get all spaces
+	var space_list = spaces.get_children().duplicate()
+	for chunk in $Chunks.get_children():
+		space_list += chunk.get_child(0).get_node("Spaces").get_children()
 	link_spaces(space_list)
 	for space in space_list:
 		set_space_data(space)
+	print("All spaces: ", all_spaces)
 
 func player_setup(info_list):
 	var player_scene = preload("res://Scenes/Characters/character.tscn")
@@ -413,7 +417,7 @@ func set_spawn(player, space):
 func replace_space(event_data):
 	#find the spaces that can be set
 	var empty_spaces = Array()
-	for space in spaces.get_children():
+	for space in all_spaces:
 		var option_count = 0
 		for option in space.adjacent_spaces.values():
 			if option != null:

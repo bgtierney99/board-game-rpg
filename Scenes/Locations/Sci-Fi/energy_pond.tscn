@@ -60,101 +60,101 @@ size = Vector3(3, 0.2, 4)
 [node name="Spaces" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -14)
 
-[node name="space" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.267, 14)
 
-[node name="space2" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space2" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0.408691, 0)
 
-[node name="space3" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space3" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.738026, 0)
 
-[node name="space4" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space4" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.738026, 0)
 
-[node name="space5" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space5" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.738026, 0)
 
-[node name="space6" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space6" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.738026, 0)
 
-[node name="space7" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space7" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.738026, 0)
 
-[node name="space8" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space8" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.738026, 0)
 
-[node name="space9" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space9" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.738026, 0)
 
-[node name="space10" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space10" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.738026, 0)
 
-[node name="space11" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space11" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.738026, 0)
 
-[node name="space12" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space12" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.738026, 0)
 
-[node name="space13" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space13" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.738026, 0)
 
-[node name="space14" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space14" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.738026, 0)
 
-[node name="space15" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space15" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.738026, 0)
 
-[node name="space16" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space16" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.738026, 0)
 
-[node name="space17" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space17" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.738026, 0)
 
-[node name="space18" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space18" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.738026, 0)
 
-[node name="space19" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space19" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0.408474, 0)
 
-[node name="space20" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space20" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.267, 0)
 
-[node name="space23" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space23" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.267, -2)
 
-[node name="space26" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space26" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.267, -12)
 
-[node name="space29" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space29" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.267, -12)
 
-[node name="space31" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space31" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.267, 12)
 
-[node name="space22" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space22" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.267, 2)
 
-[node name="space27" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space27" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.267, 12)
 
-[node name="space28" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space28" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.267, 12)
 
-[node name="space21" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space21" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0.267, 0)
 ActionManager = SubResource("Resource_cdojo")
 event_data = ExtResource("3_pqi81")
 
-[node name="space24" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space24" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.332954, -12)
 
-[node name="space25" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space25" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.332954, -10)
 ActionManager = SubResource("Resource_wcldh")
 event_data = ExtResource("5_l2l7g")
 
-[node name="space30" parent="Spaces" instance=ExtResource("1_we3g0")]
+[node name="energy_pond_space30" parent="Spaces" instance=ExtResource("1_we3g0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.332954, -8)
 ActionManager = SubResource("Resource_wcldh")
 event_data = ExtResource("5_l2l7g")

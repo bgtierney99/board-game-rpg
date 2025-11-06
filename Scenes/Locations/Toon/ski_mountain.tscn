@@ -70,172 +70,172 @@ mesh = SubResource("BoxMesh_3j6yq")
 [node name="Spaces" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -25)
 
-[node name="space" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30.0289, -24)
 
-[node name="space2" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space2" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30.0289, -22)
 
-[node name="space3" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space3" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30.0289, -20)
 
-[node name="space4" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space4" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30.0289, -18)
 
-[node name="space20" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space20" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 30.0289, -18)
 
-[node name="space21" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space21" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 30.0289, -18)
 
-[node name="space22" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space22" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 30.0289, -18)
 
-[node name="space23" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space23" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 30.0289, -18)
 
-[node name="space24" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space24" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 30.0289, -18)
 
-[node name="space25" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space25" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 30.0289, -18)
 
-[node name="space26" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space26" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 30.0289, -18)
 
-[node name="space27" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space27" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 30.0289, -18)
 
-[node name="space28" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space28" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 30.0289, -18)
 
-[node name="space29" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space29" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 30.0289, -18)
 
-[node name="space30" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space30" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 30.0289, -18)
 
-[node name="space31" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space31" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 30.0289, -16)
 
-[node name="space32" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space32" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 28.0289, -14)
 
-[node name="space33" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space33" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 28.0289, -12)
 
-[node name="space34" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space34" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 28.0289, -12)
 
-[node name="space35" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space35" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 28.0289, -12)
 
-[node name="space36" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space36" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 28.0289, -12)
 
-[node name="space37" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space37" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 28.0289, -12)
 
-[node name="space38" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space38" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 28.0289, -12)
 
-[node name="space39" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space39" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 28.0289, -10)
 
-[node name="space40" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space40" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 26.0289, -8)
 
-[node name="space41" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space41" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 26.0289, -8)
 
-[node name="space42" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space42" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 26.0289, -8)
 
-[node name="space43" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space43" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 26.0289, -8)
 
-[node name="space44" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space44" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 26.0289, -8)
 
-[node name="space45" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space45" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 26.0289, -6)
 
-[node name="space46" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space46" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 24.0289, -4)
 
-[node name="space47" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space47" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 24.0289, -4)
 
-[node name="space48" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space48" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 24.0289, -4)
 
-[node name="space50" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space50" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 24.0289, -4)
 
-[node name="space51" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space51" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 24.0289, -4)
 
-[node name="space52" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space52" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 22.0289, -2)
 
-[node name="space53" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space53" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 20.0289, -2)
 
-[node name="space54" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space54" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 20.0289, -2)
 
-[node name="space55" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space55" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 20.0289, -2)
 
-[node name="space56" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space56" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 18.0289, -2)
 
-[node name="space49" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space49" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 24.0289, -4)
 
-[node name="space5" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space5" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 30.0289, -18)
 
-[node name="space6" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space6" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 30.0289, -18)
 
-[node name="space7" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space7" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 30.0289, -18)
 
-[node name="space8" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space8" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 30.0289, -18)
 
-[node name="space9" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space9" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 30.0289, -18)
 
-[node name="space10" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space10" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 30.0289, -18)
 
-[node name="space11" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space11" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 30.0289, -18)
 
-[node name="space12" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space12" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 30.0289, -18)
 
-[node name="space13" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space13" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 30.0289, -18)
 
-[node name="space14" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space14" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 30.0289, -18)
 
-[node name="space15" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space15" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 30.0289, -16)
 
-[node name="space16" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space16" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 30.0289, -14)
 
-[node name="space17" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space17" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 28.0289, -12)
 
-[node name="space18" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space18" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 26.0289, -10)
 
-[node name="space19" parent="Spaces" instance=ExtResource("1_insyp")]
+[node name="ski_mountain_space19" parent="Spaces" instance=ExtResource("1_insyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 24.0289, -8)
 
 [node name="Mountains" type="Node3D" parent="."]

@@ -124,119 +124,119 @@ mesh = SubResource("BoxMesh_w1gca")
 [node name="Spaces" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -14)
 
-[node name="space" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.286399, 14)
 
-[node name="space2" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space2" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.286399, 12)
 
-[node name="space26" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space26" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.286399, 12)
 
-[node name="space27" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space27" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.286399, 12)
 
-[node name="space28" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space28" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.286399, 12)
 
-[node name="space29" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space29" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.286399, 12)
 
-[node name="space30" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space30" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.286399, 12)
 
-[node name="space31" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space31" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.286399, 10)
 
-[node name="space32" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space32" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.286399, 8)
 
-[node name="space33" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space33" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.286399, 6)
 
-[node name="space34" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space34" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.286399, 4)
 
-[node name="ShopSpace" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_ShopSpace" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.286399, 10)
 ActionManager = SubResource("Resource_eccsd")
 event_data = ExtResource("3_w1gca")
 
-[node name="Shop" parent="Spaces/ShopSpace" instance=ExtResource("1_vs75i")]
+[node name="tamer_city_Shop" parent="Spaces/tamer_city_ShopSpace" instance=ExtResource("1_vs75i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.286399, -1.6398296)
 
-[node name="space3" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space3" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.286399, 10)
 
-[node name="space4" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space4" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.286399, 8)
 
-[node name="space5" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space5" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.286399, 6)
 
-[node name="space6" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space6" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.286399, 4)
 
-[node name="space7" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space7" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.286399, 2)
 
-[node name="space16" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space16" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, 2)
 
-[node name="space17" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space17" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.286399, 2)
 
-[node name="space18" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space18" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.286399, 2)
 
-[node name="space19" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space19" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.286399, 2)
 
-[node name="space20" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space20" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.286399, 2)
 
-[node name="space8" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space8" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.286399, 0)
 
-[node name="space9" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space9" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.286399, -2)
 
-[node name="space10" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space10" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.286399, -4)
 
-[node name="space11" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space11" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.286399, -4)
 
-[node name="space12" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space12" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.286399, -4)
 
-[node name="space13" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space13" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.286399, -4)
 
-[node name="space14" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space14" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.286399, -4)
 
-[node name="space35" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space35" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.286399, -4)
 ActionManager = SubResource("Resource_6owuj")
 event_data = ExtResource("6_qw2lm")
 
-[node name="space21" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space21" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.286399, -2)
 
-[node name="space22" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space22" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.286399, 0)
 
-[node name="space23" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space23" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.286399, 0)
 
-[node name="space24" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space24" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.286399, 2)
 
-[node name="space25" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space25" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.286399, 2)
 
-[node name="space15" parent="Spaces" instance=ExtResource("2_04v36")]
+[node name="tamer_city_space15" parent="Spaces" instance=ExtResource("2_04v36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.286399, -6)
 
 [node name="ParkingLot" type="Node3D" parent="."]

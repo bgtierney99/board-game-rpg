@@ -84,185 +84,185 @@ mesh = SubResource("BoxMesh_us5sj")
 [node name="Spaces" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
 
-[node name="space" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, 4)
 
-[node name="space2" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space2" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, 2)
 
-[node name="space3" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space3" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, 0)
 
-[node name="space4" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space4" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, -2)
 
-[node name="space5" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space5" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, -4)
 
-[node name="space12" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space12" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, -6)
 
-[node name="space13" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space13" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, -8)
 
-[node name="space14" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space14" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, -10)
 
-[node name="space17" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space17" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.286399, -10)
 
-[node name="space18" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space18" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.286399, -10)
 
-[node name="space19" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space19" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.286399, -10)
 
-[node name="space52" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space52" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.286399, -8)
 
-[node name="space53" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space53" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.286399, -6)
 
-[node name="space54" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space54" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.286399, -4)
 
-[node name="space55" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space55" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.286399, -4)
 
-[node name="space56" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space56" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.286399, -4)
 
-[node name="space50" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space50" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.286399, -12)
 
-[node name="space51" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space51" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.286399, -14)
 
-[node name="space20" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space20" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.286399, -10)
 
-[node name="space21" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space21" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.286399, -10)
 ActionManager = SubResource("Resource_fnlui")
 event_data = ExtResource("3_6cfar")
 
-[node name="space15" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space15" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, -12)
 
-[node name="space16" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space16" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, -14)
 
-[node name="space46" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space46" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.286399, -14)
 
-[node name="space47" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space47" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.286399, -14)
 
-[node name="space48" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space48" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.286399, -14)
 
-[node name="space49" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space49" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.286399, -14)
 ActionManager = SubResource("Resource_wpoao")
 event_data = ExtResource("3_6cfar")
 
-[node name="space57" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space57" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.286399, -14)
 
-[node name="space22" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space22" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, -16)
 
-[node name="space23" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space23" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, -18)
 
-[node name="space34" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space34" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.286399, -18)
 
-[node name="space35" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space35" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.286399, -18)
 
-[node name="space36" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space36" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.286399, -18)
 
-[node name="space37" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space37" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.286399, -16)
 
-[node name="space38" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space38" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.286399, -16)
 
-[node name="space39" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space39" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.286399, -16)
 
-[node name="space40" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space40" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.286399, -16)
 
-[node name="space41" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space41" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.286399, -18)
 
-[node name="space42" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space42" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.286399, -20)
 
-[node name="space43" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space43" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.286399, -22)
 
-[node name="space44" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space44" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.286399, -22)
 ActionManager = SubResource("Resource_sk5ke")
 event_data = ExtResource("3_y6ub6")
 
-[node name="space26" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space26" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.286399, -18)
 
-[node name="space27" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space27" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.286399, -18)
 
-[node name="space28" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space28" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.286399, -18)
 
-[node name="space29" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space29" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.286399, -18)
 
-[node name="space30" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space30" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.286399, -20)
 
-[node name="space31" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space31" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.286399, -20)
 
-[node name="space32" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space32" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.286399, -22)
 
-[node name="space33" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space33" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.286399, -22)
 ActionManager = SubResource("Resource_dgrx5")
 event_data = ExtResource("3_y6ub6")
 
-[node name="space24" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space24" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, -20)
 
-[node name="space25" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space25" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, -22)
 
-[node name="space45" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space45" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.286399, -24)
 ActionManager = SubResource("Resource_y6ub6")
 event_data = ExtResource("3_y6ub6")
 
-[node name="space6" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space6" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.286399, -4)
 
-[node name="space7" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space7" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.286399, -4)
 
-[node name="space8" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space8" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.286399, -4)
 
-[node name="space9" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space9" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.286399, -4)
 
-[node name="space10" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space10" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.286399, -4)
 
-[node name="space11" parent="Spaces" instance=ExtResource("1_us5sj")]
+[node name="animal_town_space11" parent="Spaces" instance=ExtResource("1_us5sj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.286399, -4)
 ActionManager = SubResource("Resource_mhpfb")
 event_data = ExtResource("3_6cfar")

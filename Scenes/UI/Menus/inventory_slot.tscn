@@ -56,6 +56,7 @@ text_overrun_behavior = 1
 [node name="SubViewport" type="SubViewport" parent="."]
 own_world_3d = true
 transparent_bg = true
+canvas_item_default_texture_filter = 0
 size = Vector2i(140, 140)
 
 [node name="Outline" parent="SubViewport" instance=ExtResource("2_xlqxs")]

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dq6j0gerkmk2f"]
+
+[ext_resource type="PackedScene" uid="uid://cqs0fi46togjl" path="res://Assets/Art/Items/Models/placeholder.glb" id="1_h17pu"]
+
+[node name="Placeholder" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.9227333, 0.38543913, 0, -0.38543913, 0.9227333, 0, 1.076, 1.5)
+
+[node name="placeholder" parent="." instance=ExtResource("1_h17pu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44257164, 0)

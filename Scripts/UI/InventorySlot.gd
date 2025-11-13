@@ -89,7 +89,11 @@ func set_item(new_item:lootData):
 				stat_value,
 				stat_text,
 				effect_description]
-		var model = new_item.model.instantiate()
+		var model
+		if new_item.model:
+			model = new_item.model.instantiate()
+		else:
+			model = preload("res://Scenes/Objects/Items/placeholder.tscn").instantiate()
 		model.name = "Model"
 		subviewport.add_child(model)
 		setup_usage_panel(new_item)

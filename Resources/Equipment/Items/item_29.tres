@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=2 format=3 uid="uid://dw08qw4nhcw8"]
+
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_ayc1c"]
+
+[resource]
+script = ExtResource("1_ayc1c")
+name = "Nanite Gauntlets"
+item_type = "Holdable"
+description = "Gauntlets that use nanites to form a variety of tools or weapons for the user when gripping the inner rods."
+price = 650
+stats = {
+"additions": {
+"Attack": 25,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

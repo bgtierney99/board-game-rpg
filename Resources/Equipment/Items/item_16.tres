@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=2 format=3 uid="uid://54t2k8hsjyvc"]
+
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_156b2"]
+
+[resource]
+script = ExtResource("1_156b2")
+name = "Overalls"
+item_type = "Wearable"
+world = 2
+description = "Overalls perfect for exploring your new world in style!"
+price = 700
+stats = {
+"additions": {
+"Attack": 0,
+"Defense": 10,
+"HP": 10,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

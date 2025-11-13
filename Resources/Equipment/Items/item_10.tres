@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=2 format=3 uid="uid://11x5hyym6cxj"]
+
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_wsj3w"]
+
+[resource]
+script = ExtResource("1_wsj3w")
+name = "Anvil"
+item_type = "Holdable"
+world = 3
+description = "A large, heavy anvil that's perfect for dropping onto your enemies."
+price = 800
+stats = {
+"additions": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

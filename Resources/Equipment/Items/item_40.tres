@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=2 format=3 uid="uid://5q4dccgm6wx5"]
+
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_uqsiu"]
+
+[resource]
+script = ExtResource("1_uqsiu")
+name = "Crate"
+item_type = "Consumable"
+world = 1
+description = "This fortefied crate provide significant but temporary protection."
+price = 800
+stats = {
+"additions": {
+"Attack": 0,
+"Defense": 30,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 1,
+"HP": 0,
+"Speed": 0
+}
+}

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=2 format=3 uid="uid://unjx3hlci8c8"]
+
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_vsl2e"]
+
+[resource]
+script = ExtResource("1_vsl2e")
+name = "Glorby"
+item_type = "Wearable"
+world = 2
+description = "A living creature made of gelatonous material. They love protecting humans as a sort of armor."
+price = 1250
+stats = {
+"additions": {
+"Attack": 15,
+"Defense": 30,
+"HP": 20,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

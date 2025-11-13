@@ -9,7 +9,6 @@ name = "Spiked Cane"
 model = ExtResource("1_mq63u")
 item_type = "Holdable"
 world = 1
-description = ""
 price = 500
 stats = {
 "additions": {

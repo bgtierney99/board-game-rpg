@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=3 format=3 uid="uid://ba43ora7qvohm"]
+
+[ext_resource type="Resource" uid="uid://o34vldaesgn7" path="res://Resources/Equipment/Effects/effect_charged_potion.tres" id="1_yceut"]
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="2_6x0ft"]
+
+[resource]
+script = ExtResource("2_6x0ft")
+name = "Charged Potion"
+item_type = "Consumable"
+effect = ExtResource("1_yceut")
+description = "An elixer enhanced with electrical energy which supercharges the vitals of the user."
+price = 450
+stats = {
+"additions": {
+"Attack": 0,
+"Defense": 0,
+"HP": 30,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

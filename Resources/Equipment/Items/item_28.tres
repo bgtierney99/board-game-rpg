@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=2 format=3 uid="uid://c1v561p8e50ov"]
+
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_pokpb"]
+
+[resource]
+script = ExtResource("1_pokpb")
+name = "Laser Sword"
+item_type = "Holdable"
+description = "The primary weapon of the knights. With a blade of light, it lacks the weight of more archaic weaponry."
+price = 600
+stats = {
+"additions": {
+"Attack": 30,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

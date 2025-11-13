@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=3 format=3 uid="uid://dq6k4yqtc6vgw"]
+
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_8t752"]
+[ext_resource type="Resource" uid="uid://djkam7lpcarca" path="res://Resources/Equipment/Effects/effect_berries.tres" id="1_puhwh"]
+
+[resource]
+script = ExtResource("1_8t752")
+name = "Berries"
+item_type = "Consumable"
+world = 3
+effect = ExtResource("1_puhwh")
+description = "A han dful of delicious berries. They should heal you up in a pinch."
+price = 250
+stats = {
+"additions": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

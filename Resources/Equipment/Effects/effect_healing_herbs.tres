@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="HealEffect" load_steps=2 format=3 uid="uid://0jwypveh7hhs"]
+
+[ext_resource type="Script" uid="uid://k7qktxhuscns" path="res://Resources/Equipment/Effects/HealEffect.gd" id="1_08y0a"]
+
+[resource]
+script = ExtResource("1_08y0a")
+hp_percent = 0.3
+description = "Restores 30% HP."

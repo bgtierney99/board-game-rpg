@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=2 format=3 uid="uid://b4m5wjqu07s8r"]
+
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_veoo3"]
+
+[resource]
+script = ExtResource("1_veoo3")
+name = "Flash Scope"
+item_type = "Holdable"
+world = 1
+description = "A handheld telescope that fires off a burst of light."
+price = 750
+stats = {
+"additions": {
+"Attack": 15,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

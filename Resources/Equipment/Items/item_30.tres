@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=3 format=3 uid="uid://cix5mgke4m8c6"]
+
+[ext_resource type="Resource" uid="uid://bi0mtsffm844d" path="res://Resources/Equipment/Effects/effect_energy_crystal.tres" id="1_csglu"]
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_s0vji"]
+
+[resource]
+script = ExtResource("1_s0vji")
+name = "Energy Crystal"
+item_type = "Consumable"
+effect = ExtResource("1_csglu")
+description = "A crystal imbued with immense energy that is used to heal everyday injuries."
+price = 1500
+stats = {
+"additions": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

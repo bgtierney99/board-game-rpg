@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=2 format=3 uid="uid://bygrb68bo544s"]
+
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="2_e0ev2"]
+
+[resource]
+script = ExtResource("2_e0ev2")
+name = "Gummy Fish"
+item_type = "Consumable"
+world = 3
+description = "A sweet gummy snack. Wait! Is this thing alive?"
+price = 350
+stats = {
+"additions": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

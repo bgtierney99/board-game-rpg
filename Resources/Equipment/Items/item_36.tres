@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=2 format=3 uid="uid://dslawian4b25n"]
+
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_80oyw"]
+
+[resource]
+script = ExtResource("1_80oyw")
+name = "Burst Watch"
+item_type = "Holdable"
+world = 1
+description = "This pocketwatch can send out a sonic burst that will paralyze anyone nearby."
+price = 700
+stats = {
+"additions": {
+"Attack": 20,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=2 format=3 uid="uid://brsv1bntkh6g"]
+
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="2_1y57m"]
+
+[resource]
+script = ExtResource("2_1y57m")
+name = "Wrist-mounted Crossbow"
+item_type = "Wearable"
+world = 1
+description = "A small ranged weapon for conveniently firing small projectiles while keeping the hands of the user free."
+price = 650
+stats = {
+"additions": {
+"Attack": 20,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

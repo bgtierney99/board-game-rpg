@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=2 format=3 uid="uid://dcwch4e7mox5w"]
+
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_7p3ia"]
+
+[resource]
+script = ExtResource("1_7p3ia")
+name = "Fernn"
+item_type = "Wearable"
+world = 2
+description = "Living vines that wrap around a tamer's arms and assist in tasks."
+price = 900
+stats = {
+"additions": {
+"Attack": 25,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

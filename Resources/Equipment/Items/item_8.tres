@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=2 format=3 uid="uid://dj10qa7i0jgnr"]
+
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="3_whedu"]
+
+[resource]
+script = ExtResource("3_whedu")
+name = "Paw Gloves"
+item_type = "Wearable"
+world = 3
+description = "Gloves that create extra traction to allow for quicker movement."
+price = 700
+stats = {
+"additions": {
+"Attack": 0,
+"Defense": 5,
+"HP": 0,
+"Speed": 20
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

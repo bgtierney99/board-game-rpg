@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=2 format=3 uid="uid://b81e758ikdi4y"]
+
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_1jyvc"]
+
+[resource]
+script = ExtResource("1_1jyvc")
+name = "Lasso"
+item_type = "Holdable"
+world = 2
+description = "A lasso typically used by farmers for wrangling monsters, but can also double as a whip for combat."
+price = 300
+stats = {
+"additions": {
+"Attack": 20,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

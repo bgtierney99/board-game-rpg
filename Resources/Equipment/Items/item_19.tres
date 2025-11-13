@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=3 format=3 uid="uid://6bg2tmd56cvn"]
+
+[ext_resource type="Resource" uid="uid://0jwypveh7hhs" path="res://Resources/Equipment/Effects/effect_healing_herbs.tres" id="1_8tni3"]
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_cuvh3"]
+
+[resource]
+script = ExtResource("1_cuvh3")
+name = "Healing Herbs"
+item_type = "Consumable"
+world = 2
+effect = ExtResource("1_8tni3")
+description = "A natural medication used typically used by tamers for healing monsters."
+price = 400
+stats = {
+"additions": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

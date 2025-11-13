@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=2 format=3 uid="uid://hghmmr45dj7e"]
+
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_81qe1"]
+
+[resource]
+script = ExtResource("1_81qe1")
+name = "Metal Arms"
+item_type = "Wearable"
+description = "Metal arm coverings that provide increased defense and offense at the cost of some speed."
+price = 750
+stats = {
+"additions": {
+"Attack": 20,
+"Defense": 10,
+"HP": 0,
+"Speed": -10
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

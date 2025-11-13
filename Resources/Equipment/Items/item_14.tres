@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="lootData" load_steps=3 format=3 uid="uid://cms617ik1w78n"]
+
+[ext_resource type="Resource" uid="uid://6xiei8av7k13" path="res://Resources/Equipment/Effects/effect_carrots.tres" id="1_kc6ga"]
+[ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="2_7s3ua"]
+
+[resource]
+script = ExtResource("2_7s3ua")
+name = "Carrots"
+item_type = "Consumable"
+world = 3
+effect = ExtResource("1_kc6ga")
+description = "A bunch of carrots, a healthy snack that will heal you up a decent amount."
+price = 350
+stats = {
+"additions": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+},
+"modifiers": {
+"Attack": 0,
+"Defense": 0,
+"HP": 0,
+"Speed": 0
+}
+}

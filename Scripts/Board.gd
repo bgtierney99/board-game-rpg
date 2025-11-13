@@ -180,7 +180,6 @@ func space_setup():
 	link_spaces(space_list)
 	for space in space_list:
 		set_space_data(space)
-	print("All spaces: ", all_spaces)
 
 func player_setup(info_list):
 	var player_scene = preload("res://Scenes/Characters/character.tscn")

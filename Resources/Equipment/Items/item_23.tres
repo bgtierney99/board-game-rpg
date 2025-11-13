@@ -4,16 +4,16 @@
 
 [resource]
 script = ExtResource("1_r33u4")
-name = "Metal Arms"
+name = "Heavy Armor"
 item_type = "Wearable"
-description = "A holomolecular bubble which protects the user greatly but limits their offensive capability."
+description = "Traditional armor of the cyborg knights."
 price = 650
 stats = {
 "additions": {
-"Attack": -20,
-"Defense": 15,
+"Attack": -10,
+"Defense": 25,
 "HP": 0,
-"Speed": 0
+"Speed": -5
 },
 "modifiers": {
 "Attack": 0,

@@ -8,7 +8,6 @@ script = ExtResource("1_6iky8")
 name = "Robot Horse"
 model = ExtResource("1_trtbk")
 item_type = "Companion"
-world = 0
 description = "A horse... but, like, robotic."
 price = 5000
 stats = {

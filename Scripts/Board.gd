@@ -107,6 +107,8 @@ func link_spaces(space_list: Array):
 	#link spaces together
 	for space in space_list:
 		all_spaces.append(space)
+		#make sure all the spaces maintain the same rotation
+		space.global_rotation = Vector3.ZERO
 		for other_space in space_list:
 			if other_space != space:
 				var dist_to_space = space.position.distance_to(other_space.position)

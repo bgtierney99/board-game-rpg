@@ -5,7 +5,7 @@
 [node name="MonsterGel" type="Node3D"]
 
 [node name="monster_gel" parent="." instance=ExtResource("1_uoi5i")]
-transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.26816642, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.26816642, 0)
 
 [node name="Camera3D" type="Camera3D" parent="monster_gel"]
-transform = Transform3D(4, 0, 0, 0, 3.6909332, 1.5417565, 0, -1.5417565, 3.6909332, 0, 3.2313342, 6)
+transform = Transform3D(1, 0, 0, 0, 0.9227333, 0.38543913, 0, -0.38543913, 0.9227333, 0, 0.80783355, 1.5)

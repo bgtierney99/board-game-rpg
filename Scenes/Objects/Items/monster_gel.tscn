@@ -1,13 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://mqlc37057igx"]
 
-[sub_resource type="SphereMesh" id="SphereMesh_ot3po"]
-height = 0.3
+[ext_resource type="PackedScene" uid="uid://dear41yhpqi88" path="res://Assets/Art/Items/Models/monster_gel.glb" id="1_uoi5i"]
 
 [node name="MonsterGel" type="Node3D"]
 
-[node name="model" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-mesh = SubResource("SphereMesh_ot3po")
+[node name="monster_gel" parent="." instance=ExtResource("1_uoi5i")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.26816642, 0)
 
-[node name="Camera3D" type="Camera3D" parent="model"]
-transform = Transform3D(1, 0, 0, 0, 0.922733, 0.385439, 0, -0.385439, 0.922733, 0, 0.576, 1.5)
+[node name="Camera3D" type="Camera3D" parent="monster_gel"]
+transform = Transform3D(4, 0, 0, 0, 3.6909332, 1.5417565, 0, -1.5417565, 3.6909332, 0, 3.2313342, 6)

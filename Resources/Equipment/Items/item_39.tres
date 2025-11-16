@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="lootData" load_steps=2 format=3 uid="uid://c20wbqwm2pxh8"]
+[gd_resource type="Resource" script_class="lootData" load_steps=3 format=3 uid="uid://c20wbqwm2pxh8"]
 
+[ext_resource type="Resource" uid="uid://duyi5olupuw1u" path="res://Resources/Equipment/Effects/effect_first_aid.tres" id="1_03cn7"]
 [ext_resource type="Script" uid="uid://b4pi7yq6xd7v5" path="res://Resources/Equipment/lootData.gd" id="1_roajf"]
 
 [resource]
@@ -7,7 +8,8 @@ script = ExtResource("1_roajf")
 name = "First Aid Device"
 item_type = "Consumable"
 world = 1
-description = "A cocktail made with only the finest ingredients for keeping you in tip-top shape!"
+effect = ExtResource("1_03cn7")
+description = "A kit that can be used to quickly heal someone in a pinch!"
 price = 400
 stats = {
 "additions": {

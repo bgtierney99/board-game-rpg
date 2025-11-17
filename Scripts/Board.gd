@@ -80,7 +80,8 @@ func link_spaces(space_list: Array):
 			if other_space != space:
 				var dist_to_space = space.position.distance_to(other_space.position)
 				#adjacent spaces can't be more than the threshold away or too high
-				if dist_to_space == space_distance_threshold and other_space.position.y <= space.position.y+space_height_threshold:
+				var y_distance = abs(space.global_position.y - other_space.global_position.y)
+				if dist_to_space == space_distance_threshold and y_distance <= space_height_threshold:
 					if other_space.position.x > space.position.x: space.adjacent_spaces["Right"] = other_space
 					elif other_space.position.x < space.position.x: space.adjacent_spaces["Left"] = other_space
 					elif other_space.position.z > space.position.z: space.adjacent_spaces["Back"] = other_space

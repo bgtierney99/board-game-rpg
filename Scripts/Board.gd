@@ -69,39 +69,6 @@ func assemble_board_locations():
 	#Instantiate all the new areas into the world
 	for i in range(0, $Chunks.get_child_count()):
 		location_chunks[i].add_child(chunk_list[i].scene.instantiate())
-		
-
-func generate_spaces():
-	var space_list = spaces.get_children()
-	var space_scene = preload("res://Scenes/Objects/space.tscn")
-	var space_positions = Array()
-	var space_dict := {}
-	#add initial spaces into list
-	for space in space_list:
-		var space_pos = space.position
-		space_positions.append(space_pos)
-		space_dict[space_pos] = space
-		for other_space in space_list:
-			#get position for new in-between spaces
-			var other_space_pos = other_space.position
-			if other_space_pos == space_pos:
-				continue
-			var diff = other_space_pos-space_pos
-			#check that the spaces are lined up
-			if diff.x == 0 or diff.z == 0:
-				var num_spaces = space_pos.distance_to(other_space_pos)/space_distance_threshold-1
-				for i in range(num_spaces):
-					var new_space_pos = space_pos+((space_distance_threshold*diff.normalized())*(i+1))
-					space_dict[new_space_pos] = null
-	#generate spaces
-	for space_pos in space_dict.keys():
-		if not space_positions.has(space_pos):
-			var new_space = space_scene.instantiate()
-			spaces.add_child(new_space)
-			new_space.add_to_group("Spaces")
-			new_space.position = space_pos
-			space_list.append(new_space)
-	return space_list
 
 func link_spaces(space_list: Array):
 	#link spaces together

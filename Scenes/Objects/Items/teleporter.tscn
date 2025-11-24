@@ -1,12 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://cse3qf7gw64be"]
 
-[sub_resource type="TorusMesh" id="TorusMesh_q76un"]
+[ext_resource type="PackedScene" uid="uid://cg364ox8mfsoy" path="res://Assets/Art/Items/Models/teleporter.glb" id="1_d6xv5"]
 
 [node name="Teleporter" type="Node3D"]
 
-[node name="model" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-mesh = SubResource("TorusMesh_q76un")
+[node name="teleporter" parent="." instance=ExtResource("1_d6xv5")]
 
-[node name="Camera3D" type="Camera3D" parent="model"]
-transform = Transform3D(1, 0, 0, 0, 0.922733, 0.385439, 0, -0.385439, 0.922733, 0, 0.57587, 2.15234)
+[node name="Camera3D" type="Camera3D" parent="teleporter"]
+transform = Transform3D(1, 0, 0, 0, 0.6580589, 0.7529665, 0, -0.7529665, 0.6580589, 0, 1.7447605, 2.1855989)

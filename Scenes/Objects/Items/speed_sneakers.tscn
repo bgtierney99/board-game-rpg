@@ -1,12 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://bnhcgcgg5vtji"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_moi3d"]
+[ext_resource type="PackedScene" uid="uid://di0ycaewdq5yv" path="res://Assets/Art/Items/Models/speed_sneakers.glb" id="1_xhx1g"]
 
 [node name="SpeedSneakers" type="Node3D"]
 
-[node name="model" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-mesh = SubResource("CapsuleMesh_moi3d")
+[node name="speed_sneakers" parent="." instance=ExtResource("1_xhx1g")]
 
-[node name="Camera3D" type="Camera3D" parent="model"]
-transform = Transform3D(1, 0, 0, 0, 0.786913, 0.617063, 0, -0.617063, 0.786913, 0, 1.91632, 2.06856)
+[node name="Camera3D" type="Camera3D" parent="speed_sneakers"]
+transform = Transform3D(1, 0, 0, 0, 0.7869135, 0.6170634, 0, -0.6170634, 0.7869135, 0, 0.265213, 0.35063553)

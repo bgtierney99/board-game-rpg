@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ilrbroay2o1q"]
+
+[ext_resource type="PackedScene" uid="uid://dk81kivclnd0k" path="res://Assets/Art/Items/Models/anvil.glb" id="1_pk2kc"]
+
+[node name="Anvil" type="Node3D"]
+
+[node name="anvil" parent="." instance=ExtResource("1_pk2kc")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.90072095, 0.4343981, 0, -0.4343981, 0.90072095, 0, 0.7714603, 0.8359333)

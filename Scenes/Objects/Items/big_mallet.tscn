@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b21rdo1tmos10"]
+
+[ext_resource type="PackedScene" uid="uid://bxkmswwivhg0w" path="res://Assets/Art/Items/Models/big_mallet.glb" id="1_jnj74"]
+
+[node name="BigMallet" type="Node3D"]
+
+[node name="big_mallet" parent="." instance=ExtResource("1_jnj74")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.94939804, 0.31407538, 0, -0.31407538, 0.94939804, 0, 0.5820074, 0.5138266)

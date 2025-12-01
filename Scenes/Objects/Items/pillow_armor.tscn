@@ -1,12 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://dd403ta6kapmm"]
 
-[sub_resource type="TubeTrailMesh" id="TubeTrailMesh_ti1kl"]
+[ext_resource type="PackedScene" uid="uid://btqrgciprkwpe" path="res://Assets/Art/Items/Models/pillow_armor.glb" id="1_oyulj"]
 
 [node name="PillowArmor" type="Node3D"]
 
-[node name="model" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-mesh = SubResource("TubeTrailMesh_ti1kl")
+[node name="pillow_armor" parent="." instance=ExtResource("1_oyulj")]
 
-[node name="Camera3D" type="Camera3D" parent="model"]
-transform = Transform3D(1, 0, 0, 0, 0.922733, 0.385439, 0, -0.385439, 0.922733, 0, 0.662994, 1.68234)
+[node name="Camera3D" type="Camera3D" parent="pillow_armor"]
+transform = Transform3D(1, 0, 0, 0, 0.9227333, 0.38543913, 0, -0.38543913, 0.9227333, 0, 0.93412364, 1.3588924)

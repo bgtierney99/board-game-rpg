@@ -3,6 +3,7 @@ class_name InventoryComponent
 
 @export var inventory_size:int
 var inventory:Array[lootData]
+var overflow:Array[lootData]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,13 +18,15 @@ func add_item(item):
 	var empty_index = inventory.find(null)
 	if empty_index != -1:
 		inventory[empty_index] = item
+	else:
+		overflow.append(item)
 
 func add_items(items):
 	for item in items:
 		add_item(item)
 
 func remove_item(item):
-	inventory[inventory.find(item)] = null
+	inventory[inventory.find(item)] = overflow.pop_front()
 
 func remove_items(items):
 	for item in items:
@@ -38,6 +41,7 @@ func get_item_count():
 	for item in inventory:
 		if item:
 			item_count += 1
+	item_count += overflow.size()
 	return item_count
 
 func filter_items(filter_type = null):

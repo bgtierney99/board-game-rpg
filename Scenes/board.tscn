@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bwqe4q4ogy3t1"]
+[gd_scene format=3 uid="uid://bwqe4q4ogy3t1"]
 
 [ext_resource type="Script" uid="uid://b4widvab7we44" path="res://Scripts/Board.gd" id="1_r8ymi"]
 [ext_resource type="PackedScene" uid="uid://fnd4ocn5rmes" path="res://Scenes/Objects/Items/disk.tscn" id="4_h8i5x"]
@@ -24,71 +24,74 @@ font_color = Color(0.552941, 0, 0.0117647, 1)
 outline_size = 20
 outline_color = Color(0.368627, 0, 0.0823529, 1)
 
-[node name="Board" type="Node3D" node_paths=PackedStringArray("main_camera", "overhead_camera")]
+[node name="Board" type="Node3D" unique_id=416518511 node_paths=PackedStringArray("main_camera", "overhead_camera")]
 script = ExtResource("1_r8ymi")
 main_camera = NodePath("Board Camera")
 overhead_camera = NodePath("Overhead Camera")
 
-[node name="PlayerInfo" parent="." instance=ExtResource("12_qmttr")]
+[node name="PlayerInfo" parent="." unique_id=982468809 instance=ExtResource("12_qmttr")]
 
-[node name="SpotLight3D" type="SpotLight3D" parent="."]
+[node name="Disc Collection" type="Node3D" parent="." unique_id=724301424]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30.326439, 0)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Disc Collection" unique_id=1242998095]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1.7, 13)
-visible = false
 
-[node name="Disk Platform" type="MeshInstance3D" parent="."]
+[node name="Disc Platform" type="MeshInstance3D" parent="Disc Collection" unique_id=1335403850]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 13)
 mesh = SubResource("BoxMesh_1vdan")
+skeleton = NodePath("../..")
 
-[node name="Disk Platform2" type="MeshInstance3D" parent="."]
+[node name="Disc Platform Back" type="MeshInstance3D" parent="Disc Collection" unique_id=1565709400]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.59722, 12.4255)
-visible = false
 mesh = SubResource("BoxMesh_1p071")
+skeleton = NodePath("../..")
 
-[node name="Disk" parent="." instance=ExtResource("4_h8i5x")]
+[node name="Disc" parent="Disc Collection" unique_id=346586359 instance=ExtResource("4_h8i5x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 13)
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=146502177]
 transform = Transform3D(1, 0, 0, 0, 0.515293, 0.857014, 0, -0.857014, 0.515293, 0, 10.2203, 0)
 light_energy = 0.36
 shadow_enabled = true
 shadow_normal_bias = 3.0
 directional_shadow_mode = 0
 
-[node name="Overhead Camera" type="Camera3D" parent="."]
+[node name="Overhead Camera" type="Camera3D" parent="." unique_id=1287163902]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 7, 0)
 
-[node name="Outline" parent="Overhead Camera" instance=ExtResource("5_dguuv")]
+[node name="Outline" parent="Overhead Camera" unique_id=410877665 instance=ExtResource("5_dguuv")]
 
-[node name="Board Camera" type="Camera3D" parent="."]
+[node name="Board Camera" type="Camera3D" parent="." unique_id=1429050116]
 transform = Transform3D(1, 0, 0, 0, 0.848048, 0.529919, 0, -0.529919, 0.848048, 0.000745773, 3.72851, 5.00918)
 
-[node name="Outline" parent="Board Camera" instance=ExtResource("5_dguuv")]
+[node name="Outline" parent="Board Camera" unique_id=860031618 instance=ExtResource("5_dguuv")]
 
-[node name="Players" type="Node" parent="."]
+[node name="Players" type="Node" parent="." unique_id=146757776]
 
-[node name="Chunks" type="Node" parent="."]
+[node name="Chunks" type="Node" parent="." unique_id=289214664]
 
-[node name="Chunk1" type="Node3D" parent="Chunks"]
+[node name="Chunk1" type="Node3D" parent="Chunks" unique_id=1207835249]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -18, 0, -20)
 
-[node name="Chunk2" type="Node3D" parent="Chunks"]
+[node name="Chunk2" type="Node3D" parent="Chunks" unique_id=833416195]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 18, 0, -20)
 
-[node name="Chunk3" type="Node3D" parent="Chunks"]
+[node name="Chunk3" type="Node3D" parent="Chunks" unique_id=1835481779]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -40)
 
-[node name="Chunk4" type="Node3D" parent="Chunks"]
+[node name="Chunk4" type="Node3D" parent="Chunks" unique_id=1872826863]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -40)
 
-[node name="Chunk5" type="Node3D" parent="Chunks"]
+[node name="Chunk5" type="Node3D" parent="Chunks" unique_id=1107902059]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -12, 0, 2)
 
-[node name="Chunk6" type="Node3D" parent="Chunks"]
+[node name="Chunk6" type="Node3D" parent="Chunks" unique_id=1644705873]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 12, 0, 2)
 
-[node name="BossHub" parent="." instance=ExtResource("21_bb5wj")]
+[node name="BossHub" parent="." unique_id=1709513296 instance=ExtResource("21_bb5wj")]
 
-[node name="RoundText" type="Label" parent="."]
+[node name="RoundText" type="Label" parent="." unique_id=1102822514]
 visible = false
 anchors_preset = 15
 anchor_right = 1.0
@@ -99,7 +102,7 @@ label_settings = SubResource("LabelSettings_a5tvk")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="DeathText" type="Label" parent="."]
+[node name="DeathText" type="Label" parent="." unique_id=1614135460]
 visible = false
 anchors_preset = 15
 anchor_right = 1.0
@@ -110,7 +113,7 @@ label_settings = SubResource("LabelSettings_dutb6")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="SavingLabel" type="Label" parent="."]
+[node name="SavingLabel" type="Label" parent="." unique_id=2076115160]
 visible = false
 anchors_preset = 2
 anchor_top = 1.0
@@ -121,7 +124,7 @@ grow_vertical = 0
 theme_override_font_sizes/font_size = 32
 text = "Saving..."
 
-[node name="TurnOrder" type="VBoxContainer" parent="."]
+[node name="TurnOrder" type="VBoxContainer" parent="." unique_id=352891227]
 visible = false
 custom_minimum_size = Vector2(250, 75)
 anchors_preset = 6

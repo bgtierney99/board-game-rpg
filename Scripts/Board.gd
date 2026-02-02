@@ -12,6 +12,7 @@ var current_round = 1
 @onready var death_text = $DeathText
 @onready var starting_space = $BossHub/Start
 @onready var spaces = $BossHub/Spaces
+@onready var disc = $"Disc Collection/Disc"
 @onready var item_pool = GameManager.get_table("weighted_item_pool").table.duplicate()
 @onready var event_pool = GameManager.get_table("weighted_event_pool").table.duplicate()
 
@@ -27,9 +28,9 @@ func _ready():
 	space_setup()
 	starting_space.adjacent_spaces["Forward"] = spaces.get_child(0)
 	#connect signals
-	UIManager.state_list["PlayerActions"].move_to_num.connect(transition_cameras.bind($Disk.camera))
+	UIManager.state_list["PlayerActions"].move_to_num.connect(transition_cameras.bind(disc.camera))
 	UIManager.state_list["RollMenu"].back_to_player.connect(transition_cameras.bind(main_camera))
-	GameManager.send_num_range.connect(spin_disk)
+	GameManager.send_num_range.connect(spin_disc)
 	GameManager.send_num_result.connect(manage_result)
 	GameManager.respawn_player.connect(respawn)
 	#setup players
@@ -375,10 +376,10 @@ func do_round(round_num):
 			print("Round 7 reached!")
 	start_turn(current_player)
 
-func spin_disk(min, max):
+func spin_disc(min, max):
 	max = clampi(max+current_player.get_speed_offset(), 1, 999)
 	#max = 1
-	await $Disk.spin(min, max)
+	await disc.spin(min, max)
 
 func set_spawn(player, space):
 	boardData[player.get_name()]["Spawnpoint"] = space

@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bacfbgy8l2ccj"]
+[gd_scene format=3 uid="uid://bacfbgy8l2ccj"]
 
 [ext_resource type="Script" uid="uid://cv5dbc6t58cvo" path="res://Scripts/UI/main.gd" id="1_5s0tp"]
 [ext_resource type="ButtonGroup" uid="uid://pyiy1iw2u8vn" path="res://Resources/button_group_num_characters.tres" id="2_ddsem"]
@@ -10,7 +10,7 @@ default_font_size = 45
 [sub_resource type="CurveTexture" id="CurveTexture_wsw31"]
 width = 32
 
-[node name="Main" type="Control"]
+[node name="Main" type="Control" unique_id=1120058672]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,7 +21,7 @@ script = ExtResource("1_5s0tp")
 num_characters_group = ExtResource("2_ddsem")
 num_players_group = ExtResource("3_7d5nd")
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="." unique_id=1725179791]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -30,7 +30,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.0862745, 0.196078, 0.282353, 1)
 
-[node name="Go" type="Button" parent="."]
+[node name="Go" type="Button" parent="." unique_id=638745985]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -45,7 +45,7 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Go"
 
-[node name="PlayerNum" type="SpinBox" parent="."]
+[node name="PlayerNum" type="SpinBox" parent="." unique_id=798675562]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -62,7 +62,7 @@ max_value = 4.0
 value = 4.0
 alignment = 1
 
-[node name="Options" type="VBoxContainer" parent="."]
+[node name="Options" type="VBoxContainer" parent="." unique_id=1234721020]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -73,31 +73,31 @@ offset_right = 187.0
 offset_bottom = 230.0
 grow_horizontal = 2
 
-[node name="NumCharacters" type="VBoxContainer" parent="Options"]
+[node name="NumCharacters" type="VBoxContainer" parent="Options" unique_id=300138612]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Options/NumCharacters"]
+[node name="Label" type="Label" parent="Options/NumCharacters" unique_id=1199921681]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Number of Characters:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Options/NumCharacters"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Options/NumCharacters" unique_id=245868754]
 layout_mode = 2
 alignment = 1
 
-[node name="NumPlayers" type="VBoxContainer" parent="Options"]
+[node name="NumPlayers" type="VBoxContainer" parent="Options" unique_id=1935375905]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Options/NumPlayers"]
+[node name="Label" type="Label" parent="Options/NumPlayers" unique_id=1490610345]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Number of Players:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Options/NumPlayers"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Options/NumPlayers" unique_id=1536516082]
 layout_mode = 2
 alignment = 1
 

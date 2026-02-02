@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="eventData" load_steps=5 format=3 uid="uid://5u4xi3vryrcm"]
+[gd_resource type="Resource" script_class="eventData" format=3 uid="uid://5u4xi3vryrcm"]
 
 [ext_resource type="Texture2D" uid="uid://ck1ujdbdtiur1" path="res://Assets/Art/Spaces/boss_event.png" id="1_huql0"]
 [ext_resource type="Script" uid="uid://brfd2rvbise7y" path="res://Resources/Events/Actions/action_boss.gd" id="1_wj3r6"]

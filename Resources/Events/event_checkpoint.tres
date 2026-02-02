@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="eventData" load_steps=5 format=3 uid="uid://b2vssap0pvvl1"]
+[gd_resource type="Resource" script_class="eventData" format=3 uid="uid://b2vssap0pvvl1"]
 
 [ext_resource type="Script" uid="uid://ybc34xkd3exu" path="res://Resources/Events/Actions/action_checkpoint.gd" id="1_diwcs"]
 [ext_resource type="Texture2D" uid="uid://cnyei3g5npxn1" path="res://Assets/Art/Spaces/checkpoint_event.png" id="1_dstjq"]
